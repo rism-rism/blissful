@@ -1,0 +1,1782 @@
+@charset "utf-8";
+
+/* ------------------------------------------------
+    基本CSS
+   ------------------------------------------------ */
+
+
+   #top2 {
+	width: 100%;
+	height: 225px;
+	background: url(../images/marason61.png);
+}
+
+@media (min-width:480px) {
+  #top2 {
+	  width: 100%;
+	  height: 533px;
+	  background: url(../images/marason61.png);
+  }
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,
+div,
+img {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	font-weight: normal;
+}
+
+/*
+* { */
+	/* margin: 0; メインCSSの含まれる */
+	/* padding: 0; メインCSSの含まれる */
+	/* border: none; メインCSSの含まれる */
+    /* word-break: break-all; メインCSSの含まれる */
+	/* font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif; メインCSSの含まれる */
+	/* letter-spacing: 0.08em; メインCSSの含まれる */
+	/* font-style: normal; メインCSSの含まれる */
+	/* font-size: 15px; メインCSSの含まれる */
+	/* list-style: none; メインCSSの含まれる */
+	/* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;	メインCSSの含まれる */
+/* } */
+
+
+/* ★制御用 */
+.pc_only {
+	display: block !important;
+}
+.sp_only {
+	display: none !important;
+}
+
+
+
+/* ----------------------------------------------------------------
+	 ▼▼▼　PC ヘッダーエリア　▼▼▼
+---------------------------------------------------------------- */
+
+#sp_header {
+	width: 100%;
+	height: 135px;
+	background: #fff;
+	transition: .5s;
+	/* border-bottom: 1px solid hsla(216,14%,85%,0.50); */
+}
+
+#sp_header:hover {
+	background: hsla(0,0%,100%,0.95);
+}
+
+
+/* ----------------------------------------------------------------
+	 ▲▲▲　PC ヘッダーエリア　▲▲▲
+---------------------------------------------------------------- */
+
+#sp_menu {
+	display: block;
+
+}
+
+
+/* ----------------------------------------------------------------
+	 スマートフォンサーチエリア　▼
+---------------------------------------------------------------- */
+
+#search_box {
+	margin: 15px;
+
+	border-radius: 8px;
+	overflow: hidden;
+	position: relative;
+}
+
+/* 検索文字入力エリア */
+#search_box .sb_input {
+	display: block;
+	margin: 1% 1% 1% 1%;
+	width: 85%;
+	height: 2em;
+	font-size: 18px;/* フォントサイズ固定 */
+	/* background-color: #FF9091; */
+	float: left;
+	line-height: 1em;
+	padding-top: 3px;
+	vertical-align: baseline;
+}
+
+/* サーチボタン */
+#search_box .sb_search {
+	position: absolute;
+	top: 10px;
+	right: 7px;
+	display: block;
+	overflow: hidden;
+	width: 2.5em;
+	height: 0px;
+	margin: 0;
+	padding-top: 2.5em;
+	align-items: baseline;
+	color: #000;
+	float: left;
+	background: url(https://www.rakuten.ne.jp/gold/roomy/img/search_button.png) 0px 2px no-repeat;
+}
+
+div.sp_header_btm p {
+	font-size: 1.0em;/* 15px */
+	font-weight: bolder;
+	overflow: hidden;
+	padding: 3px 0;
+	text-align: left;
+	margin: 3px 0;
+	line-height: 1.8em;/* 改行時マージン確保 */
+}
+
+/* ----------------------------------------------------------------
+	 スマートフォンサーチエリア　▲
+---------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* ------------------------------------------------
+    ヘッダー
+   ------------------------------------------------ */
+
+header {
+	/* border-bottom: 1px solid #d5d9df; */
+	height: 115px;/* 35px */
+	box-sizing: border-box;
+	letter-spacing: 0.08em;/* 全体にかけると楽天cカテのチェックボックスが崩れるため */
+	position: relative;
+	z-index: 10000;
+}
+
+
+
+header a:hover {
+	opacity: 1.0 !important;
+}
+
+
+
+/* ヘッダー内メニュー上部全て */
+#head-top {
+	max-width: 1100px;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto 0px;/* 0 auto 10px */
+}
+
+
+/* TOP「roomy」ロゴ（background） */
+#logo a {
+	display: block;
+	width: 260px;
+	height: 40px;
+	background-image: url(../images/newlogolong.jpg);
+	background-size:260px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+
+
+/* Rボタン */
+#head-top .r-btn {
+	margin: 0px 12px 8px 12px;
+}
+
+/* Rボタン */
+#head-top .r-btn:hover {
+	margin: -2px 12px 8px 12px;
+}
+
+/* Rボタン（background） */
+#head-top .r-btn a {
+	display: block;
+	width: 27px;
+	height: 30px;
+	margin: 0;
+	background-image: url(https://www.rakuten.ne.jp/gold/roomy/img/top/r_btn.svg);
+	background-size: 27px;
+	background-position: 0px 5px;
+	background-repeat: no-repeat;
+}
+
+/* カートボタン */
+#head-top .crt-btn {
+	margin: 0px 17px 8px 12px;
+}
+
+/* カートボタン */
+#head-top .crt-btn:hover {
+	margin: -2px 17px 8px 12px;
+}
+
+/* カートボタン（background） */
+#head-top .crt-btn a {
+	display: block;
+	width: 27px;
+	height: 30px;
+	margin: 0;
+	background-image: url(https://www.rakuten.ne.jp/gold/roomy/img/top/cart_btn.svg);
+	background-size: 27px;
+	background-position: 0px 5px;
+	background-repeat: no-repeat;
+}
+
+/* Instagramボタン */
+#head-top .ig-btn {
+	position: relative;
+	margin: 5px 10px 12px 12px;
+}
+
+/* Instagramボタン */
+#head-top .ig-btn:hover {
+	margin: 3px 10px 12px 12px;
+}
+
+/* カートボタン（background） */
+#head-top .ig-btn a {
+	display: block;
+	width: 27px;
+	height: 30px;
+	margin: 0;
+	background-image: url(https://www.rakuten.ne.jp/gold/roomy/img/top/ig.svg);
+	background-size: 27px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+
+#head-top .ani-badge {
+	display: block;
+	width: 32px;
+	margin: 0px 0px 12px 15px;
+}
+
+#head-top .ani-badge img {
+	width: 32px;
+    height: 34px;
+}
+
+
+/* ------------------------------------------------
+    サーチ全般
+   ------------------------------------------------ */
+
+#s-box {
+	display: flex;
+	justify-content: flex-end;
+	width: 470px;
+	height: 45px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#s-box form {
+	display: block;
+	position: relative;
+	width: 317px;
+	height: 45px;
+	padding: 0;
+	margin: 0;
+}
+
+#s-box form input.sb_input {
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	width: 240px;
+	height: 40px;
+	display: block;
+	background-color: #f2f2f2;
+	border: 1px solid #ccc;
+}
+
+#s-box form input.sb_search {
+	display: block;
+	position: absolute;
+	top: 8px;
+	right: 40px;
+	width: 25px;
+	height: 0px;
+	overflow: hidden;
+	padding-top: 27px;
+	background: url(https://www.rakuten.ne.jp/gold/roomy/img/top/search_button.svg) 0px 2px no-repeat;
+}
+
+
+#s-box form input.sb_search:hover {
+	top: 3px;
+}
+
+
+
+#s-box form input.sb_search:hover {
+    background: url(https://www.rakuten.ne.jp/gold/roomy/img/top/search_button.svg) 0px 2px no-repeat;
+}
+
+/* search ここまで */
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------
+    本文エリア
+   ------------------------------------------------ */
+
+/* 帯カラー追加・色の濃さ戻り時間設定 */
+#navi {
+	padding: 10px 0!important;
+	/* background-color: #111; */
+  background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+	transition: background-color 2.5s ease-in;
+}
+
+
+#navi > div {
+	/* position: fixed;
+	top: 0;
+	left: 0;*/
+	height: 35px;
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	position: relative;
+}
+/* チェックボックスを非表示 */
+#navi input {
+	display: none;
+}
+
+
+/* 上部メニュー */
+#navi .menu {
+	max-width: 1200px;
+	margin: 0 auto;
+	/* float: right;
+	margin-right: 10px; */
+	overflow: hidden;
+	border-right: 0px solid #333;
+}
+
+
+/* メニュー内の文字属性 safariのみ */
+_::-webkit-full-page-media, _:future, :root #navi ul.menu > li > a,
+_::-webkit-full-page-media, _:future, :root #navi ul.m-c01 > li > a,
+_::-webkit-full-page-media, _:future, :root #navi ul.m-c02 > li > a {
+	font-weight: 500;
+}
+
+/* メニュー内の文字属性 safariのみ(SP用特集エリア) */
+_::-webkit-full-page-media, _:future, :root #sp_menu>div.sp_only>ul>li a {
+	font-weight: 500;
+}
+
+
+
+/* 第一階層文字のクリック範囲を確保 */
+#navi div.m-c > ul > li > a {
+	display: inline-block;
+	width: 100%;
+}
+@media (min-width:480px) {
+	/* 第一階層文字のクリック範囲を確保 */
+#navi div.m-c > ul > li > a {
+	display: inline-block;
+	width: 290px;
+}
+}
+
+
+/* メニュー選択時に背景色変化があるほうがよい場合 */
+#navi div.m-c > ul > li > a:hover {
+	background-color: #E5E8EF;
+}
+
+
+/* メニュー選択時にマーカーがあるほうがよい場合
+div.m-c > ul > li > a:hover::after {
+	content: "・";
+	padding: 0 0 0 0.3em;
+	color: #c9bdad;
+} */
+
+
+/* 第１階層メニュー文字 */
+#navi div.m-c > ul > li {
+	display: block;
+	font-size: 15px;
+	text-align: left;
+	padding: 7px 10px;
+	box-sizing: border-box;
+}
+
+/* 第２階層メニュー文字 */
+#navi ul.m-c02 li {
+	font-size: 14px;
+	padding: 5px 10px;
+	margin: 10px 0px;
+}
+
+
+
+/* パソコンでは V を非表示 */
+#navi .m-p .pd {
+  display: none;
+}
+/* 上部メニューの最後の項目 */
+#navi .m-p:last-child {
+  margin-right: 0px;
+}
+
+#menu-navibtn {
+  display: none;
+  cursor: pointer;
+  cursor: hand;
+}
+
+
+
+
+/* ★ */
+/* ナビ横帯の文字等指定 */
+#navi .m-p {
+	border:none;
+	line-height: 35px;
+	float: left;
+	padding: 0 15px;
+	font-size: 15px;
+	font-weight: 600;
+	box-sizing: border-box;
+	transition : all 0.3s ease-in-out;
+}
+@media (min-width:480px) {
+	#navi .m-p {
+		border-left: 1px solid #fff;
+		width: calc(100%/8);
+		text-align: center;
+	}
+}
+
+
+/* メニュー一覧の文字属性変更 */
+#navi .m-p .menu-main {
+	display: block;
+	height: 35px;
+	font-weight: 100;
+	letter-spacing: 0.08em;
+	color: #FFF;
+	-webkit-font-smoothing: subpixel-antialiased;
+  /* font-family: "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif; */
+}
+
+
+/* ドロップダウンメニュー2　ボタンの文字 */
+#navi .m-p02 {
+	border-top: 1px solid hsla(0,0%,0%,0.00);
+	border-left: 1px solid hsla(0,0%,0%,0.00);
+	border-bottom: 1px solid hsla(0,0%,0%,0.00);
+	box-sizing: border-box;
+}
+
+
+/* PC版ではメニューボタン非表示 */
+#navi #navibtn {
+	display: none;
+}
+
+
+/* ------------------------------------------------
+    ドロップダウンメニュー本体
+   ------------------------------------------------ */
+
+#navi .m-p .m-c {
+	visibility: hidden;
+	border-radius: 10px;
+	opacity: 0;
+	position: absolute;
+	/* top: 430px; */
+	left: 0px;
+	width: 1100px;
+	height: 50px;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	background-color: hsla(0,0%,100%,0.98);
+	z-index: 1;
+	transform : translate(0, 0);
+	transition : opacity 0.1s ease-in-out;/* 消える動作変更 */
+	box-shadow: 0 1px 4px #999;
+}
+
+#navi .m-p .m-c>ul>li>ul { /* .m-p .m-c>ul */
+	width: 302px;
+}
+
+
+
+/* メニュー本体の左右コンテンツ振り分け用 */
+#navi ul.m-c01 {
+	width: 49.8%;
+	float: left;
+}
+
+
+
+#navi .m-c02 li {
+	font-size: 13px;
+	/* padding: 0px 10px; */
+}
+
+/* 第二階層 */
+#navi .m-p .m-c02 {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 310px;
+	min-height: 100%;
+	margin-left: 0px;
+	width: 300px;/* auto */
+	box-sizing: border-box;
+	padding: 0px 20px;
+	background-color: #FFF;
+	z-index: 1;
+	overflow: auto;
+}
+
+#navi li a {
+	text-decoration: none;
+	font-weight: 100;
+	color: #434f61;/* #646464 */
+}
+
+#navi li a:hover {
+	text-decoration: none;
+	font-weight: 100;
+	color: #232A35;
+}
+
+
+/* PC用　＞　表示 */
+#navi .m-p02::after {
+	content: "\FF1E";
+	font-size: 10px;
+	padding: 0.4em 0 0 0;
+	color: #AAA;
+	position: absolute;
+	left: 293px;
+	transform : translate(0, 0);
+	transition : all 0.5s ease-in-out;
+}
+
+
+#navi .m-p02:hover::after {
+	content: "\FF1E";
+	font-size: 10px;
+	font-weight: bolder;
+	padding: 0.4em 0 0 0;
+	color: #c9bdad;/* #666 */
+	position: absolute;
+	left: 300px;
+	transform : translate(0, 0);
+	transition : all 0.5s ease-in-out;
+}
+
+
+/* 階層区切りタグ */
+#navi div.m-c ul li.dot-bd {
+	height: 0px;
+	border-bottom: 1px #AAA dotted;
+	margin: 8px 300px 8px 0 !important;
+	padding: 0 !important;
+	width: 290px;
+	overflow: hidden;
+}
+
+#navi ul.m-c02 li.dot-bd {
+	width: 260px !important;
+}
+
+
+/* ↓ここからメニューボックス右エリアの設定 */
+#navi .sub-cnt {
+	float: left;
+	/* position: absolute;
+	left: 50%;
+	top: 0; */
+	width: 50%;
+	padding: 10px 10px 10px 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+
+#navi .sub-cnt ul {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0%;
+	overflow: hidden;
+}
+
+#navi .sub-cnt ul li {
+	/* background-color: #FF9E31; */
+	width: 47%;
+	overflow: hidden;
+	/* height: 400px; */
+
+}
+
+#navi .sub-cnt ul li img {
+	width: 100%;
+	height: auto;
+}
+
+#navi .sub-cnt ul li h2 {
+	font-size: 13px;
+	text-align: left;
+	padding: 0.2em 0 0;
+}
+
+
+#navi .sub-cnt ul li p {
+	display: block;
+	font-size: 12px;
+	overflow: hidden;
+	line-height: 1.8em;
+	text-align: left;
+	padding: 1em 0;
+	height: 6.2em;
+}
+
+#navi .sub-cnt ul li p.li-text {
+	font-size: 13px;
+	color: #5E0809;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	padding: 0 0.5em 0 0;
+	margin: 1em 0;
+	text-align: right;
+	height: inherit;
+}
+
+#navi .sub-cnt ul li p.li-text::after {
+	content: "\FF1E";
+	font-size: 9px;
+	font-weight: 800;
+	padding: 0 0 0 0.5em;
+}
+/* ↑ここまでメニューボックス右エリアの設定 */
+
+
+/* Awordエリアのコーディング見直し */
+div.award_imgaria > img {
+	width: unset;
+	height: unset;
+}
+
+
+
+
+/* ------------------------------------------------
+    特殊　ブランド内iframe
+   ------------------------------------------------ */
+
+#navi .n-b iframe {
+	width: 100%;
+	display: block;
+	height: 500px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+
+
+
+/* ----------------------------------------------------------
+min-width: 700px（PCにのみ読み込むCSS）
+---------------------------------------------------------- */
+@media screen and (min-width: 700px) {
+
+
+	/* ▼新ヘッダー用 */
+	/* 共用CSSのヘッダー高さを無効へ（スペースが生まれるのを回避） */
+	header {
+		height: inherit !important;
+	}
+
+	header #pc_header {
+		width: 100%;
+		height: 115px;
+		background: hsla(0,0%,100%,0.20);/* 0.9 上部にスクロールした際に背景を白くする場合 */
+		position: fixed;
+		top: 0;
+		left: 0;
+		border-bottom: 1px solid #d5d9df;
+		box-sizing: border-box;
+	}
+
+	header #pc_header:hover {
+		background: hsla(0,0%,100%,0.95);
+	}
+
+
+	/* スクロール時にヘッダー非表示 */
+	#pc_header.site-header{
+		padding: 0px;
+		position: fixed;
+		top: 0;
+		transition: .5s;
+		width: 100%;
+		z-index: 999;
+
+	}
+
+	#pc_header.site-header.hide{
+		transform: translateY(-100%);
+		top: 45px;
+		/* background: hsla(0,0%,100%,0.10);  上部にスクロールした際に背景を白くする場合 */
+	}
+
+
+
+}/* @ */
+
+
+
+
+/* ----------------------------------------------------------
+max-width: 1224px（PCナビドロップダウン本体　レスポンス用）
+---------------------------------------------------------- */
+@media screen and (max-width: 1224px) {
+
+	/* ドロップダウンメニュー本体 */
+	#navi .m-p .m-c {
+		width: 100%;
+	}
+
+	/* ナビ横帯の文字等指定 */
+	#navi .m-p {
+		margin-right: 15px;
+		padding: 1px 5px 0px;
+		transition : all 0.5s ease-in-out;
+	}
+
+	#navi .m-p a em {
+		font-size: 14px;
+	}
+
+}/* @ */
+
+
+
+/* ----------------------------------------------------------
+max-width: 950px（PCナビドロップダウン本体　レスポンス用）
+---------------------------------------------------------- */
+@media screen and (max-width: 950px) {
+
+	/* ドロップダウンメニュー本体 */
+	#navi .m-p .m-c {
+		width: 100%;
+	}
+
+	/* ナビ横帯の文字等指定 */
+	#navi .m-p {
+		margin-right: 12px;
+		padding: 2px 2px 0px;
+		transition : all 0.5s ease-in-out;
+	}
+
+	#navi .m-p a em {
+		font-size: 12px;
+	}
+
+}/* @ */
+
+
+
+
+
+
+
+/* ----------------------------------------------------------
+max-width: 620px（スマートフォン）
+---------------------------------------------------------- */
+@media screen and (max-width: 700px) {
+
+
+	.pc_only {
+		display: none !important;
+	}
+
+	.sp_only {
+		display: block !important;
+	}
+
+	body {
+		background-color: #FFF;
+	}
+
+
+	/* ----------------------------------------------------------------
+		 スマートフォン専用ヘッダー　▼
+	---------------------------------------------------------------- */
+
+	#sp_header {
+		width: 100%;
+		height: 60px;/* 高さを定義★★★ */
+		display: flex !important;
+		flex-flow: row;
+		flex-wrap: nowrap;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		z-index: 1500 !important;
+		/* ここからヘッダーソース修正に伴い追加 */
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 3000;
+		background-color: #333;
+	}
+
+	/* hover時に色を変更しない */
+	#sp_header:hover {
+		background-color: #333;
+	}
+
+
+	#sp_header div.logo {
+		/* width: 50%; */
+		padding: 10px;
+		flex: 8;
+	}
+
+	#sp_header div.logo h1 {
+		width: auto;
+		height: 30px;
+	}
+
+	#sp_header div.logo h1 img {
+		width: auto;
+		height: 30px;
+	}
+
+	#sp_header .guide_cart {
+		/* flex: 1; */
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+		overflow: hidden;
+	}
+
+	#sp_header .menu_btn {
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+	}
+
+	#sp_header ul {
+		list-style: none;
+	}
+
+	/* ----------------------------------------------------------------
+		 スマートフォン専用ヘッダー　▲
+	---------------------------------------------------------------- */
+
+
+
+	/* ----------------------------------------------------------------
+		 スマートフォン専用メニュー　▼
+	---------------------------------------------------------------- */
+
+	#sp_menu {
+		background: hsla(0,0%,100%,0.95);
+		position: fixed;/* fixed */
+		top: 51px;
+		left: 0 !important;
+		/* margin: 0 5% 0 5%; */
+		width: 100% !important;
+		height: 95%;/* 100% */
+		overflow-x: hidden !important;
+		overflow-y: scroll !important;
+		-webkit-overflow-scrolling: touch;
+		z-index : 33333000 !important;
+		display : none;
+		}
+
+		/* スマートフォン用メニュー　H2タイトル */
+		#sp_menu h2 {
+			font-size: 1.1em;
+			color: #2A1208;
+			padding: 0 5% 2%;
+		}
+
+		/* H2タイトル　あしらい */
+		#sp_menu h2::before {
+			content: "";
+			display : inline-block;
+			width: 4px;
+			height: 0.8em;
+			align-items: baseline;
+			background-color: #2A1208;
+			margin-right: 0.5em;
+		}
+
+
+		/* スマートフォン専用リスト箇所 */
+		#sp_menu ul {
+			list-style-type: none;
+			overflow: hidden;
+			margin: 0 20px 30px;
+		}
+
+		#sp_menu li {
+			text-align: left;
+			border-bottom: 1px solid hsla(0,0%,17%,0.30);
+		}
+
+		#sp_menu li a {
+			display: block;
+			padding: 0.8em 0;
+			text-decoration: none;
+			color: #636363;
+		}
+
+		@media (min-width:480px) {
+			#sp_menu li a {
+				display: block;
+				padding: 0.8em 0;
+				text-decoration: none;
+				color: #636363;
+			}
+
+		}
+
+		#sp_menu li a:hover {
+			background: #E9E9E9;
+			opacity: 0.9;
+		}
+
+	/* メニュー呼び出しボタン */
+	div#sp-icon {
+		display: block;
+		width: 50px;
+		height: 60px;
+		position: absolute;/* absolute */
+		right: 0px;
+		top: 0px;
+		z-index: 2050;
+	}
+
+
+	div#sp-icon:hover {
+		cursor: pointer;
+		opacity: 0.7;
+	}
+
+	/* ボタンアニメーション */
+	div#sp-icon span,
+	div#sp-icon span:before,
+	div#sp-icon span:after {
+		display : inline-block;
+		width : 20px;
+		height : 2px;
+		background : #FFF;
+		transition-property : all;/* transform */
+		transition-duration : 0.7s;/* 0.3 */
+	}
+
+	div#sp-icon span {
+		position : absolute;
+		left : 50%;
+		top : 50%;
+		transform : translate( -50%, -50% );
+	}
+
+	div#sp-icon span:before {
+		content : "";
+		position : absolute;
+		transform : translateY( -7px ) rotate( 0deg );
+	}
+
+	div#sp-icon span:after {
+		content : "";
+		position : absolute;
+		transform : translateY( 7px ) rotate( 0deg );
+	}
+
+
+	div.sp-close span {
+		background : transparent !important;
+	}
+
+	div.sp-close span:before {
+		position : absolute;
+		transform : rotate( 45deg ) !important;/* 45deg */
+		transform-origin: 50% 50%;/* 回転中心を指定 */
+	}
+
+	div.sp-close span:after {
+		position : absolute;
+		transform : rotate( -45deg ) !important;/* -45deg */
+		transform-origin: 50% 50%;/* 回転中心を指定 */
+	}
+
+	/* ----------------------------------------------------------------
+		 スマートフォン専用メニュー　▲
+	---------------------------------------------------------------- */
+
+
+
+
+	/* ★打消し */
+	header {
+		height: inherit;
+	}
+
+	/* ★打消し */
+	/* ヘッダー内メニュー上部全て */
+	#head-top {
+		width: 100%;
+		height: 50px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto 0px;
+	}
+
+	/* ★打消し */
+	#navi {
+		padding-top: 0;
+		background-color: inherit;
+	}
+
+	/* ★打消し */
+	#navi > div {
+		height: inherit;
+		width: inherit;
+		max-width: inherit;
+		margin: 0 auto;
+		position: inherit;
+	}
+
+	/* ★打消し */
+	#navi .menu {
+		width: auto;
+		margin: 0 20px 30px;
+		overflow: hidden;
+	}
+
+
+	/* ★打消し */
+	#navi div.m-c > ul > li > a {
+		display: inherit;
+		/* width: inherit; */
+	}
+
+	/* ★打消し */
+	#navi div.m-c > ul > li > a:hover {
+		background-color: inherit;
+	}
+
+	/* ★打消し */
+	/* 第１階層メニュー文字 */
+	#navi div.m-c > ul > li {
+		display: inherit;
+		font-size: 1em;
+		text-align: inherit;
+		padding: inherit;
+		margin: 0;
+		box-sizing: inherit;
+		width: 50%;
+		float: left;
+	}
+	@media (min-width:480px) {
+		#navi div.m-c > ul > li {
+			display: inherit;
+			font-size: 1em;
+			text-align: inherit;
+			padding: inherit;
+			margin: 0;
+			box-sizing: inherit;
+		}
+	}
+	/* ★打消し */
+	/* 第２階層メニュー文字 */
+	#navi ul.m-c02 li {
+		font-size: 1em;
+		padding: 0;
+		margin: 0;
+	}
+
+	/* ★打消し */
+	#menu-navibtn {
+	  display: none;
+	  cursor: pointer;
+	  cursor: hand;
+	}
+
+	/* ★打消し */
+	/* ナビ横帯の文字等指定 */
+	#navi .m-p {
+		float: inherit;
+		margin-right: inherit;
+		padding: inherit;
+		font-size: 17px;
+		font-weight: inherit;
+		box-sizing: inherit;
+	}
+
+	/* スマホ版の文字サイズを整え */
+	#navi .m-p a em {
+		font-size: 15px;
+	}
+
+
+	/* ★打消し */
+	/* メニュー一覧の文字属性変更 */
+	#navi .m-p .menu-main {
+		display: inherit;
+		height: inherit;
+		letter-spacing: 0.08em;
+		font-weight: 100;
+		color: #636363;
+		-webkit-font-smoothing: subpixel-antialiased;
+	}
+
+	/* ★打消し */
+	/* ドロップダウンメニュー2　ボタンの文字 */
+	#navi .m-p02 {
+		border-top: none;
+		border-left: none;
+		border-bottom: none;
+		box-sizing: border-box;
+	}
+
+	/* ★打消し */
+	/* PC版ではメニューボタン非表示 */
+	#navi #navibtn {
+		display: none;
+	}
+
+
+	/* ★打消し */
+	/* ------------------------------------------------
+    ドロップダウンメニュー本体
+   ------------------------------------------------ */
+
+	#navi .m-p .m-c {
+		/* visibility: inherit; */
+		opacity: inherit;
+		position: inherit;
+		top: inherit;
+		left: inherit;
+		width: auto;
+		height: inherit;
+		box-sizing: border-box;
+		padding: inherit;
+		background-color: hsla(0,0%,87%,0.30);/* リセット厳しいので直接入力 */
+		z-index: 1;
+		transform : translate(0, 0);
+		transition : opacity 0.1s ease-in-out;
+		box-shadow: none;
+	}
+
+	/* ★打消し */
+	#navi .m-p .m-c>ul>li>ul {
+		width: inherit;
+	}
+
+	/* ★打消し */
+	/* メニュー本体の左右コンテンツ振り分け用 */
+	#navi ul.m-c01 {
+		width: inherit;
+		float: none;
+	}
+
+	/* ★打消し */
+	#navi .m-c02 li {
+		font-size: 13px;
+	}
+
+	/* ★打消し */
+	/* 第二階層 */
+	#navi .m-p .m-c02 {
+		visibility: inherit;
+		opacity: inherit;
+		position: inherit;
+		top: inherit;
+		left: inherit;
+		min-height: inherit;
+		margin-left: inherit;
+		width: inherit;
+		box-sizing: inherit;
+		padding: inherit;
+		background-color: inherit;
+		z-index: 1;
+		overflow: inherit;
+	}
+
+	/* ★打消し */
+	#navi li a {
+		text-decoration: inherit;
+		font-weight: inherit;
+		color: #636363;
+	}
+
+	/* ★打消し */
+	#navi li a:hover {
+		text-decoration: inherit;
+		font-weight: inherit;
+		color: #232A35;
+	}
+
+	/* ★打消し */
+	/* PC用　＞　表示 */
+	#navi .m-p02::after {
+		display: none;
+	}
+
+	/* ★打消し */
+	#navi .m-p02:hover::after {
+		display: none;
+	}
+
+	/* ★打消し */
+	/* 階層区切りタグ */
+	#navi div.m-c ul li.dot-bd {
+		height: 0px;
+		border-bottom: 1px #AAA dotted;
+		margin: 0 !important;
+		padding: 0;
+		width: inherit;
+		overflow: hidden;
+	}
+
+	/* ★打消し */
+	#navi ul.m-c02 li.dot-bd {
+		width: inherit;
+	}
+
+	/* ★打消し */
+	/* ↓ここからメニューボックス右エリアの設定 */
+	#navi .sub-cnt {
+		display: none;
+	}
+	/* ↑ここまでメニューボックス右エリアの設定 */
+
+
+	/* ------------------------------------------------
+    特殊　ブランド内iframe
+   ------------------------------------------------ */
+
+	/* ★打消し */
+	/* SPにてブランドで探す内「iframe」非表示 */
+	#navi .n-b .m-c {
+		display: none;
+	}
+
+	/* SPにてブランドで探す内「label」非表示 */
+	#navi .n-b label {
+		display: none;
+	}
+	/* ★ここまで基本打消し */
+
+
+
+
+
+
+
+
+
+
+
+
+	/* ロゴカラーをスマホ用に切り替え */
+	#logo a {
+		display: block;
+		width: 125px;
+		height: 30px;
+		margin: 10px 0 10px 10px;
+		background-image: url(../images/logo_w.svg);
+		background-size: 125px;
+		background-position: 0px 0px;
+		background-repeat: no-repeat;
+	}
+
+
+	/* Rボタン（background） */
+	#head-top .r-btn a {
+		display: none;/* 実装予定なしのため非表示 */
+		width: 27px;
+		height: 30px;
+		margin: 0;
+		background-image: url(https://www.rakuten.ne.jp/gold/roomy/img/top/r_btn.svg);
+		background-size: 27px;
+		background-position: 0px 5px;
+		background-repeat: no-repeat;
+	}
+
+
+	/* カートボタン */
+	#head-top .crt-btn {
+		margin: 0px 10px 8px 5px;
+	}
+
+	/* カートボタン */
+	#head-top .crt-btn:hover {
+		margin: -2px 10px 8px 5px;
+	}
+
+	/* カートボタン（background） */
+	#head-top .crt-btn a {
+		display: block;
+		width: 28px;
+		height: 30px;
+		margin: 5px 0 0 0;
+		background-image: url(https://www.rakuten.ne.jp/gold/roomy/img/top/cart_btn_w.svg);
+		background-size: 24px;
+		background-position: 0px 2px;
+		background-repeat: no-repeat;
+	}
+
+
+	/* Instagramボタン */
+	#head-top .ig-btn {
+		margin: 5px 6px 12px 5px;
+	}
+
+	/* Instagramボタン */
+	#head-top .ig-btn:hover {
+		margin: 3px 6px 12px 5px;
+	}
+
+	/* カートボタン（background） */
+	#head-top .ig-btn a {
+		display: block;
+		width: 28px;
+		height: 30px;
+		margin: 4px 0 0 0;
+		background-image: url(https://www.rakuten.ne.jp/gold/roomy/img/top/ig_w.svg);
+		background-size: 22px;
+		background-position: 4px 0px;
+		background-repeat: no-repeat;
+	}
+
+
+
+	/* ------------------------------------------------
+    サーチ全般
+   ------------------------------------------------ */
+
+	#s-box {
+		display: flex;
+		justify-content: flex-end;
+		width: 60%;
+		height: 40px;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	/*
+	#s-box .r-btn {
+		order: 3;
+	} */
+
+	#s-box .crt-btn {
+		order: 2;
+	}
+
+	#s-box .ig-btn {
+		order: 1;
+	}
+
+
+	/* 検索窓はPCで利用しているものはSPでは利用しない */
+	#s-box form {
+		display: none;
+	}
+
+	/* search ここまで */
+
+
+
+
+
+
+
+
+	#navi #head-top {
+		width: 100%;
+		background-color: #FFF;
+	}
+	/* ★レスポンスするためだけに記述 */
+
+
+
+	#navi {
+		/* width: 100%; ★★★SPで崩れるため非表示へ */
+	}
+
+
+}/* @ */
+
+
+	/* ----------------------------------------------------------
+	min-width: 700px
+	---------------------------------------------------------- */
+@media screen and (min-width: 700px) {
+
+	/* ドロップダウンメニュー本体　を表示に切替 */
+	#navi .m-p:hover .m-c {
+		visibility: visible;
+		top: 35px;
+		opacity: 1;
+		transition : all 0.2s ease-in-out;
+		overflow: hidden;
+		z-index: 1;
+		height: inherit;
+	}
+
+	/* 第二階層の表示 */
+	#navi .m-p02:hover .m-c02 {
+		visibility: visible;
+		opacity: 1;
+		background-color: #E5E8EF;/* hsla(0,0%,74%,0.20) */
+		transition : all 1000ms;
+		border-left: 1px solid #dfe3e7;
+		border-right: 1px solid #dfe3e7;
+	}
+
+	/* メニューバーを選択した際にボーダーを出す */
+	#navi .m-p:hover .menu-main {
+		color: #c9bdad;
+		border-bottom: 4px solid #c9bdad;
+		box-sizing: border-box;
+	}
+
+	 #navi:hover {
+		padding-top: 10px;
+		background-color: hsla(18,65%,10%,1.00);
+		transition : all 0.5s ease-in;
+	}
+
+
+	/* 第一階層の表示 */
+	#navi .m-p02:hover {
+		background-color: #E5E8EF;/* hsla(0,0%,74%,0.20) */
+		transition : all 1000ms;
+		opacity: 1;
+		/* border-right: 1px solid hsla(0,0%,74%,0.20); */
+		border-top: 1px solid #dfe3e7;/* #dfe3e7 */
+		border-left: 1px solid #dfe3e7;/* #dfe3e7 */
+		border-bottom: 1px solid #dfe3e7;/* #dfe3e7 */
+		box-sizing: border-box;
+	}
+
+	/* 第一階層のhover時文字 */
+	#navi .m-p02:hover a.ib {
+		font-weight: 400;
+		color: #232A35;
+		transform : translate(0, 0);
+		transition : all 0.5s ease-in;
+	}
+
+
+
+}/* @ */
+
+
+
+/* ----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+ ここからsp_eader.html　ベタCSSのコピー
+-------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* ----------------------------------------------------------
+max-width: 620px（スマートフォン）
+---------------------------------------------------------- */
+@media screen and (max-width: 700px) {
+
+	/* PC版専用商品紹介コラムを非表示 */
+	#navi .sub-cnt {
+		display: none;
+	}
+
+	#navi ul {
+		display: block;
+		overflow: hidden;
+	}
+
+	/* 高さ制御が狂うため削除
+	#navi {
+		position: inherit;
+		overflow-y: hidden;
+		overflow-x: hidden;
+		height: 100%;
+	} */
+
+	/* チェックボックスを非表示 */
+	#navi input {
+		display: none;
+	}
+
+
+	#menu-navibtn {
+	  display: block;
+	  cursor: pointer;
+	  cursor: hand;
+	}
+
+	/* スマホの際に V を表示 */
+	#navi .m-p .pd {
+		display: inline-block;
+		width: 100%;
+	}
+	#navi .menu {
+		display: block;
+	}
+	#navi .m-p {
+		height: auto;
+		width: 100%;
+		padding: 0px;
+		position: relative;/* トグルをpositionで合わせるために */
+	}
+	#navi .m-p:first-child {
+		/* border-top: 1px solid #DDD; */
+	}
+
+	#navi .m-p i {
+		padding: 0px 0px;
+	}
+
+	#navi {
+		width: 100%;
+		position: absolute;
+	}
+
+
+
+}/* @ */
+
+
+	/* ----------------------------------------------------------
+	max-width: 620px
+	---------------------------------------------------------- */
+@media screen and (max-width: 700px) {
+
+  /* ハンバーガーメニューがクリックされた時 */
+	#menu-navibtn:checked ~ * .menu {
+	display: block;
+	opacity: 1;
+	}
+
+	#menu-navibtn:checked ~ * .m-p {
+		max-height: inherit;
+		overflow-y: visible;
+	}
+
+	#menu-navibtn:checked ~ * .m-c {
+		max-height: 0;
+		overflow-y: hidden;
+		visibility: hidden;
+	}
+
+	/* 子メニュー */
+	#navi .m-c {
+		border-top: 1px solid #DDD;
+		border-left: 1px solid #FFF;
+		border-right: 1px solid #FFF;
+		border-bottom: 1px solid #FFF;
+		position: relative;
+		padding: 0;
+		opacity: 0;
+		top: 0;
+		margin-left: auto;
+		left: auto;
+		width: auto;
+		max-height: 0;
+		transition: all 0.2s ease-in;
+		background-color: hsla(0,0%,87%,0.30);
+	}
+
+
+
+	#navi .m-ct {
+		margin: 0 !important;
+		padding: 0 !important;
+		list-style: none;
+		/* background-color: #FFF34D; */
+	}
+
+
+	#navi .m-c01 li {
+		border-bottom: 1px solid #DDD !important;
+	}
+
+	#navi .m-c01 li:last-child {
+		border-bottom: none !important;
+	}
+
+
+	#navi .m-p02 {
+		margin: 0;
+		padding: 0;
+	}
+
+
+
+
+
+	/* 子メニュー 第二階層 */
+	#navi .m-c02 {
+		display: none;
+		overflow: hidden;
+		width: 100%;
+		margin: 0 !important;
+		padding: 10px 0px !important;
+		border-top:  1px dotted #AAA;
+		/* background-color: #53F351; */
+	}
+	@media (min-width:480px) {
+
+	/* 子メニュー 第二階層 */
+	#navi .m-c02 {
+		display: block;
+		overflow: hidden;
+		width: 100%;
+		margin: 0 !important;
+		padding: 10px 0px !important;
+		border-top:  1px dotted #AAA;
+		/* background-color: #53F351; */
+	}
+	}
+
+	#navi .m-c02 li {
+		padding: 0;
+		margin: 0;
+		border-bottom: none !important;
+	}
+
+
+	#navi .m-c02 li a {
+		border-bottom: none !important;
+		padding: 6px !important;
+		margin: 0 !important;
+		/* color: #F00 !important; */
+		font-size: 13px;
+	}
+
+
+	/* ★ナビのじゃまな要素を消すため記載 */
+	#navi label {
+		display: block;
+		height: 0px;
+	}
+
+
+
+	#navi .m-p > label:hover {
+		cursor: pointer;
+		cursor: hand;
+	}
+
+	/* 子メニューがクリックされた時 */
+	#navi input[type="checkbox"]:checked ~ .m-c {
+		max-height: inherit;
+		opacity: 1;
+		overflow-y: hidden;
+		visibility: visible;
+		transition: all 1.0s ease-in;
+	}
+
+	/* スマホ版のみアンカータグを覆うように配置 */
+	#navi .angletoggle {
+		display: block;
+		width: 100%;
+		height: 45px;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		/* background-color: hsla(208,100%,50%,0.50); */
+	}
+
+
+
+	#navi .angletoggle:before {
+		content: "";
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 45px;
+		height: 45px;
+		background-image: url("https://www.rakuten.ne.jp/gold/roomy/img/top/btn-icon01.svg");
+		background-repeat: no-repeat;
+		background-size: 8px;
+		background-position: 50% 50%;
+		transform: rotate(-0deg);
+		-webkit-transform: rotate(-0deg);
+		transition : all 0.5s ease-in-out;
+	}
+
+	#navi input[type="checkbox"]:checked ~ * .angletoggle:before {
+		content: "";
+		background-image: url("https://www.rakuten.ne.jp/gold/roomy/img/top/btn-icon01.svg");
+		background-repeat: no-repeat;
+		background-size: 8px;
+
+		background-position: 50% 50%;
+		transform: rotate(-180deg);
+		-webkit-transform: rotate(-180deg);
+		transition : all 0.5s ease-in-out;
+	}
+
+
+
+
+
+	/* 子メニュー */
+	#navi .m-c li {
+		font-size: 14px;
+		/* border-bottom: 1px solid #DDD; */
+	}
+	/* 余分な最後の線を消去 */
+	#navi .m-c li:last-child {
+		border: none;
+	}
+	#navi .m-c li i {
+		margin-right: 3px;
+	}
+
+	/* ハンバーガー */
+	#navi #navibtn {
+	/* display: none; */
+	}
+
+}/* @ */

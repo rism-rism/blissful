@@ -1,0 +1,534 @@
+@charset "utf-8";
+/* CSS Document */
+/*-------------- calendar ---------------*/
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+}
+#calendar .color{
+	background: red;
+}
+#calendar section {
+    margin: 10px;
+}
+#calendar h1 {
+    font-size: 18px;
+}
+#calendar table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+#calendar td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+#calendar td:first-child {
+    color: red;
+}
+#calendar td:last-child {
+    color: royalblue;
+}
+#calendar td.is-disabled {
+    color: #ccc;
+}
+/*-------------- footer ---------------*/
+#footer1{
+	background: #444444;
+	color: #fff;
+	width: 100%;
+    padding: 60px 0 50px;
+    margin-bottom: 0;
+}
+#footer2{
+	background: #222222;
+	color: #fff;
+	width: 100%;
+	padding-top: 60px;
+}
+#footer2 a{
+	color: #fff;
+}
+.copyright{
+	width: 100%;
+	padding: 30px 20px;
+	text-align: center;
+	line-height: 1;
+	font-size: 12px;
+	border-top: 1px solid #9D9D9D;
+	margin-top: 40px;
+}
+.footer21{
+	float: left;
+	width: 40%;
+}
+.calandinfo{
+    float: right;
+    width: 60%;
+}
+.footer22,.footer23{
+	background: #EFEFEF;
+	border-radius: 10px;
+	padding: 20px;
+	width: calc(50% - 25px);
+	float: left;
+	margin-left: 25px;
+	color: #1F3143;
+}
+.footer22 .tsukushi,.footer23 .tsukushi{
+	font-size: 32px;
+	line-height: 1;
+	margin-bottom: 10px;
+	text-align: center;
+}
+#footer2 .h4span{
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 15px;
+	display: block;
+}
+#footer2 .small{
+	font-size: 12px;
+}
+#footer2 .footer22 .text b{
+	display: block;
+	margin-bottom: 5px;
+}
+#footer2 .footer22 .small{
+	margin-top: 15px;
+}
+.footericons a{
+    display: block;
+    width: 17.6%;
+    margin-right: 3%;
+    color: #fff;
+    float: left;
+}
+.footericons a:last-child{
+    margin-right: 0;
+}
+.footericons a .tsukushi{
+    line-height: 1;
+    font-size: 32px;
+    margin: 10px auto 15px;
+    text-align: center;
+}
+.footericons a .ficontitle{
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footericons a img{
+    display: block;
+    margin: 0 auto;
+    max-width: 110px;
+    width: 80%;
+	transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
+.footericons a:hover img{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+.footer_head{
+    position: relative;
+    margin-bottom: 50px;
+}
+.footer_h3{
+    font-size: 32px;
+    line-height: 1;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer_head .search_container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    max-width: 300px;
+}
+.fcoltitle{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footer_cols .col{
+    width: 20%;
+    float: left;
+	flex: 1;
+}
+.footer_cols .col:first-child{
+	flex: 1.4;
+}
+.footer_cols .col:nth-child(4){
+	flex: 1.4;
+}
+.footer_cols .col:last-child{
+	flex: 1.2;
+}
+.footer_cols .col-sm-5ths a{
+    padding-left: 15px;
+    position: relative;
+	display: block;
+	color: #fff;
+	margin-bottom: 5px;
+}
+.footer_cols .col-sm-5ths a::before{
+    width: 8px;
+    height: 10px;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: calc(50% - 5px);
+    background: url('../images/menu_arrow.png')no-repeat center center;
+    background-size: contain;
+}
+
+
+.footer_cols {
+    padding: 0 40px 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #fff;
+	display: flex;
+}
+.logo_w {
+    width: 100%;
+    max-width: 230px;
+    margin: 0 auto 40px;
+    display: block;
+}
+.maxfancy{
+	line-height: 26px;
+	font-size: 16px;
+	margin-bottom: 25px;
+	font-weight: bold;
+}
+.mflogo{
+	height: 26px;
+	width: auto;
+	margin-right: 10px;
+}
+#footer2 .footer21 .text{
+	font-size: 12px;
+	margin-bottom: 30px;
+}
+#footer2 .footer21 .text_gray{
+	color: #9D9D9D;
+	font-size: 11px;
+}
+.footerul{
+	margin-bottom: 40px;
+	text-align: center;
+	display: flex;
+    width: 50%;
+    float: left;
+}
+.footerul li{
+    height: 28px;
+    text-align: center;
+    border-right: 1px solid #9D9D9D;
+    font-size: 13px;
+    line-height: 28px;
+    list-style: none;
+    flex: 1;
+}
+.footerul li:first-child{
+	border-left: 1px solid #9D9D9D;
+}
+.footerul:nth-child(2) li:first-child{
+	border-left: none;
+}
+.footerul:first-child li:nth-child(3){
+	flex: 1.8;
+}
+.footerul:first-child li:nth-child(2){
+	flex: 1.3;
+}
+.underline_action2 span::after {
+    background: #fff;
+}
+/*-------------- /footer ---------------*/
+
+/*-------------- footerăŽsearchbox ---------------*/
+.search_container {
+    border-bottom: 1px solid #fff;
+
+}
+.search_container input[type="text"]{
+	color: #fff;
+}
+.search_container input[type="text"]::placeholder {
+  color: #fff;
+}
+.search_container input[type="text"]:focus {
+	outline: 0;
+}
+.search_container input[type="submit"] {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: url(../img/search.png) no-repeat center center;
+	background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+	top: calc(50% - 10px);
+	right: 5px;
+	box-sizing: border-box;
+}
+@media screen and (max-width: 1080px) {
+
+	.footericons{
+		text-align: center;
+	}
+	.footericons a {
+	    display: inline-block;
+	    width: 28%;
+		max-width: 230px;
+	    float: none;
+	    margin: 0 2.5% 30px;
+	    text-align: left;
+	}
+	.footericons a .tsukushi {
+	    line-height: 1;
+	    font-size: 24px;
+	    margin: 10px auto 15px;
+	}
+	.footericons a .ficontitle {
+	    font-size: 13px;
+	    margin-bottom: 15px;
+	    line-height: 1.2;
+	}
+	.footericons a img {
+	    max-width: 80px;
+	}
+	.footer_h3 {
+	    text-align: left;
+	}
+	.footer_cols {
+	    padding: 0 0 30px;
+	    margin-bottom: 40px;
+	}
+	.fcoltitle {
+	    font-size: 14px;
+	    margin-bottom: 15px;
+	    line-height: 1.3;
+	}
+}
+@media screen and (max-width: 980px) {
+	.footerul{
+		margin-bottom: 30px;
+	}
+	.footerul li{
+		font-size: 12px;
+	}
+    .calandinfo {
+        float: none;
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto 40px;
+    }
+    .footer21 {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer22, .footer23 {
+        width: calc(50% - 10px);
+        margin: 0;
+    }
+    .footer23{
+        float: right;
+    }
+}
+@media screen and (max-width: 860px) {
+    .footer_cols .col a {
+        width: auto;
+        display: inline-block;
+        margin-right: 15px;
+    }
+    .fcoltitle {
+        width: 100%;
+    }
+    .footer_cols{
+        display: block;
+    }
+    .footer_cols .col {
+        width: 100%;
+        float: none;
+        margin-bottom: 25px;
+    }
+    .footer_head {
+        margin-bottom: 35px;
+    }
+    .footerul{
+        width: 100%;
+        float: none;
+        margin: 0 auto 15px;
+        max-width: 600px;
+    }
+    .footerul:nth-child(2){
+        margin-bottom: 40px;
+    }
+    .footerul:nth-child(2) li:first-child{
+        border-left: 1px solid #9D9D9D;
+    }
+    #footer2 {
+        padding-top: 40px;
+    }
+    #footer1 {
+        padding: 35px 0 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 640px) {
+    .footericons a {
+        width: 100%;
+        max-width: none;
+        float: none;
+        margin: 0px 0 10px;
+        position: relative;
+        padding: 15px 15px 15px 95px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 1px 1px rgb(31 49 67 / 10%);
+        background: rgb(255 255 255 / 15%);
+    }
+	.footericons a img {
+	    position: absolute;
+	    top: 15px;
+	    left: 20px;
+	    width: 55px;
+	}
+	.footericons a .tsukushi {
+	    margin: 0px auto 10px;
+	    text-align: left;
+		display: inline-block;
+	}
+	.footericons a .ficontitle {
+	    margin-bottom: 8px;
+	    text-align: left;
+	    display: inline-block;
+	    margin: 0 0 0 10px;
+	}
+	.footericons a .ficontitle::after{
+		content: '';
+		display: block;
+		width: 100%;
+		height: 0;
+	}
+}
+@media screen and (max-width: 560px) {
+    .footer22, .footer23 {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .calandinfo {
+        margin: 0 auto 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+	.footer_cols {
+	    padding: 0;
+	    margin-bottom: 30px;
+	}
+	#footer1 {
+	    padding: 20px 0 10px;
+	}
+    .footer_h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer_head .search_container {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .footerul li {
+        font-size: 10px;
+        height: 14px;
+        line-height: 14px;
+    }
+    .footerul {
+        margin: 0 auto 10px;
+    }
+    .footerul:nth-child(2) {
+        margin-bottom: 25px;
+    }
+    .mflogo {
+        height: 22px;
+    }
+    .maxfancy {
+        line-height: 22px;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    #footer2 .footer21 .text {
+        margin-bottom: 15px;
+    }
+    .logo_w {
+        max-width: 200px;
+        margin: 0 auto 25px;
+    }
+    .copyright {
+        padding: 20px 0 100px;
+        margin-top: 30px;
+        font-size: 9px;
+    }
+    .footericons a .tsukushi {
+        margin: 0px auto 5px;
+        font-size: 18px;
+    }
+    .footericons a .ficontitle {
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .footericons a img {
+        left: 15px;
+        width: 45px;
+    }
+    .footericons a {
+        padding: 15px 15px 15px 75px;
+    }
+}
+
+
+.underline_action2{
+    position: relative;
+}
+.underline_action{
+    position: relative;
+}
+.underline_action span::after {
+    bottom: -2px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+    position: absolute;
+    z-index: 999;
+}
+.underline_action2 span::after {
+    bottom: -2px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform .3s;
+    position: absolute;
+    z-index: 999;
+}
+.underline_action2:hover span::after {
+    transform: scale(1, 1);
+}
