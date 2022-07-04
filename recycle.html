@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>家電リサイクルについて</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="./css/bootstrap.custom.min.css" rel="stylesheet" type="text/css">
+
+  <style>
+    .btn--orange,
+  a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
+
+    .Fred{
+      color: #FF0000;
+    }
+    .Forange{
+      color: #ff8c00;
+      padding: 10px 0;
+      line-height: 30px;
+    }
+  .item_price{
+    text-align: left;
+    margin: 5px 0 20px 0;
+  }
+  .title01{
+    color: #000;
+    margin: 0 auto;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-bottom:1px solid #ccc;
+    font-weight: bold;
+    margin-top:40px;
+  }
+  .big_titlle {
+      line-height: 10px;
+      margin-top: 15px;
+      margin-bottom: 40px;
+  }
+  .center {
+    text-align: center;
+}
+.item_name {
+    margin-top: 10px;
+}
+.green_title{
+padding: 10px;
+color: #fff;
+background: #a8c46d;
+}
+.green_title::before{
+
+  content: '';/*何も入れない*/
+  display: inline-block;/*忘れずに！*/
+  width: 30px;/*画像の幅*/
+  height: 33px;/*画像の高さ*/
+  background-image:url(./images/recycle.svg) ;
+  background-size: contain;
+  vertical-align: middle;
+}
+.text{
+  padding: 15px;;
+}
+
+
+table{
+ border-collapse: collapse;
+  border-spacing: 0;
+}
+table th{
+  border-right: 1px solid #fff;
+}
+table th,table td{
+  padding: 10px ;
+  text-align: center;
+}
+
+table tr:nth-child(odd){
+  background-color: #eee
+}
+form.search_form_ {
+	width:100%;
+	border: none;
+
+	float:left;
+	position: relative;
+}
+form.search_form_ input.keyword_{
+	width:100%;
+	padding:15px;
+	margin: 0;
+	height: 50px;
+	line-height: 50px;
+	border: none;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+border: 1px solid #eee;
+border-radius: 30px;
+	color: #666666;
+	box-sizing: border-box;
+	float: none;
+}
+form.search_form_ input.keyword_::-webkit-input-placeholder,
+form.search_form_ input.keyword_:-moz-placeholder,
+form.search_form_ input.keyword_::-moz-placeholder,
+form.search_form_ input.keyword_:-ms-input-placeholder {
+	font-size: 12px;
+}
+form.search_form_ .placeholder_ {
+	position: absolute;
+	top: 9px;
+	left: 15px;
+	color: #999;
+	font-size: 12px;
+}
+form.search_form_ .search_button_ {
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+	border: none;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+	font-size: 14px;
+	font-weight: bold;
+	background:none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	float: none;
+    background: url(./images/search_white.svg) center no-repeat;
+    text-indent: -9999px;
+}
+.sc_gray{
+  background: #eee;
+}
+.sc_white{
+  background: #fff;
+}
+.logo_area{
+  padding: 10px 0;
+}
+</style>
+  <body>
+    <!--headerの読み込み-->
+    <section class="sc_white">
+      <div class="inner logo_area">
+        <div class="col-sm-4">
+          <img src="./images/logo_w.svg" width="150">
+        </div>
+        <div class="col-sm-4 noleft"><form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" target="_top" class="search_form_" accept-charset="EUC-JP">
+          <input value="6" type="hidden" name="sv">
+          <input value="406047" type="hidden" name="sid">
+          <input value="大平" type="hidden" name="su">
+          <input value="大平商事" type="hidden" name="sn">
+          <input value="A" type="hidden" name="f">
+          <input type="text" name="sitem" id="g_keyword" class="keyword_" autocomplete="off" placeholder="キーワード／商品番号を入力" expfocusindex="1" expsid="expKeywordsId">
+          <input type="image" src="./images/sp_search.svg" alt="検索" class="search_button_">
+          </form>
+        </div>
+      </div>
+    </section>
+<div class="clearfix"></div>
+  <section class="sc_gray">
+    <div class="inner">
+      <img src="./images/title2.png" width="100%">
+    </div>
+  </section>
+    <section class="sc_white">
+        <div class="inner">
+
+          <h2 class="green_title">ABOUT 家電リサイクルて</h2>
+          <p class="text">エアコン、ブラウン管式テレビ、薄型テレビ（液晶、プラズマ）、冷蔵庫・冷凍庫、洗濯機・衣類乾燥機について、特定家庭用機器再商品化法(家電リサイクル法)で定められた家電リサイクル料金と、運搬料（お客様実費負担）が発生致します。</p>
+
+          <h2 class="green_title">リサイクル回収の注意点</h2>
+          <p class="text">リサイクル品の回収は、同一品目の商品を当店 でご購入頂いた場合に限り、承っております。<br>
+            以下の場合は回収をお断りしております。予めご了承ください。<br>
+            ・購入した商品とは違う種類の商品の回収（例：洗濯機をご購入の際に、テレビの回収）<br>
+            ・ご購入商品のお届け先と違う場所に、回収商品がある場合<br>
+            ・ご購入商品の配達日より前にリサイクル商品の回収<br>
+            ・特定家庭用機器再商品化法(家電リサイクル法)対象商品以外の回収<br>
+            ・業務用機器のリサイクル回収</p>
+            <h2 class="green_title">リサイクル回収の申込みについて</h2>
+          <p class="text">当店より商品の配達が完了した後、下記連絡先へお電話またはメールにてご連絡をお願いします。<br>
+            その際、下記1～8の項目を弊社担当者へお伝え下さい。<br>
+
+           <span class="Forange"> ■確認事項</span><br>
+
+            1、受注番号<br>
+            2、引取先住所（郵便番号も必要となります）<br>
+            3、氏名<br>
+            4、電話番号<br>
+            5、リサイクル品目（冷蔵庫、洗濯機）<br>
+            6、リサイクル品のメーカー名　※メーカーによって値段が変わる場合があります。<br>
+            7、リサイクル品の大きさ（テレビ→何インチ、冷蔵庫→何リットル、洗濯機とエアコンは必要ありません）<br>
+            8、搬出条件（何階建ての何階か、エレベーターの有無）<br>
+            <span class="Forange"> ■連絡先</span><br>
+            当店へのお問合せの際に、間違い電話が多数発生しております。
+            お問合せの際には、電話番号をよくお確かめの上、お掛け間違いのないようお願い申し上げます。<br>
+            <span><a href="https://ask.step.rakuten.co.jp/inquiry-form/?page=simple-inquiry-top&act=login&ms=500&shop_id=406047" class="btn btn--orange btn--radius">お問合せフォーム</a></span><br>
+
+            月から金 午前10時から17時まで<br>
+            ※土・日・祝祭日、夏季休業、年末年始を除く<br>
+            <br>
+            ※ご注意：離島の場合など、一部、回収を承れない地域がございます。事前にご確認をお願いします。<br>
+            その後、回収日の打ち合わせの為、引き取りに伺う業者よりお電話させて頂きます。<br>
+
+          </p>
+            <h2 class="green_title">家電リサイクル料金(再商品化など料金</h2>
+            <table>
+              <tr><th>リサイクル対象商品 </th><td>	家電リサイクル（代表例）</td></tr>
+              <tr><th>洗濯機・乾燥機 </th><td>	¥2,530〜</td></tr>
+              <tr><th>冷蔵庫冷凍庫（170リットル以下）</th><td>	¥3,740〜</td></tr>
+              <tr><th>冷蔵庫冷凍庫（170リットル以上）</th><td> 	¥4,730〜</td></tr>
+            </table>
+            <br>
+            ※2022年12月28日 更新
+            <h2 class="green_title">リサイクル回収前の準備について</h2>
+            <p class="text">・リサイクル料金のお支払いは回収時に業者に現金でお支払いください。<br>
+              　クレジットカード、デビットカードなど現金以外でのお支払いは承っておりません。</p>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="./js/jquery-1.11.3.js"></script>
+
+    <script>
+      loadHtml("./","/header","#header"); //headerの読み込み
+      loadHtml("./","/event","#event"); //sidebarの読み込み
+      loadHtml("./","/footer","#footer"); //footerの読み込み
+      loadHtml("./","/header","#search_keyword","#keywords");
+    </script>
+
+  </body>
+</html>

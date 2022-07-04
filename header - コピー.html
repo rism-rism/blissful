@@ -1,0 +1,918 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>季節家電インテリア雑貨通販のブリスフル</title>
+  <meta name="keywords" content="アウトドア商品,サーモカメラ,アクリルパーテーション,アルコール消毒,扇風機,空気清浄機,ブリスフル楽天市場店">
+  <meta name="description" content="サーモカメラやアクリルパーテーションやアルコール消毒,扇風機,空気清浄機などのネット通販専門ブリスフル楽天市場店" />
+  <base target="_top">
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="content-language" content="ja">
+  <link rel="icon" type="image/png" href="./images/favicon.ico">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <link href="./css/header2.css" rel="stylesheet" type="text/css">
+  <link href="./css/common2.css" rel="stylesheet" type="text/css">
+  <link href="./css/bootstrap.custom.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./css/slick.min.css">
+  <link rel="stylesheet" href="./css/slick-theme.min.css">
+  <!--[if lt IE 9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+  <!-- ▼JSメイン -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+    /* ------------------------------------------------
+      スマートフォン用ナビボタン
+    ------------------------------------------------ */
+    $(function() {
+    function sp_resize() {
+    	$('#sp_menu').css({
+    	'width' : $(window).width() + 'px',
+    	});
+    }
+    function sp_open_close() {
+    var open_close = $(this).attr('class');
+    if ( open_close === 'sp-open') {
+    	$(this).attr('class','sp-close');
+    	$('#sp_menu').css({
+    		'width' : $(window).width() + 'px',
+    		'top' : $('div#sp-icon').height() + 'px',
+    	})
+    	.fadeIn('500');
+    } else {
+    	$(this).attr( 'class', 'sp-open' );
+    	$('#sp_menu').fadeOut('500');
+    }
+    }
+    $(window).on('resize',sp_resize);
+    $('div#sp-icon').on('click',sp_open_close);
+    });
+
+
+    /* スマホでも正常に動作（ただしSPでメニューオープン状態でPCモードにした場合、SPに戻ると×の状態でメニューが表示されない
+
+    var $winWidth = $(window).width();
+    $(window).on('resize', function(){
+      var $winWidthResize = $(window).width();
+      if($winWidth !== $winWidthResize) {
+          var w = $(window).width();
+    	  	if(w < 695) {
+    		$('#sp_menu').css('display','none');
+          }
+    	  	if(w > 700) {
+    		$('#sp_menu').css('display','block');
+          }
+
+      }
+    }); */
+
+    /*
+    var $winWidth = $(window).width();
+    $(window).on('resize', function(){
+      var $winWidthResize = $(window).width();
+      if($winWidth !== $winWidthResize) {
+          var w = $(window).width();
+    	  	if(w > 700) {
+    		$('#sp_menu').css('display','block');
+          }
+      }
+    });
+    */
+  </script>
+  <script>
+    $(function() {
+      var slide_main = $(".slide").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        asNavFor: ".slide-navigation"
+      });
+      var slide_sub = $(".slide-navigation").slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 400,
+        arrows: false,
+        asNavFor: ".slide",
+        focusOnSelect: true,
+        vertical: true,
+        verticalSwiping: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              centerMode: true,
+              vertical: false,
+              verticalSwiping: false,
+              slidesToShow: 3,
+              adaptiveHeight: true
+            }
+          }
+        ]
+      });
+      var open_window_Width = $(window).width();
+      $(window).resize(function() {
+        var width = $(window).width();
+        if (open_window_Width != width) {
+          slide_main.slick("setPosition");
+          slide_sub.slick("setPosition");
+        }
+      });
+    });
+  </script>
+  <body>
+    <div class="ads">
+      <p>3980円以上お買い上げで <span class="entry">送料無料</span></p>
+    </div>
+    <!-- -------------------------------------------------------------------------
+      ▼▼▼　PC / SPヘッダー　▼▼▼
+      ------------------------------------------------------------------------- -->
+    <div id="sp_header">
+      <div id="head-top">
+        <div id="logo"> <a href="https://www.rakuten.ne.jp/gold/taiheisj1/" target="_top"></a> </div>
+        <div id="s-box">
+          <form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" class="pc_only" target="_top" accept-charset="EUC-JP"> <input name="sv" value="6" type="hidden"><input name="sid" value="406047" type="hidden"> <input name="su" value="taiheisj1" type="hidden"> <input name="sn" value="ブリスフル楽天市場店" type="hidden"> <input name="f" value="A" type="hidden"> <input class="sb_input" name="sitem" size="12" type="TEXT" placeholder="商品検索はこちら"> <input class="sb_search" alt="ストア内検索" value="検索" type="image"> </form>
+          <div class="r-btn"><a href="https://www.rakuten.co.jp/"></a></div>
+          <div class="crt-btn"><a href="https://basket.step.rakuten.co.jp/rms/mall/bs/cart/?shop_bid=406047"></a></div>
+        </div>
+      </div>
+      <div class="menu_btn">
+        <div id="sp-icon" class="sp-open"><span></span></div>
+      </div>
+      <!-- .menu_btn -->
+      <menu id="sp_menu">
+        <!-- ▼RMSコピー時削除 -->
+        <div id="search_box" class="sp_only">
+          <form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" target="_top" accept-charset="EUC-JP"> <input name="sv" value="6" type="hidden"> <input name="sid" value="406047" type="hidden"> <input name="su" value="taiheisj1" type="hidden"> <input name="sn" value="ブリスフル楽天市場店" type="hidden"> <input name="f" value="A" type="hidden">
+            <p> <input class="sb_input" name="sitem" size="10" type="TEXT" placeholder=" 商品検索はこちら"> <input class="sb_search" alt="ストア内検索" value=" 検 索 " type="image"> </p>
+          </form>
+        </div>
+          <!-- .sp_only -->
+        <!-- ▲RMSコピー時削除 -->
+        <nav id="navi" role="navigation" aria-label="メインメニュー">
+          <div>
+            <ul class="menu">
+              <!-- ▼set -->
+              <li class="m-p"> <a class="ib menu-main" href="https://item.rakuten.co.jp/taiheisj1/c/0000000548/">季節家電</a> <input type="checkbox" id="m-p01x" /> <label for="m-p01x">
+                    <span class="ib pd"><i class="angletoggle"></i></span>
+                </label>
+                <div class="m-c">
+                  <ul class="m-c01">
+                    <li class="m-ct m-p02"> <a class="ib" href="https://item.rakuten.co.jp/taiheisj1/c/0000000655/">夏家電</a>
+                      <ul class="m-c02 pc">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000666/">リビング扇風機</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000777/">サーキュレーター</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000780/">ハンディファン</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000900/">冷風機・冷風扇</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000892/">卓上ファン</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000656/">ウェアラブルファン</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000778/">タワーファン</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000897/">アウトドアファン</a></li>
+                      </ul>
+                    </li>
+                    <li class="dot-bd"></li>
+                    <li class="m-ct m-p02"> <a class="ib" href="https://item.rakuten.co.jp/taiheisj1/c/0000000608/">秋冬家電</a>
+                      <ul class="m-c02 pc">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000609/">加湿器</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000669/">こたつ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000689/">電気カイロ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000690/">ヒーター・ストーブ</a></li>
+                      </ul>
+                    </li>
+                    <li class="dot-bd"></li>
+                    <li class="m-ct m-p02"> <a class="ib" href="https://item.rakuten.co.jp/taiheisj1/c/0000000549/">キッチン家電</a>
+                      <ul class="m-c02 pc">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000550/">電子レンジ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000712/">冷蔵庫</a></li>
+                      </ul>
+                    </li>
+                    <li class="dot-bd"></li>
+                    <li class="m-ct m-p02"> <a class="ib" href="https://item.rakuten.co.jp/taiheisj1/c/0000000651/">一般家電</a>
+                      <ul class="m-c02 pc">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000652/">空気清浄機</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000792/">ロボット掃除機</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000887/">洗濯機</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000660/">防犯カメラ</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="sub-cnt">
+                    <ul>
+                      <li> <a href="https://item.rakuten.co.jp/taiheisj1/xr-df217/">
+                        <img src="https://shop.r10s.jp/taiheisj1/cabinet/20010/xr-df217.jpg" width="271" height="271">
+                        <h2>卓上加湿扇風機</h2>
+                        <p>2022年夏の新発想！加湿機+扇風機、湿度と温度の挑戦中。</p>
+                        </a> </li>
+                      <li> <a href="https://item.rakuten.co.jp/taiheisj1/xr-ht05/">
+                        <img src="https://thumbnail.image.rakuten.co.jp/@0_mall/taiheisj1/cabinet/20020/xr-ht05.jpg" width="271" height="271">
+                        <h2>イオン除菌、32畳対応サーキュレーター</h2>
+                        <p>一台5役他の圧倒する機能性を実現しました。</p>
+                        </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- ▲set -->
+              <!-- ▼set -->
+              <li class="m-p"><a class="ib menu-main" href="https://item.rakuten.co.jp/taiheisj1/c/0000000720/" target="_top">アウトドア</a> <input type="checkbox" id="m-p06x" /> <label for="m-p06x">
+                <span class="ib pd"><i class="angletoggle"></i></span>
+                </label>
+                <div class="m-c">
+                  <ul class="m-c01">
+                    <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000739/" target="_top">焚き火台</a></li>
+                    <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000744/" target="_top">ドームテント</a></li>
+                    <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000741/" target="_top">タープテント</a></li>
+                    <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000734/" target="_top">スリーピング</a></li>
+                    <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000736/" target="_top">アウトドア用寝具</a></li>
+                    <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000743/" target="_top">テーブル</a></li>
+                    <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000745/" target="_top">チェア</a></li>
+                    <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000740/" target="_top">ツール・アクセサリー</a></li>
+                    <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000721/" target="_top">キャリーカート・ワゴン</a></li>
+                  </ul>
+                  <div class="sub-cnt">
+                    <ul>
+                      <li> <a href="https://item.rakuten.co.jp/taiheisj1/sl-fh2020/" target="_top">
+                          <img loading="lazy" src="https://thumbnail.image.rakuten.co.jp/@0_mall/taiheisj1/cabinet/08839758/imgrc0093088451.jpg" width="271" height="271">
+                          <h2>折り畳み焚き火台(2-3人用)</h2>
+                          <p>厚めステンレスでレーザー彫刻して仕上げました、嬉しい収納袋付きます</p>
+                          </a> </li>
+                      <li> <a href="https://item.rakuten.co.jp/taiheisj1/sl-zp210/" target="_top">
+                          <img loading="lazy" src="https://thumbnail.image.rakuten.co.jp/@0_mall/taiheisj1/cabinet/10001/sl-zp210-c.jpg" width="271" height="271">
+                          <h2>ワンタッチテント</h2>
+                          <p>夏場BBQに最適、複雑な作業がなくて、ワンタッチでセッテイング完了。</p>
+                          </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- ▲set -->
+              <!-- ▼set -->
+              <li class="m-p"> <a class="ib menu-main" href="https://item.rakuten.co.jp/taiheisj1/c/0000000595/" target="_top">インテリア雑貨</a> <input type="checkbox" id="m-p04x" /> <label for="m-p04x">
+                <span class="ib pd"><i class="angletoggle"></i></span>
+                </label>
+                <div class="m-c">
+                  <ul class="m-c01">
+                    <li class="m-ct m-p02"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000651/" target="_top" class="no_pointer">一般家電</a>
+                      <ul class="m-c02">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000652/" target="_top">空気清浄機</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000660/" target="_top">防犯カメラ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000712/" target="_top">冷蔵庫</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000550/" target="_top">電子レンジ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000887/" target="_top">洗濯機</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/hd-stytj/" target="_top">ロボット掃除機</a></li>
+                      </ul>
+                    </li>
+                    <li class="m-ct m-p02"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000610/" target="_top" class="no_pointer">デスク用品</a>
+                      <ul class="m-c02">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000611/" target="_top">卓上加湿器</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000625/" target="_top">机</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000676/" target="_top">モニター用品</a></li>
+                      </ul>
+                    </li>
+                    <li class="m-ct m-p02"> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000672/" target="_top" class="no_pointer">LED照明ライト</a>
+                      <ul class="m-c02">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000673/" target="_top">スポットライト</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000682/" target="_top">ナイトライト</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000710/" target="_top">シーリングライト</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000703/" target="_top">デスクライト</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000630/" target="_top">装飾間接照明</a></li>
+                      </ul>
+                    </li>
+                    <li class="m-ct m-p02"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000280/" target="_top" class="no_pointer">プレゼントウェア</a>
+                      <ul class="m-c02">
+                        <li class="s_cat_02 s_cat_01"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000281/" target="_top">アイテムで選ぶ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000282/" target="_top">季節のイベントで選ぶ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000283/" target="_top">デザインで選ぶ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000284/" target="_top">お祝いで選ぶ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000285/" target="_top">贈り相手で選ぶ</a></li>
+                      </ul>
+                    </li>
+                    <li class="m-ct m-p02"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000612/" target="_top" class="no_pointer">生活雑貨</a>
+                      <ul class="m-c02">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000760/" target="_top">宅配BOX</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000714/" target="_top">ダイニングマット</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000675/" target="_top">消火器周辺</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000654/" target="_top">ゴミ箱</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="sub-cnt">
+                    <ul>
+                      <li> <a href="https://item.rakuten.co.jp/taiheisj1/hd-stytj/" target="_top">
+                        <img loading="lazy" src="https://thumbnail.image.rakuten.co.jp/@0_mall/taiheisj1/cabinet/2022/hd-stytj.jpg" width="271" height="271">
+                        <h2>両手を解放しましょう、ロボット掃除機R1</h2>
+                        <p>部屋の状況に応じて、掃除ルートを自分で学習しながら、修正します。</p>
+                        </a> </li>
+                      <li> <a href="https://item.rakuten.co.jp/taiheisj1/20mx63-l/" target="_top">
+                        <img loading="lazy" src="https://thumbnail.image.rakuten.co.jp/@0_mall/taiheisj1/cabinet/100099/20mx63-l.jpg" width="271" height="271">
+                        <h2>一人暮らしのおすすめ電子レンジ</h2>
+                        <p>新い人生のスタートです、一人暮らしい便利なグッズです。</p>
+                        </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- ▲set -->
+              <!-- ▼set -->
+              <li class="m-p"> <a class="ib menu-main" href="https://item.rakuten.co.jp/taiheisj1/c/0000000551/" target="_top">店舗看板・厨房用品</a> <input type="checkbox" id="m-p03x" /> <label for="m-p03x">
+                    <span class="ib pd"><i class="angletoggle"></i></span>
+                </label>
+                <div class="m-c">
+                  <ul class="m-c01">
+                    <li class="m-ct m-p02"> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000553/" class="no_pointer">A型スタンド看板</a>
+                      <ul class="m-c02">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000620/" target="_top">木製ブラックボード</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000635/" target="_top">カードケース看板</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000558/" target="_top">A型LEDスタンド看板</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000604/" target="_top">イーゼルスタンド</a></li>
+                      </ul>
+                    </li>
+                    <li class="m-ct m-p02"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000616/" target="_top">額・ポスターフレーム</a>
+                      <ul class="m-c02">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000617/" target="_top">ポスターフレーム</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000667/" target="_top">LEDポスターフレーム</a></li>
+                      </ul>
+                    </li>
+                    <li class="m-ct m-p02"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000552/" target="_top">案内スタンド看板</a>
+                      <ul class="m-c02">
+                        <li class="el_globalNavi_item--lev2"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000607/" target="_top">ポールサイン看板</a></li>
+                        <li class="el_globalNavi_item--lev2"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000636/" target="_top">メニュースタンド</a></li>
+                        <li class="el_globalNavi_item--lev2"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000642/" target="_top">カタログスタンド・マガジンラック</a></li>
+                        <li class="el_globalNavi_item--lev2"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000711/" target="_top">樹脂スタンド</a></li>
+                        <li class="el_globalNavi_item--lev2"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000641/" target="_top">ハイグレードスタンド看板</a></li>
+                        <li class="el_globalNavi_item--lev2"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000624/" target="_top">バナースタンド看板</a></li>
+                        <li class="el_globalNavi_item--lev2"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000678/" target="_top">注水台スタンド看板</a></li>
+                      </ul>
+                    </li>
+                    <li class="m-ct m-p02"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000569/" target="_top">電飾スタンド看板</a>
+                      <ul class="m-c02">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000597/" target="_top">LED電飾スタンド看板</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000570/" target="_top">LEDバッテリー付き看板</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000701/" target="_top">電光掲示板付き</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000770/" target="_top">デジタルサイネージ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000786/" target="_top">矢印電飾看板</a></li>
+                      </ul>
+                    </li>
+                    <li class="m-ct m-p02"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000633/" target="_top">LEDライトパネル看板</a>
+                      <ul class="m-c02">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000684/" target="_top">Aサイズ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000700/" target="_top">Bサイズ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000621/" target="_top">その他&関連商品</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="sub-cnt">
+                    <ul>
+                      <li> <a href="https://item.rakuten.co.jp/taiheisj1/wbd-780/" target="_top">
+                      <img loading="lazy" src="./images/kanban.jpg" width="271" height="271">
+                      <h2>チョークマーカー両方対応木製黒板</h2>
+                      <p>開くだけで固定します、お好きな絵を描くことできます。</p>
+                      </a> </li>
+                      <li> <a href="https://item.rakuten.co.jp/taiheisj1/andon-h505-100v/">
+                        <img loading="lazy" src="https://thumbnail.image.rakuten.co.jp/@0_mall/taiheisj1/cabinet/10005/andon-h505-100v.jpg" width="271" height="271">
+                        <h2>和風スタイル抜群の行燈サイン</h2>
+                        <p>4面表示できます、和風スタイル抜群表現します、印刷承ります。</p>
+                      </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- ▲set -->
+              <!-- ▼set -->
+              <li class="m-p"> <a class="ib menu-main" href="https://item.rakuten.co.jp/taiheisj1/c/0000000576/">コロナ対策</a> <input type="checkbox" id="m-p02x" /> <label for="m-p02x">
+                <span class="ib pd"><i class="angletoggle"></i></span>
+                </label>
+                <div class="m-c">
+                  <ul class="m-c01">
+                    <li class="m-ct m-p02"> <a class="ib">拡散防止パネル</a>
+                      <ul class="m-c02 pc">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000730/" target="_top">抗菌・抗ウイルス性能タイプ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000582/" target="_top">簡単差し込みタイプ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000589/" target="_top">お得セットパーテーション</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000592/" target="_top">高さ調整タイプ</a></li>
+                      </ul>
+                    </li>
+                    <li class="dot-bd"></li>
+                    <li class="m-ct m-p02"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000695/" target="_top">非接触検温カメラ</a>
+                      <ul class="m-c02 pc">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000781/" target="_top">AI検温サーモカメラ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000696/" target="_top">AI顔認証検温サーモカメラ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000784/" target="_top">AI検温・健康パス</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000783/" target="_top">複数同時検温サーモカメラ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000785/" target="_top">検温勤怠管理サーモカメラ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000782/" target="_top">タッチ型検温サーモカメラ</a></li>
+                      </ul>
+                    </li>
+                    <li class="dot-bd"></li>
+                    <li class="m-ct m-p02"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000593/" target="_top">非接触消毒スタンド</a>
+                      <ul class="m-c02 pc">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000691/" target="_top">検温スタンド</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000594/" target="_top">消毒スタンド</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000601/" target="_top">検温消毒スタンド</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000718/" target="_top">非接触・自動検温器</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000596/" target="_top">センサー付きディスペンサー</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000606/" target="_top">アルコール消毒液</a></li>
+                      </ul>
+                    </li>
+                    <li class="dot-bd"></li>
+                  </ul>
+                  <div class="sub-cnt">
+                    <ul>
+                      <li> <a href="https://item.rakuten.co.jp/taiheisj1/aps-s4040/">
+                      <img loading="lazy" src="https://image.rakuten.co.jp/bestsign/cabinet/07576422/07914696/aps-s4040.jpg" width="271" height="271">
+                      <h2>飛沫拡散防止欠かせないパーテーション</h2>
+                      <p>置くだけで簡単に設置可能、一枚から発送しています、あったら安心できます。</p>
+                      </a> </li>
+                      <li> <a href="https://item.rakuten.co.jp/taiheisj1/aps-l5/">
+                      <img loading="lazy" src="https://thumbnail.image.rakuten.co.jp/@0_mall/taiheisj1/cabinet/08721002/aps-l5.jpg" width="271" height="271">
+                      <h2>接触なしでスムーズに検温と消毒完了</h2>
+                      <p>サーモカメラで高温者の侵入を防ぐ可能です、さらにかざすだけでルコール消毒で安心</p>
+                      </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- ▲set -->
+              <!-- ▼set -->
+              <li class="m-p"> <a class="ib menu-main" href="https://item.rakuten.co.jp/taiheisj1/c/0000000626/" target="_top">PCスマホグッズ</a> <input type="checkbox" id="m-p05x" /> <label for="m-p05x">
+                <span class="ib pd"><i class="angletoggle"></i></span>
+                </label>
+                <div class="m-c">
+                  <ul class="m-c01">
+                    <li class="m-ct m-p02"> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000627/" class="no_pointer" target="_top">パソコングッズ</a>
+                      <ul class="m-c02">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000628/" target="_top">パソコンデスク</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000658/" target="_top">MacBookケース</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000677/" target="_top">PCスタンド</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000694/" target="_top">モニターアーム</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000776/" target="_top">WEBカメラ</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000627/" target="_top">すべてを見る</a></li>
+                      </ul>
+                    </li>
+                    <li class="m-ct m-p02"> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000631/" class="no_pointer" target="_top">スマホ・タブレット</a>
+                      <ul class="m-c02">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000722/" target="_top">タブレットケース</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000723/" target="_top">タブレットフィルム</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000772/" target="_top">スマホケース</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000773/" target="_top">スマホホルダー</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000775/" target="_top">ワイヤレス充電器</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000631/" target="_top">すべてを見る</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="sub-cnt">
+                    <ul>
+                      <li> <a href="https://item.rakuten.co.jp/taiheisj1/bgz-02/" target="_top">
+                            <img loading="lazy" src="https://thumbnail.image.rakuten.co.jp/@0_mall/taiheisj1/cabinet/20010/bgz-02.jpg" width="271" height="271">
+                            <h2>パソコンデスク</h2>
+                            <p>こだわりのデザイン、強度に優れたスチール制デスク。</p>
+                            </a> </li>
+                      <li> <a href="https://item.rakuten.co.jp/taiheisj1/xd-s36-feb/" target="_top">
+                            <img loading="lazy" src="https://thumbnail.image.rakuten.co.jp/@0_mall/taiheisj1/cabinet/20010/xd-s36-feb.jpg" width="271" height="271">
+                            <h2>ワイヤレス充電器</h2>
+                            <p>30W PD対応＋QC3.0高速で充電可能ワイヤレス充電器</p>
+                            </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- ▲set -->
+
+              <!-- ▼set -->
+              <li class="m-p"> <a class="ib menu-main" href="https://item.rakuten.co.jp/taiheisj1/c/0000000795/" target="_top">標識・サイン</a> <input type="checkbox" id="m-p05x" /> <label for="m-p05x">
+                <span class="ib pd"><i class="angletoggle"></i></span>
+                </label>
+                <div class="m-c">
+                  <ul class="m-c01">
+                    <li class="m-ct m-p02"> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000796/" class="no_pointer" target="_top">許可票・登録票</a>
+                      <ul class="m-c02">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000822/" target="_top">建設業の許可票</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000826/" target="_top">宅地建物取引業者票・報酬額票</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000808/" target="_top">登録電気工事業者登録票</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000824/" target="_top">登録電気工事業者届出済票</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000812/" target="_top">建築士事務所標識</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000820/" target="_top">賃貸住宅管理業者票</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000817/" target="_top">解体工事業者登録票</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000801/" target="_top">産業廃棄物収集運搬業者票</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000819/" target="_top">マンション管理業者票</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000797/" target="_top">その他各種許可票名称</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000796/" target="_top">すべてを見る</a></li>
+                      </ul>
+                    </li>
+                    <li class="m-ct m-p02"> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000804/" class="no_pointer" target="_top">各種表札</a>
+                      <ul class="m-c02">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000829/" target="_top">アイアン・ステンレス表札</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000805/" target="_top">アクリル表札</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000833/" target="_top">タイル表札</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000806/" target="_top">組み合わせ表札</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000868/" target="_top">人工大理石表札</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000804/" target="_top">すべてを見る</a></li>
+                      </ul>
+                    </li>
+                    <li class="m-ct m-p02"> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000872/" class="no_pointer" target="_top">標識・案内板</a>
+                      <ul class="m-c02">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000873/" target="_top">危険・安全標識注意看板</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000835/" target="_top">ドア表示・室名表示</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000869/" target="_top">ハイグレード看板</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000872/" target="_top">すべてを見る</a></li>
+                      </ul>
+                    </li>
+                    <li class="m-ct m-p02"> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000843/" class="no_pointer" target="_top">各種社名・建物銘板</a>
+                      <ul class="m-c02">
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000867/" target="_top">ステンレス銘板</a></li>
+                        <li class="s_cat_02 s_cat_01"><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000844/" target="_top">アクリル銘板</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000849/" target="_top">エッチング加工銘板</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000852/" target="_top">棟数・階数表示サイン</a></li>
+                        <li><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000843/" target="_top">すべてを見る</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="sub-cnt">
+                    <ul>
+                      <li> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000829/" target="_top">
+                            <img loading="lazy" src="https://thumbnail.image.rakuten.co.jp/@0_mall/taiheisj1/cabinet/10013-1/08792885/gs-nmpl-1002_1.jpg" width="271" height="271">
+                            <h2>ステンレス表札</h2>
+                            <p>日本で製造したいます、お好きな文字で製造対応、世界おリンワンの表札を作りましょう。</p>
+                            </a> </li>
+                      <li> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000822/" target="_top">
+                            <img loading="lazy" src="https://image.rakuten.co.jp/taiheisj1/cabinet/10013/rb-sil-sil.jpg" width="271" height="271">
+                            <h2>建設業の許可票</h2>
+                            <p>国土交通省令の基づいて、欠かせない設業の許可票、豊富なバリエーションを選択可能</p>
+                            </a> </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- ▲set -->
+              <!-- ▼set -->
+              <li class="m-p"> <a class="ib menu-main">ご利用ガイド</a> <input type="checkbox" id="m-p08x" /> <label for="m-p08x">
+                  <span class="ib pd"><i class="angletoggle"></i></span>
+                </label>
+                <div class="m-c">
+                  <ul class="m-c01">
+                    <li class="m-ct m-p02"><a href="" class="ib">お買い物ガイド</a>
+                      <ul class="m-c02">
+                        <li><a href="https://www.rakuten.co.jp/taiheisj1/info2.html">お支払いについて</a></li>
+                        <li><a href="https://www.rakuten.co.jp/taiheisj1/info.html#shipping">配送について</a></li>
+                        <li><a href="https://www.rakuten.co.jp/taiheisj1/info.html#return_policy">ご注文後の変更・キャンセルについて</a></li>
+                        <li><a href="https://www.rakuten.co.jp/taiheisj1/info.html#return_policy">返品・交換について</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="https://www.rakuten.co.jp/taiheisj1/info.html#company_info">会社概要</a></li>
+                    <li><a href="https://ask.step.rakuten.co.jp/inquiry-form/?page=simple-inquiry-top&act=login&ms=500&shop_id=406047">お問い合わせ</a></li>
+                    <li><a href="https://www.rakuten.co.jp/">楽天市場TOPへ</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- ▲set -->
+            </ul>
+          </div>
+        </nav>
+      </menu>
+      <!-- #sp_menu -->
+    </div>
+    <!-- #sp_header -->
+    <div class="inner">
+  <div class="slider center_slider">
+
+    <div><a href="https://www.rakuten.ne.jp/gold/taiheisj1/fan/index.html" target="_top"><img src="./images/banner777.jpg" alt="子扇風機特集" class="big"/></a></div>
+    <div><a href="https://www.rakuten.ne.jp/gold/taiheisj1/natu/index.html" target="_top"><img src="./images/slider0405.jpg" alt="扇風機特集" class="big"/></a></div>
+    <div><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000720/" target="_top"><img src="./images/outdoor2.jpg" alt="アウトドア" class="big"/></a></div>
+    <div><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000696/" target="_top"><img src="./images/slider01.jpg" alt="顔認証サーモカメラ" class="big"/></a></div>
+    <div><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000577/" target="_top"><img src="./images/slider02.jpg" alt="飛沫防止パーテーション" class="big"/></a></div>
+    <div><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000596/" target="_top"><img src="./images/slider03.jpg" alt="自動噴霧器" class="big"/></a></div>
+    <div><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000796/" target="_top"><img src="./images/slider04.jpg" alt="各種許可票" class="big"/></a></div>
+
+
+
+  </div>
+</div>
+    <!-- <section class="bannerslider">
+      <div class="header_area inner">
+        <div class="slide-box">
+          <ul class="slide">
+            <li class="item"> <a href="https://www.rakuten.ne.jp/gold/taiheisj1/fan/index.html" target="_top"><img src="./images/banner777.jpg" alt="子扇風機特集" class="big"/></a> </li>
+            <li class="item"> <a href="https://www.rakuten.ne.jp/gold/taiheisj1/natu/index.html" target="_top"><img src="./images/slider0405.jpg" alt="扇風機特集" class="big"/></a> </li>
+            <li class="item"> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000720/" target="_top"><img src="./images/outdoor2.jpg" alt="アウトドア" class="big"/></a> </li>
+            <li class="item"> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000696/" target="_top"><img src="./images/slider01.jpg" alt="顔認証サーモカメラ" class="big"/></a> </li>
+            <li class="item"> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000577/" target="_top"><img src="./images/slider02.jpg" alt="飛沫防止パーテーション" class="big"/></a> </li>
+            <li class="item"> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000596/" target="_top"><img src="./images/slider03.jpg" alt="自動噴霧器" class="big"/></a> </li>
+            <li class="item"> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000796/" target="_top"><img src="./images/slider04.jpg" alt="各種許可票" class="big"/></a> </li>
+            <li class="item"> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000302/" target="_top"><img src="./images/titinohi.jpg" alt="父の日" class="big"/></a> </li>
+            <li class="item"> <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000302/" target="_top"><img src="./images/bs.jpg" alt="父の日" class="big"/></a> </li>
+
+          </ul>
+          <div class="slide-navigation">
+            <div class="item">
+              <figure class="image"> <img src="./images/banner777.jpg" /> </figure>
+            </div>
+            <div class="item">
+              <figure class="image"> <img src="./images/slider0405.jpg" /> </figure>
+            </div>
+
+            <div class="item">
+              <figure class="image"> <img src="./images/outdoor2.jpg" /> </figure>
+            </div>
+            <div class="item">
+              <figure class="image"> <img src="./images/slider01.jpg" /> </figure>
+            </div>
+            <div class="item">
+
+              <figure class="image"> <img src="./images/slider02.jpg" /> </figure>
+            </div>
+            <div class="item">
+              <figure class="image"> <img src="./images/slider03.jpg" /> </figure>
+            </div>
+            <div class="item">
+              <figure class="image"> <img src="./images/slider04.jpg" /> </figure>
+            </div>
+
+            <div class="item">
+              <figure class="image"> <img src="./images/titinohi.jpg" /> </figure>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section class="bannerslider">
+      <div class="header_area inner">
+        <div class="sliderB responsive">
+          <div class=""><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000609/" target="_top"><img src="./images/slider11.jpg" alt="加湿器特集" class="big"></a></div>
+          <div class=""><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000720/" target="_top"><img src="./images/slider18.jpg" alt="アウトドア特集" class="big"></a></div>
+          <div class=""><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000548/" target="_top"><img src="./images/slider12.jpg" alt="生活家電特集" class="big"></a></div>
+          <div class=""><a href="https://item.rakuten.co.jp/taiheisj1/c/0000000627/" target="_top"><img src="./images/slider14.jpg" alt="テレワーク特集" class="big"></a></div>
+        </div>
+    </section> -->
+    <style>
+      .width440{
+        width: 440px;
+      }
+      @media (min-width:480px) {
+        .width440{
+          width: 690px;
+        }
+      }
+      .inner {
+    max-width: 1100px;
+    margin: 0 auto;}
+    .slick-slick{
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      user-select: none;
+      touch-action: pan-y;
+    }
+    .sliderB.responsiveB.slick-initialized.slick-slider {
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+    </style>
+
+    <section class="bannerslider">
+      <div class="header_area inner">
+        <div class="sliderB responsiveB">
+          <div class="col-sm-6 col-xs-12"><a href="https://coupon.rakuten.co.jp/getCoupon?getkey=WFZHTC1aSFRJLUNYTEYtRzg2TA--&rt=" target="_blank">
+            <img src="./images/coupon300.jpg" alt=""class="big"></a></div>
+          <div class="col-sm-6 col-xs-12"><a href="https://coupon.rakuten.co.jp/getCoupon?getkey=T1lYNC1KWUFPLTVCVEwtQ1VSRg--&rt=" target="_blank">
+            <img src="./images/coupon500.jpg" alt=""class="big"></a></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="bannerslider">
+      <div class="header_area inner">
+        <div class="sliderB responsiveB">
+          <div class="col-sm-6 col-xs-12"><a href="https://coupon.rakuten.co.jp/getCoupon?getkey=OEJXVS1SNjlCLVhPTFItV1lXNA--&rt=" target="_blank"><img src="./images/coupon800.jpg" alt="クーポン"class="big"></a></div>
+          <div class="col-sm-6 col-xs-12"><a href="https://event.rakuten.co.jp/campaign/card/pointday/" target="_blank"><img src="./images/5 and 0.png" alt="楽天市場グループ"class="big"></a></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ly_header_inner nopadding">
+      <div class="">
+        <ul class="questions">
+          <li class="tpl_item">
+            <div id="q1" class="h2_close">
+              <div class="qa_title"> <span class="sp_info_tag">お知らせ</span> <span class="tpl_name">新型コロナウイルス対策に伴う一部業務縮小のお知らせ</span> <span class="right"><i class="fas fa-chevron-down"></i></span> </div>
+              <div id="toggle1" class="toggle"></div>
+            </div>
+
+            <div class="answer_close" id="open1"> <span class="answer_text">
+                    弊社では、新型コロナウイルス感染拡大防止対策の一環として、当面の間、電話対応の規模を縮小させていただきます。このため、お問合せ頂いた際につながりにくい、ご対応にお時間を頂く事が予想されます。<br><br>
+                    メールによる問合せには従前通りご対応させていただきますが、業務縮小に伴いましてご返信に通常よりお時間をいただく事もございます。<br><br>
+                    順次ご対応しておりますので、回答およびご返信までお待ち頂きますようお願い申し上げます。<br><br>
+                    皆様にはご不便をお掛けすることとなりますが、何卒ご理解・ご協力の程、宜しくお願い申し上げます。<br><br>
+                    お客様には大変ご迷惑をお掛け致しますが、何卒ご理解ご容赦いただきますよう宜しくお願い申し上げます。<br>
+                </span> </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+
+  //複数表示（レスポンシブ）
+$(function() {
+  $('.multiple-item1').slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    dots:true,
+    slidesToShow: 1,
+    slidesToScroll: 2,
+    responsive: [{
+      breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+      }
+    },{
+      breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll:1,
+        }
+      }
+    ]
+  });
+});
+//複数表示（レスポンシブ）
+$(function() {
+  $('.multiple-item2').slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    dots:true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    responsive: [{
+      breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+      }
+    },{
+      breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll:2,
+        }
+      }
+    ]
+  });
+});
+
+$('.center_slider').slick({
+  centerMode: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  dots:true,
+  centerPadding: '0px',
+  slidesToShow: 1,
+  responsive: [
+  {
+    breakpoint: 768,
+    settings: {
+      arrows: false,
+      centerMode: true,
+      centerPadding: '0px',
+      slidesToShow: 1
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      arrows: true,
+      centerMode: true,
+      centerPadding: '0px',
+      slidesToShow: 1
+    }
+  }
+  ]
+});
+
+      $('.responsive').slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 4,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+
+      $('.responsiveB').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        speed: 400,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+      jQuery( window ).on( 'scroll', function() {
+        if ( 150 < jQuery( this ).scrollTop() ) { // 1000px以上スクロールしたら
+          jQuery( '#sp_header' ).addClass( 'm_fixed' );
+        } else {
+          jQuery( '#sp_header' ).removeClass( 'm_fixed' );
+        }
+      });
+    </script>
+    <script>
+      //トグル
+      function toggle(number){
+          document.getElementById("q" + number).addEventListener("click",function(){
+              var toggle = document.getElementById("toggle" + number).className;
+              if(toggle == "toggle_open"){
+                  document.getElementById("toggle" + number).className="toggle";
+                  document.getElementById("q" + number).className="h2_close";
+                  document.getElementById("open" + number).className="answer_close";
+                  return;
+              };
+              for(var i = 1; i < 37; i++) {
+                  if(i == number){
+                      document.getElementById("toggle" + i).className="toggle_open";
+                      document.getElementById("q" + i).className="h2_open";
+                      document.getElementById("open" + i).className="answer_open";
+                  }
+                  else {
+                      document.getElementById("toggle" + i).className="toggle";
+                      document.getElementById("q" + i).className="h2_close";
+                      document.getElementById("open" + i).className="answer_close";
+                  }
+              }
+          });
+      }
+      //トグル数
+      for(var i = 1; i < 37; i++) {
+          toggle(i);
+      }
+    </script>
+  </body>
+</html>
