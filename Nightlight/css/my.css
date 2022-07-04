@@ -1,0 +1,847 @@
+.li_title{
+  padding: 5px 0;
+}
+.li_title li{
+  padding: 5px 0;
+}
+.li_title li::before{
+  content: "・";
+  width: 7px;
+  right: 40px;
+
+}
+.p_title{
+  font-size: 90%;
+  padding: 10px 0;
+  text-align: center;
+
+}
+.more{
+  padding: 10px 30px;
+  border: 1px solid #000;
+  float: right;
+  text-align: center;
+  margin: 15px 0;
+
+}
+.more::after{
+  font-family: 'icomoon';
+  content: "\e904";
+  font-weight: 400;
+  position: relative;
+  right: -20px;
+  top: 50%;
+}
+.more:hover{
+  background: #000;
+  color: #fff;
+}
+
+.bread li{
+  display: inline;
+  margin-right: 10px;
+}
+.bread li::after{
+  content: "  /";
+}
+
+.title_4{
+  padding:15px 0;
+}
+.bl_search{
+  padding: 0;
+}
+.searchs{
+  padding: 10px 0;
+}
+.bl_hotWords, ul{
+  margin:0;
+  padding: 0;
+}
+.nobottom{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+ul li{
+  padding:0;
+  margin: 0;
+}
+.ly_headerLogo{
+  background-color: #f7f7f7;
+}
+.tags{
+  padding:3px;
+  border:1px solid #c00000;
+  color: #c00000;
+  font-size: 80%;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+}
+iframe {
+  max-width: 100%;
+}
+.youtube-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.youtube-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.box01{
+  background: url(https://takasyou.jp/wp-content/uploads/2020/07/1-50.jpg) no-repeat;
+  background-size: 100px 100px;
+  background-position: 100% 90% ;
+}
+.box02{
+  background: url(../images/icon02.jpg) no-repeat;
+  background-size: 100px 100px;
+  background-position: 100% 90% ;
+}
+
+.box03{
+  background: url(../images/icon03.jpg) no-repeat;
+  background-size: 100px 100px;
+  background-position: 100% 90%;
+}
+.box04{
+  background: url(../images/icon04.jpg) no-repeat;
+  background-size: 100px 100px;
+  background-position: 100% 90% ;
+}
+.box05{
+  background: url(../images/icon05.jpg) no-repeat;
+  background-size: 100px 100px;
+  background-position: 100% 90% ;
+}
+.box06{
+  background: url(../images/icon06.jpg) no-repeat;
+  background-size: 100px 100px;
+  background-position: 100% 90% ;
+}
+.style01{
+  padding-bottom: 10px;;
+  border-bottom:1px solid #eee;
+}
+.style01::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 12px;
+    top: 20px;
+    right: 40px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: url(https://www.rakuten.ne.jp/gold/e-kurashi/hal/images/icon_pull.png) no-repeat center center / contain;
+}
+.tab {
+  list-style: none;
+}
+.tab li {
+  width: calc(100% / 4);
+  float: left;
+  padding:10px 0;
+ background: #f7f7f7;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.tab li:last-child{
+  border-right: 1px solid #ccc;
+}
+.tab{
+
+  margin: 0;
+  padding: 0;
+}
+.tab li.current {
+  background: #33658A;
+}
+/* .tab li a.current {
+  background: #33658A;
+  padding: 10px 0;
+  color: #fff;
+} */
+.tab li a {
+  display: block;
+  border-bottom: none;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+.tab li.current a {
+  color: #fff;
+}
+.tabContents {
+  clear: both;
+  display: none;
+  padding: 10px;
+  margin-bottom:10px;
+}
+.tabContents.current {
+  display: block;
+
+}
+
+.tabB {
+  list-style: none;
+}
+
+.tabB{
+  margin: 0;
+  padding: 0;
+}
+
+.tabB li.current {
+}
+/* .tab li a.current {
+  background: #33658A;
+  padding: 10px 0;
+  color: #fff;
+} */
+.tabB li a {
+  display: block;
+  border-bottom: none;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+.tabB li {
+  width: calc(100% / 3);
+  float: left;
+  padding:10px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right:1px solid #fff;
+
+}
+
+.tabB li.current a {
+  color: #fff;
+}
+.tabB li.current{
+  color: #fff;
+  border-bottom: #f7f7f7;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right:1px solid #ccc;
+  border-radius: 8px 8px 0 0;
+}
+.tabBContents {
+  clear: both;
+  display: none;
+  padding: 10px 0;
+  margin-bottom:10px;
+  border: 1px solid #ccc;
+}
+.tabBContents.current {
+  display: block;
+
+}
+
+.tabC {
+  list-style: none;
+}
+
+.tabC{
+  margin: 0;
+  padding: 0;
+}
+
+.tab li.current {
+  background: #333;
+}
+.nopadding{
+  padding: 0;
+}
+/* .tab li a.current {
+  background: #33658A;
+  padding: 10px 0;
+  color: #fff;
+} */
+.tabC li a {
+  display: block;
+  border-bottom: none;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 0;
+  margin: 5px;
+  border: 1px solid #000;
+}
+.tabC li.current a {
+background: #99e2ff;
+color: #000;
+}
+.cates{
+  margin: 5px;
+  border: 1px solid #333;
+  line-height: 50px;
+}
+.tabC li {
+  width: calc(100% / 3);
+  float: left;
+  line-height: 50px;
+}
+.tabC li.current {
+  color: #333;
+
+}
+.tabCContents {
+  clear: both;
+  display: none;
+  padding: 10px 0;
+  margin-bottom:10px;
+}
+.tabCContents.current {
+  display: block;
+}
+.rankingBox{
+  border:1px solid #ccc;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.Tdescription{
+  padding: 15px 0;
+}.right{
+  float:right;
+}
+h1{
+  font-size: 2rem !important;
+  font-weight: bold;
+}
+.item_description{
+  padding:10px;
+}
+.yellow{
+  color: #fcff00;
+  text-align: right;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: -.0083333333em !important;
+  padding-left: 20px;
+}
+h2 {
+  line-height: 1.5em;
+  font-family: "Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","Hiragino Sans","ヒラギノ角ゴシック","メイリオ",meiryo,"MS PGothic",sans-serif !important;
+}
+
+.contents_wrapper {
+  background: linear-gradient(180deg, #2ab4cc 355px, #165e83);
+  color: #fff;
+}
+.item_wrap .item_description {
+  padding: 0.625rem 0.625rem 1.25rem 0.625rem;
+}
+.item_wrap {
+  background: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.itemwrap{
+  background: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.item_wrap:hover {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.sc_lisk {
+    background: url(https://www.cansystem.co.jp/thermogate/img/bg-sec03.jpg) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-size: cover;
+    background-position: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}.lisk {
+    background: #fff;
+    padding: 10px;
+}
+h3{
+    line-height: 1.5em;
+}
+.bl_left_catNav {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .bl_left_catNav_item {
+    font-size: 12px;
+    line-height: 1.5;
+    width: calc((100% - 20px ) /2);
+  }
+
+  .bl_left_catNav_item:first-of-type {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: solid 1px #D1D1D1;
+    margin-bottom: 5px;
+  }
+  .box{
+    border: 1px solid #eee;
+    padding: 20px 10px;
+  }
+  .bl_left_catNav_item:first-of-type .bl_left_catNav_link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .bl_left_catNav_item:first-of-type .bl_left_catNav_link::after {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-family: 'icomoon';
+    content: "\e904";
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .bl_left_catNav_link {
+    padding: 6px 5px;
+    display: block;
+    color: #0d2943;
+    position: relative;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+
+  .bl_left_catNav_link:hover {
+    opacity: 1;
+    background-color: #dddddd;
+    color: #26a1d5;
+  }
+
+  .bl_left_catNav_item:first-of-type > .bl_left_catNav_link {
+    padding: 0 5px;
+  }
+
+  .bl_left_catNav_item:first-of-type > .bl_left_catNav_link:hover {
+    background-color: #ffffff;
+  }
+
+  .bl_left_catNav_ico {
+    display: block;
+    width: auto;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .ly_left_brands {
+    margin-bottom: 5rem;
+  }
+
+  .bl_brandList {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+  }
+
+  .el_brandList_item {
+    border: solid 1px #dddddd;
+    text-align: center;
+    padding: 0.5rem;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+
+  .el_brandList_item:hover {
+    background-color: #dddddd;
+  }
+
+  .el_brandList_item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+  }
+
+  .el_ico_brandLogo {
+    width: 100%;
+    height: auto;
+  }
+    .item_price{
+      color:#ff0000;
+      font-weight:bold;
+      text-align: right;
+      font-size: 105%;
+    }
+    /*タブのスタイル*/
+  .tabF_item {
+   width: calc(100% / 3);
+    font-size: 11px;
+    border-top: 1px solid #036eb8;
+    border-left: 1px solid #036eb8;
+    border-bottom: 1px solid #036eb8;
+    text-align: center;
+    color: #565656;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+      -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  padding:10px 0;
+  }
+.tabF_last{
+  border-right: 1px solid #036eb8;
+}
+  .tabF_item:hover {
+    opacity: 0.75;
+  }
+  /*ラジオボタンを全て消す*/
+  input[name="tabF_item"] {
+    display: none;
+  }
+  /*タブ切り替えの中身のスタイル*/
+  .tabF_content {
+    border-right: 1px solid #036eb8;
+    border-left: 1px solid #036eb8;
+    border-bottom: 1px solid #036eb8;
+    display: none;
+    clear: both;
+    overflow: hidden;
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  filter: grayscale(0);
+  padding: 15px 0;
+  }
+  /*選択されているタブのコンテンツのみを表示*/
+  #tabF01:checked ~ #tabF01_content,
+  #tabF02:checked ~ #tabF02_content,
+  #tabF03:checked ~ #tabF03_content,
+  #tabF04:checked ~ #tabF04_content,
+  #tabF05:checked ~ #tabF05_content{
+    display: block;
+
+  }
+  /*選択されているタブのスタイルを変える*/
+  input[name="tabF_item"]:checked + .tabF_item {
+    color: #fff;
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0);
+    background-color: #00a0e9;
+  }
+
+   /*タブのスタイル*/
+   .tabD_item {
+    width: calc(100% / 3);
+    font-size: 11px;
+    border-left: 1px solid #333;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    color: #565656;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    padding:10px 0;
+
+   }
+   .tabD_last{
+    border-right: 1px solid #333;
+  }
+   .visual_title{
+    position: absolute;
+    left: 5px;
+    bottom: 15px;
+    background-color:rgba(0,0,0,0.8);
+    padding: 8px;
+    color: #fff;
+    font-size: 80%;
+    }
+   @media (min-width:768px){
+    .visual_title{
+      position: absolute;
+      left: 5px;
+      bottom: 15px;
+      background-color:rgba(0,0,0,0.8);
+      padding: 8px;
+      color: #fff;
+    }
+    .tabD_item {
+      width: calc(100% / 5);
+      font-size: 11px;
+      border-left: 1px solid #333;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #333;
+      text-align: center;
+      color: #565656;
+      display: block;
+      float: left;
+      text-align: center;
+      font-weight: bold;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
+      padding:10px 0;
+    }
+    .tabD_last{
+      border-right: 1px solid #333;
+    }
+  }
+   .tabD_item:hover {
+     opacity: 0.75;
+   }
+   /*ラジオボタンを全て消す*/
+   input[name="tabD_item"] {
+     display: none;
+   }
+   /*タブ切り替えの中身のスタイル*/
+   .tabD_content {
+    display: none;
+    clear: both;
+    overflow: hidden;
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0);
+    padding: 15px 0;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    background-color: #f7f7f7;
+   }
+   /*選択されているタブのコンテンツのみを表示*/
+   #tabD01:checked ~ #tabD01_content,
+   #tabD02:checked ~ #tabD02_content,
+   #tabD03:checked ~ #tabD03_content,
+   #tabD04:checked ~ #tabD04_content,
+   #tabD05:checked ~ #tabD05_content,
+   #tabD06:checked ~ #tabD06_content{
+     display: block;
+   }
+   /*選択されているタブのスタイルを変える*/
+   input[name="tabD_item"]:checked + .tabD_item {
+      color: #fff;
+      -webkit-filter: grayscale(0);
+      -moz-filter: grayscale(0);
+      -ms-filter: grayscale(0);
+      -o-filter: grayscale(0);
+      filter: grayscale(0);
+      font-size: 105;
+      background-color: #2CAA95;
+   }
+
+
+
+        .col-sm-20{
+          width: 20%;
+          float: left;
+      }
+    .item_name{
+      font-size: 80%;
+      padding-bottom: 10px;
+    }
+    .backToTop {
+    position: fixed;
+    z-index: 1000;
+    right: 35px;
+    bottom: 80px; }
+    @media screen and (max-width: 767px) {
+      .backToTop {
+        right: 5%;
+        bottom: 5%; } }
+    .backToTop a {
+      position: relative;
+      display: block;
+      width: 40px;
+      height: 40px;
+      overflow: hidden;
+      -webkit-transition: 0.2s all;
+      transition: 0.2s all;
+      text-indent: -9999px;
+      background-color: #ffffff; }
+      .backToTop a::before, .backToTop a::after {
+        position: absolute;
+        margin: auto;
+        content: ""; }
+      .backToTop a::before {
+        top: 11px;
+        right: 0;
+        left: 0;
+        display: block;
+        width: 70%;
+        height: 2px;
+        background: #000000; }
+      .backToTop a::after {
+        top: 20px;
+        right: 0;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border-top: 2px solid #000000;
+        border-left: 2px solid #000000; }
+
+     .banner_li li{
+      margin-bottom: 10px;
+    }
+    .banner_li{
+      margin-top: 15px;;
+    }
+    .small{
+      font-size: 85%;
+    }
+    .right{
+      float: right;
+    }
+    .price{
+      color:#FB5A24;
+      font-weight: bold;
+      margin-top: 15px;;
+    }
+    .item{
+      padding: 15px 0;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      background: #FFFFFF;
+    }
+    a:hover .item {
+      border: 1px solid #0d2943;
+      box-shadow:  0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);;
+    }
+    .center{
+      text-align: center;
+    }
+    .sc_gray{
+      background-color: #f7f7f7;
+    }
+    .sc_black{
+      background-color: #000;
+      color:#ffff;
+    }
+
+    .items p{
+      line-height: 10px;;
+    }
+    .items{
+      margin-bottom: 15px;
+    }
+    section{
+      padding: 20px 0;
+    }
+    .box{
+      border: 1px solid #eeeeee;
+      padding: 20px 10px;
+    }
+
+    .big_titlle{
+      line-height: 10px;
+      margin-top: 15px;
+      margin-bottom: 40px;;
+    }
+
+
+    .banner_li{
+      padding:0 ;
+    }
+
+    .header_navi{
+      width: 100%;
+      margin-bottom: 10px;
+      text-align: center;
+      filter: invert(84%) sepia(10%) saturate(7476%) hue-rotate(163deg) brightness(101%) contrast(101%);
+      font-size:70%;
+    }
+  .item_rank{
+    position: absolute;
+    top: 4px;
+    left: 20px;
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+    opacity: 0.8;
+}
+  .rank_1{
+    background: #ff0000;
+  }
+  h3{
+    margin: 0;
+    font-size: 16px;
+    padding-left:20px;
+  }
+  .sub_title{
+    text-align: center;
+  }
+  .seanbox{
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+  }
+    .sec_gray{
+      background-color: #f7f7f7;
+      padding: 15px;
+    }
+    .sec_gray ul li{
+      margin: 0;
+      padding: 0;
+    }
+  .ms_img{
+  padding-top: 5px;
+  }
+  .ly_header{
+    border-top: 3px solid #333;
+  }
+  @media (min-width:768px){
+   .ly_headerLogo{background-color: #fff;}
+  }

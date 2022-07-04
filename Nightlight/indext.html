@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Night　Light</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="./css/bootstrap.custom.min.css" rel="stylesheet" type="text/css">
+
+  <body>
+    <!--headerの読み込み-->
+    <!-- <header id="header"></header> -->
+    <!--headerの読み込み-->
+    <section class="sc_white">
+      <div class="inner">
+        <div class="col-sm-12"> <img src="./images/light_1.jpg">
+
+<center>
+      <div class="col-sm-3 col-xs-6"><a href="https://item.rakuten.co.jp/taiheisj1/hsd-n119/"target="_blank">
+      <img src="./images/light_2.jpg"width="245"></a>
+      <b>￥2,490（税込み）</b>
+          </div>
+          <div class="col-sm-3 col-xs-6"> <a href="https://item.rakuten.co.jp/taiheisj1/hsd-n80/"target="_blank">
+      <img src="./images/light_3.jpg"width="245"></a>
+        <b>￥2,490（税込み）</b>
+          </div>
+          <div class="col-sm-3 col-xs-6"> <a href="https://item.rakuten.co.jp/taiheisj1/hsd-n79/"target="_blank">
+
+      <img src="./images/light_4.jpg"width="245"></a>
+          <b>￥1,490（税込み）</b>
+          </div>
+          <div class="col-sm-3 col-xs-6"> <a href="https://item.rakuten.co.jp/taiheisj1/hsd-d420/"target="_blank">
+      <img src="./images/light_5.jpg"width="245"></a>
+      <b>￥3,480（税込み）</b>
+          </div>
+          </center>
+        </div>
+    </section>
+    <script>
+      loadHtml("./","/header","#header"); //headerの読み込み
+      loadHtml("./","/event","#event"); //sidebarの読み込み
+      loadHtml("./","/footer","#footer"); //footerの読み込み
+      loadHtml("./","/header","#search_keyword","#keywords");
+    </script>
+    <script src="./js/jquery.csv.js"></script>
+    <script src="./js/takasyou.js"></script>
+
+    <script>
+      $(function() {
+      $(".tabC a").click(function() {
+        $(this).parent().addClass("current").siblings(".current").removeClass("current");
+        var tabContents = $(this).attr("href");
+        $(tabContents).addClass("current").siblings(".current").removeClass("current");
+        return false;
+      });
+      });
+    </script>
+  </body>
+</html>

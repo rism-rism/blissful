@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+section{
+	padding: 0 0 20px 0;
+}
+
+.item a img {
+    width: 100%;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+}
+.item a img:hover {
+	transform: translateY(-4%);
+}
+.name {
+    line-height: 2rem;
+    font-weight: 700;
+	border-bottom: 2px solid #333;
+	font-size: 14px;
+	padding: 10px 0;
+	margin-bottom: 15px;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	/* display: -webkit-box;
+overflow: hidden;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical; */
+
+}
+.price {
+	font-size: 18px;
+    line-height: 3.5rem;
+    font-weight: 700;
+	text-align: center;
+	color: #ff0000;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: source-han-sans-japanese, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+}
+
+.wrapper {
+	max-width: 1152px;
+	margin: 0 auto;
+}
+
+.pagetop {
+	position: fixed;
+	bottom: 6%;
+	left: 2%;
+	width: 7rem;
+	height: 7rem;
+	background-color: #000;
+	border-radius: 50%;
+	z-index: 3;
+}
+
+.pagetop::before {
+	position: relative;
+	content: "\f0de";
+	font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+	color: #fff;
+	font-size: 4rem;
+	top: 11%;
+	left: 22%;
+}
+#pageTop {
+    width: 80px;
+    position: fixed;
+    right: 3rem;
+    z-index: 999;
+}
+#page_top {
+    width: 150px;
+    position: fixed;
+    right: 0px;
+    bottom: 300px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 3px 15px rgb(0 0 0 / 20%);
+	z-index: 998;
+	font-size: 12px;
+}
+
+@media (min-width:480px) {
+	#pageTop {
+		width: 80px;
+		position: fixed;
+		bottom: 305px;
+		right: 35px;
+		z-index: 999;
+	}
+	#page_
+	#page_top {
+		width: 160px;
+		position: fixed;
+		right: 40px;
+		bottom: 50px;
+		background: #fff;
+		border-radius: 15px;
+		box-shadow: 0px 3px 15px rgb(0 0 0 / 20%);
+		z-index: 998;
+	}
+}
+#page_top ul li {
+    padding: 10px;
+    text-align: center;
+}
+#pageTop2 {
+    width: 80px;
+    position: fixed;
+    bottom: 250px;
+    right: 60px;
+    z-index: 999;
+}
+#top {
+	width: 100%;
+	height: 300px;
+	background: url("../images/marason_back.png") no-repeat center / cover;
+	position: relative;
+}
+
+
+#top .wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	max-width: 100rem;
+	z-index: 5;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#top .wrapper img { width: 100%;}
+
+@media (min-width:480px) {
+	#top .wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		max-width: 100rem;
+		z-index: 5;
+		position: absolute;
+		top: 0;
+		left: calc(50% - 50rem);
+	}
+	#top {
+		width: 100%;
+		height: 600px;
+		background: url("../images/marason_back.png") no-repeat center / cover;
+		position: relative;
+	}
+
+}
+#top .fubuki {
+	width: 100%;
+	height: 100%;
+	background: url("../images/fubuki.png") no-repeat center / 100%;
+	position: absolute;
+	top: 0;
+}
+#pointUp {
+	padding: 10rem 0 7.5rem 0;
+	border-top: solid 1rem #000;
+	border-bottom: solid 1rem #000;
+	background-size: 30px 30px;
+	background-image: radial-gradient(#fff700 22%, transparent 22%), radial-gradient(#fff700 22%, transparent 22%);
+	background-position: 0 0, 15px 15px;
+	background-color: #ffff00;
+}
+nav li a {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+		color: #333;
+}

@@ -1,0 +1,2611 @@
+@charset "euc-jp";
+/* CSS Document */
+
+/* ------------------------------------------------------------
+	全・E
+------------------------------------------------------------ */
+body {
+	margin:0;
+	padding:0;
+	font-family:"メイリオ", Meiryo, "Hiragino Kaku Gothic ProN", "MS PGothic", sans-serif !important;
+}
+
+.floating-cart-wrapper {
+	z-index:999999999;
+}
+/* -------------・E鵐・・------------ */
+a, a:link {
+	color:#1e0fbe;
+	text-decoration:underline;
+}
+a:hover, a:active {
+	color:#FF0000;
+	text-decoration:underline;
+}
+a:hover img {
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+}
+a .photo, a:link .photo {
+	border:1px solid #1e0fbe;
+}
+a:hover .photo, a:active .photo {
+	border:1px solid red;
+}
+a .photo_m, a:link .photo_m {
+	border:1px solid #1e0fbe;
+}
+a:hover .photo_m, a:active .photo_m {
+	border:1px solid red;
+}
+
+.chat_badge_base,
+.chat_chat_base {
+	z-index: 99999999999999 !important;
+}
+
+#vertical_leftArea_1 {
+	display:none;
+}
+/* ------------------------------------------------------------
+	スマホ・PC表ｦ・E\ｦ
+------------------------------------------------------------ */
+
+@media (min-width:600px) {
+.pcHidden, .pchide, .pc_hide {display: none;}
+.pcbr {display: inline-block; margin: 0; padding: 0;}
+.spbr, .smpbr {display: none;}
+}
+@media (max-width:599px) {
+.spHidden, .sphide, .sp_hide {display: none;}
+.spbr, .smpbr {display: inline-block; margin: 0; padding: 0;}
+.pcbr {display: none;}
+}
+
+
+/* ------------------------------------------------------------
+	各夋oナー
+------------------------------------------------------------ */
+/* -------------ヘッダーオビ------------- */
+.head_line {
+	background-color:#bf0000;
+	width:100%;
+	height:40px;
+	position:fixed;
+	top:0px;
+	left:0;
+	z-index:9999;
+	text-align:center;
+}
+.head_bottom {
+	background-color:#ffffff;
+	width:100%;
+	height:40px;
+	border-top:1px solid #CCC;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	z-index:9999;
+	text-align:center;
+}
+/*.event_tate {
+	position:fixed;
+	left:24px;
+}*/
+/* ------------- ページ凹・E艨oナー ----------- */
+#bottombnr {
+	position:fixed;
+	left:0;
+	bottom:0;
+	text-align:center;
+	background-color:#FFF700;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:41px;
+}
+#bottombnr img {
+	border:0;
+}
+/* -------------ポイントバナー------------- */
+div[class^="img"]{
+	float: left;
+}
+
+.slick-initialized{
+  display: block; /*slick-initializedが付与されたら表示*/
+}
+#slider_event .draggable {
+	width: 980px;
+	margin: 0 auto !important;
+}
+#slider_event {
+	margin: 10px 0 20px;
+	width: 1045px;
+}
+
+#slider_event div {
+	margin-right: 13px;
+}
+#slider_event div img {
+	width: 185px;
+}
+
+#slider_event div img:hover {
+	opacity: 0.8;
+}
+
+#slider_event .slick-prev span {
+	background-image: url(https://www.rakuten.ne.jp/gold/sanwadirect/img/header_prev_arrow.gif);
+	display: block;
+	width: 44px;
+	height: 52px;
+	left: -15px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-size: 60px;
+	position: absolute;
+	background-repeat: no-repeat;
+	top: 41%;
+}
+#slider_event .slick-next span {
+	background-image: url(https://www.rakuten.ne.jp/gold/sanwadirect/img/header_after_arrow.gif);
+	display: block;
+	width: 44px;
+	height: 52px;
+	left: -15px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-size: 60px;
+	position: absolute;
+	background-repeat: no-repeat;
+	top: 41%;
+}
+#slider_event .slick-prev, .slick-next {
+	width: 28px;
+}
+
+#slider_event .slick-prev span:hover,
+#slider_event .slick-next span:hover {
+	opacity:0.8;
+}
+/* ------------------------------------------------------------
+	・EV
+------------------------------------------------------------ */
+/* -------------・EV------------- */
+#rmd_og, #rmd_red {
+	margin:20px 0 0 0;
+	padding:0;
+	border:solid 1px #ff6000;
+	font-size:12px;
+	line-height:1.3;
+	text-align:center;
+}
+#rmd_og {
+	width:738px;
+	border:solid 1px #ff6000;
+}
+#rmd_red {
+	width:734px;
+	border:solid 3px red;
+}
+#rmd_og p {
+	margin:0;
+	padding:5px;
+	background-color:#ff6000;
+	color:white;
+	font-size:16px;
+	font-weight:bold;
+}
+#rmd_red p {
+	margin:0;
+	padding:5px;
+	border-bottom:2px dotted red;
+	color:red;
+	font-size:20px;
+	font-weight:bold;
+}
+#rmd_red .catch {
+	color:red;
+	font-weight:bold;
+}
+#rmd_og img, #rmd_red img {
+	border:0;
+}
+#rmd_red .item_0 {
+	border-bottom:0;
+}
+#rmd_og .item_1, #rmd_red .item_1 {
+	margin:10px auto;
+	width:350px;
+}
+#rmd_og .item_1 div, #rmd_red .item_1 div {
+	margin:2px;
+	text-align:left;
+	font-size:16px;
+}
+#rmd_og .item_1 img, #rmd_red .item_1 img {
+	margin:0 3px 0 0;
+	width:160px;
+	float:left;
+}
+#rmd_og .item_2, #rmd_red .item_2 {
+	margin:10px auto;
+	width:648px;
+	font-size:14px;
+}
+#rmd_og .item_2 div, #rmd_red .item_2 div {
+	margin:2px;
+	width:320px;
+	float:left;
+	text-align:left;
+}
+#rmd_og .item_2 img, #rmd_red .item_2 img {
+	margin:0 3px 0 0;
+	width:160px;
+	float:left;
+}
+#rmd_og .item_3, #rmd_red .item_3 {
+	margin:10px auto;
+	width:630px;
+}
+#rmd_og .item_3 div, #rmd_red .item_3 div {
+	margin:2px 5px;
+	width:200px;
+	float:left;
+}
+#rmd_og .item_3 img, #rmd_red .item_3 img {
+	margin:0 0 3px 0;
+	width:200px;
+}
+#rmd_og .item_4, #rmd_red .item_4 {
+	margin:5px auto;
+	width:680px;
+}
+#rmd_og .item_4 div, #rmd_red .item_4 div {
+	margin:2px 5px;
+	width:160px;
+	float:left;
+}
+#rmd_og .item_4 img, #rmd_red .item_4 img {
+	margin:0 0 3px 0;
+	width:160px;
+}
+#rmd_og .item_5, #rmd_red .item_5 {
+	margin:5px auto;
+	width:730px;
+}
+#rmd_og .item_5 div, #rmd_red .item_5 div {
+	margin:2px 3px;
+	width:140px;
+	float:left;
+}
+#rmd_og .item_5 img, #rmd_red .item_5 img {
+	margin:0 0 3px 0;
+	width:140px;
+}
+#rmd_og .rmd_cat {
+	padding:8px 0;
+	font-size:14px;
+	border-top:1px dotted #ff6000;
+}
+#rmd_red .rmd_cat {
+	margin:5px;
+	padding:10px 0;
+	font-size:18px;
+	font-weight:bold;
+	background-color:#ffeeee;
+}
+#rmd_og .comment {
+	margin:0 auto;
+	padding:10px;
+	text-align:left;
+	font-size:14px;
+}
+/*ランキング・EV用CSS*/
+#rmd_og .item_5 .rank {
+	width:53px;
+	height:25px;
+	margin: 0 0 3px 0;
+}
+#rmd_og .item_5 .price {
+	background-color:#fff;
+	color:#F00;
+	font-size:14px;
+	padding: 7px 0 0 0;
+}
+/* ------------- ・EW・EVバナー ----------- */
+.bnr_category {
+	margin:0 0 50px 0;
+	padding:0;
+	text-align:center;
+}
+.bnr_category {
+	margin:30px 0;
+}
+.bnr_category h2 {
+	margin:0 0 5px 0;
+	padding:15px 0 0 5px;
+	height:45px;
+	background-image:url(http://image.rakuten.co.jp/sanwadirect/cabinet/design/h2_bg.gif);
+	background-repeat:no-repeat;
+	text-align:left;
+	font-size:18px;
+}
+.bnr_category ul {
+	margin:0;
+	padding:0;
+}
+.bnr_category li {
+	margin:10px 0 0 0;
+	list-style-type:none;
+}
+.bnr_category li {
+	margin:0 0 20px 0;
+}
+.bnr_category img {
+	text-align:center;
+	width:90%;
+	vertical-align:bottom;
+}
+/* テキスト・E鵐安*/
+.rmd_txt {
+	display:inline-block;
+	text-align:center;
+	margin:0 auto;
+	width:calc(100% - 20px);
+}
+.rmd_txt a {
+	display:inline-block;
+	border:2px solid #F60;
+	padding:10px;
+	text-decoration:none !important;
+	color:#F60 !important;
+	width:80%;
+	border-radius:10px;
+	transition:0.5s;
+	font-size:18px;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+.rmd_txt a:hover {
+	background-color:#F60;
+	color:#fff !important;
+}
+/* -------------インク・E璽疋薀ぅ鵐淵奪徑厦------------ */
+.inc_lineup {
+	margin:30px 0;
+	padding:0 0 20px;
+}
+.inc_lineup .ttl {
+	text-align:center;
+	font-size:28px;
+	line-height:1.7;
+	margin:30px auto 20px;
+	padding:3px 0 0;
+	color:#ffffff;
+}
+.inc_lineup .ttl:first-child {
+	margin-top:0;
+}
+.inc_lineup .box {
+	margin:0 auto;
+	padding:0 10px;
+	text-align:center;
+}
+.inc_lineup .box .cap {
+	text-align:center;
+	font-size:24px;
+	font-weight:bold;
+	margin:35px 0 15px;
+}
+.inc_lineup .box .cap:first-child {
+	margin-top:0;
+}
+.inc_lineup .box .item {
+	display:inline-block;
+	margin:0 15px 20px;
+	font-weight:bold;
+	text-align:center;
+	line-height:2;
+}
+.inc_lineup .box .item img.main_img {
+	width:100%;
+	border:1px solid #cccccc;
+}
+.inc_lineup .box .item img.btn_img {}
+/* col澄2・*/
+.inc_lineup .box.col2 .item {
+	width:44%;
+	max-width:360px;
+}
+.inc_lineup .box.col3 .item {
+	width:28%;
+}
+.inc_lineup .box.col4 .item {
+	width:22%;
+	margin:0 10px 20px;
+}
+.inc_lineup .box.col5 .item {
+	width:16%;
+	margin:0 10px 20px;
+	font-size:0.9em;
+}
+ @media screen and (max-width:740px) {
+.inc_lineup .ttl {
+	font-size:26px;
+}
+.inc_lineup .cap {
+	font-size:20px;
+}
+}
+/* ------------------------------------------------------------
+	・Eiｩ島∩・
+------------------------------------------------------------ */
+/* -------------・Eiｩ島・Ei峨・E模------------ */
+.img_priceL_0 {margin-left:-5px;}
+.img_priceL_1 {}
+.img_priceL_2 {}
+.img_priceL_3 {}
+.img_priceL_4 {}
+.img_priceL_5 {}
+.img_priceL_6 {}
+.img_priceL_7 {}
+.img_priceL_8 {margin-left:-4px;}
+.img_priceL_9 {margin-left:-5px;}
+.img_priceL_c {margin-left:-5px;}
+.img_priceL_y {}
+.img_priceM_0 {margin-left:-3px;}
+.img_priceM_1 {}
+.img_priceM_2 {margin-left:-2px;}
+.img_priceM_3 {}
+.img_priceM_4 {}
+.img_priceM_5 {}
+.img_priceM_6 {}
+.img_priceM_7 {}
+.img_priceM_8 {margin-left:-3px;}
+.img_priceM_9 {margin-left:-2px;}
+.img_priceM_c {margin-left:-2px;}
+.img_priceM_y {}
+.img_priceS_0 {margin-left:-2px;}
+.img_priceS_1 {}
+.img_priceS_2 {}
+.img_priceS_3 {}
+.img_priceS_4 {}
+.img_priceS_5 {}
+.img_priceS_6 {}
+.img_priceS_7 {}
+.img_priceS_8 {margin-left:-1px;}
+.img_priceS_9 {}
+.img_priceS_c {margin-left:-1px;}
+.img_priceS_y {}
+.img_priceT_0 {margin-left:-4px;}
+.img_priceT_1 {margin-left:-4px;}
+.img_priceT_2 {margin-left:-4px;}
+.img_priceT_3 {margin-left:-4px;}
+.img_priceT_4 {margin-left:-4px;}
+.img_priceT_5 {margin-left:-4px;}
+.img_priceT_6 {margin-left:-4px;}
+.img_priceT_7 {margin-left:-4px;}
+.img_priceT_8 {margin-left:-4px;}
+.img_priceT_9 {margin-left:-4px;}
+.img_priceT_c {margin-left:-4px;}
+.img_priceT_y {margin-left:-4px;}
+/* ------------------------------------------------------------
+	盾妬酎・E・
+------------------------------------------------------------ */
+/* -------------盾妬酎・E@全・E------------ */
+#goods {
+	margin:0;
+	padding:0;
+	width:740px;
+	text-align:center;
+}
+#goods h2 {
+	margin:30px 0 20px 0;
+	padding:5px 0 5px 2%;
+	font-size:18px;
+	text-align:left;
+	width:98%;
+	background-color:red;
+}
+#goods h2:first-of-type {
+	margin-top:0!important;
+}
+#goods .ttlbnr img {
+	width:100%;
+	border:none;
+}
+#goods .item {
+	padding:0 0 10px 0;
+	background-color:white;
+	float:left;
+	border-width:1px;
+	border-style:solid;
+}
+#goods .exp {
+	margin:0;
+	padding:2px;
+	font-size:14px;
+	font-weight:bold;
+}
+#goods .catch {
+	margin:10px 0;
+	padding:0;
+	font-size:16px;
+	font-weight:bold;
+	line-height:1.3em;
+	border-width:1px;
+	border-style:solid;
+}
+#goods .name {
+	margin:10px 0 0 0;
+	padding:0;
+	font-weight:bold;
+	line-height:1.3em;
+}
+#goods .name {
+	margin:0;
+}
+#goods .pricename {
+	margin:15px 0 0 0;
+	padding:0;
+	font-size:12px;
+}
+#goods .pricename {
+	font-size:11px;
+}
+#goods .price {
+	margin:0;
+	padding:0;
+	color:red;
+	font-weight:bold;
+	font-family:"Verdana", "Arial", "Helvetica";
+	line-height:1;
+}
+#goods .icon {
+	margin:5px 0 0 0;
+	padding:0;
+}
+#goods .icon span, #goods .price span.dlv_in span {
+	margin:0 2px;
+	padding:2px 5px;
+	font-size:12px;
+	font-weight:normal;
+	border-width:1px;
+	border-style:solid;
+}
+#goods .icon .dlv_1, #goods .price .dlv_1 {
+	background-color:white;
+	color:red;
+	border-color:red;
+}
+#goods .icon .dlv_0, #goods .price .dlv_0 {
+	background-color:white;
+	color:gray;
+	border-color:gray;
+}
+#goods .price .dlv_in {
+	display:block;
+}
+#goods .more {
+	margin:0 10px 0 0;
+	font-size:16px;
+	font-weight:bold;
+	text-align:right;
+	float:right;
+}
+#goods .more {
+	margin:0 10px 3px 0;
+}
+/* -------------盾妬酎・E@1・E力----------- */
+
+#goods .box_1 {
+	margin:10px auto;
+	padding:0;
+	width:622px;
+}
+#goods .box_1 .item {
+	margin:0;
+	padding:0;
+	width:100%;
+}
+#goods .box_1 .photo {
+	width:300px;
+	height:300px;
+	padding:0 5px 0 0;
+	border:0;
+	float:left;
+}
+#goods .box_1 .catch {
+	width:270px;
+	margin:10px;
+	padding:10px;
+	float:left;
+}
+#goods .box_1 .name {
+	width:310px;
+	font-size:20px;
+	margin:0 0 10px 0;
+	padding:0;
+	float:left;
+}
+#goods .box_1 .pricename {
+	margin:10px 0 0 0;
+	padding:0;
+	font-size:16px;
+}
+#goods .box_1 .price {
+	font-size:20px;
+}
+#goods .box_1 .price span {
+	font-size:28px;
+}
+/*#goods .box_1 .price {
+	font-size:28px;
+}
+#goods .box_1 .price span {
+	font-size:20px;
+}*/
+
+/* -------------盾妬酎・E@2・E力----------- */
+#goods .box_2 {
+	margin:10px auto;
+	padding:0;
+	width:644px;
+}
+#goods .box_2 .item {
+	margin:10px;
+	width:300px;
+}
+#goods .box_2 .photo {
+	width:300px;
+	height:300px;
+	border:0;
+}
+#goods .box_2 .catch {
+	width:259px;
+	float:left;
+	margin:10px 10px 0 10px;
+	padding:10px;
+}
+#goods .box_2 .name {
+	width:300px;
+	margin:10px 0 15px 0;
+	float:left;
+	border:0;
+}
+#goods .box_2 .name {
+	font-size:16px;
+}
+#goods .box_2 .price {
+	font-size:16px;
+}
+#goods .box_2 .price span {
+	font-size:25px;
+}
+/*#goods .box_2 .price {
+	font-size:25px;
+}
+#goods .box_2 .name, #goods .box_2 .price span {
+	font-size:16px;
+}*/
+
+
+/* -------------盾妬酎・E@3・E力----------- */
+#goods .box_3 {
+	margin:10px auto;
+	padding:0;
+	width:750px;
+}
+#goods .box_3 .item {
+	margin:7px;
+	width:31.2%;
+}
+#goods .box_3 .photo {
+	width:100%;
+	height:100%;
+	border:0;
+}
+#goods .box_3 .catch {
+	display:none;
+}
+#goods .box_3 .name {
+	font-size:16px;
+}
+#goods .box_3 .price {
+	font-size:16px;
+}
+#goods .box_3 .price span {
+	font-size:25px;
+}
+/*#goods .box_3 .price {
+	font-size:25px;
+}
+#goods .box_3 .name, #goods .box_3 .price span {
+	font-size:16px;
+}*/
+
+/* -------------盾妬酎・E@4・E力----------- */
+#goods .box_4 {
+	margin:10px auto;
+	padding:0;
+	width:720px;
+}
+#goods .box_4 .item {
+	margin:6px;
+	width:166px;
+}
+#goods .box_4 .photo {
+	width:166px;
+	height:166px;
+	border:0;
+}
+#goods .box_4 .catch {
+	display:none;
+}
+#goods .box_4 .name {
+	font-size:14px;
+}
+#goods .box_4 .price {
+	font-size:12px;
+}
+#goods .box_4 .price span {
+	font-size:22px;
+}
+/*#goods .box_4 .price {
+	font-size:22px;
+}
+#goods .box_4 .name, #goods .box_4 .price span {
+	font-size:14px;
+}*
+
+/* -------------盾妬酎・E@5・E力----------- */
+#goods .box_5 {
+	margin:0 auto 40px auto;
+	padding:0;
+	width:720px;
+}
+#goods .box_5 .item {
+	margin:6px;
+	width:130px;
+}
+#goods .box_5 .photo {
+	width:130px;
+	height:130px;
+	border:0;
+}
+#goods .box_5 .catch {
+	display:none;
+}
+#goods .box_5 .name {
+	font-size:12px;
+}
+#goods .box_5 .price {
+	font-size:12px;
+}
+#goods .box_5 .price span {
+	font-size:18px;
+}
+/*#goods .box_5 .price {
+	font-size:18px;
+}
+#goods .box_5 .name, #goods .box_5 .price span {
+	font-size:12px;
+}*/
+
+/* ------------------------------------------------------------
+	フッター
+------------------------------------------------------------ */
+/* -------------新盾妬iframe------------- */
+#web {
+	margin:30px 0;
+	width:740px;
+}
+#web .flame {
+	padding:10px 0 0 0;
+	border:3px solid #BF0000;
+	width:734px;
+	height:440px;
+}
+/* ------------------------------------------------------------
+	ヘッダー
+------------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------
+	幅広・E@・E・・
+------------------------------------------------------------ */
+/* -------------ページ・Eぅ▲Ε・------------ */
+body {
+	margin:0 auto;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+#header, #contents, #footer {
+	margin:20px auto;
+	padding:0;
+	width:1045px;
+	height:auto;
+	background-color:white;
+}
+#contents {
+	margin:20px auto 40px auto;
+}
+#left {
+	margin:0 0 30px 0;
+	width:200px;
+	height:auto;
+	float:left;
+}
+#left-space, #right-space {
+	width:20px;
+	height:auto;
+	float:left;
+}
+#center {
+	width:800px;
+	height:auto;
+	float:left;
+}
+#right {
+	width:205px;
+	float:left;
+}
+/*--------------- ヘッダー 17/2/23 ---------------*/
+
+#gradation {
+    display: inline-block;
+	min-width: 1160px;
+    width: 100%;
+    height: 50px;
+    background-image: url(https://www.rakuten.ne.jp/gold/sanwadirect/img/header/head_bgcolor70.gif);
+    background-repeat: repeat-x;
+    background-size: 50px;
+	margin-top: -40px;
+}
+#top_header {
+    width: 100%;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+#top_header a {
+	text-decoration:none;
+	color:#333;
+}
+
+#top_header_1 {
+	width:100%;
+	background-color:#eee;
+	margin:0;
+	padding:0;
+}
+
+#top_header_1 a {
+	text-decoration:none;
+	color:#333;
+}
+
+
+#header_1045 {
+	width:1045px;
+	margin:0 auto;
+	position:relative;
+	font-size:12px;
+	background-color:#eee;
+}
+#header_1045 h1 {
+	font-size:12px;
+	margin:17px 0 0;
+	padding:0;
+	float:left;
+}
+#header_1045 img {
+	border:none;
+}
+/*--------------- ・E・E・・ッダー fix_header ---------------*/
+#fix_header {
+	box-shadow: 0 5px 10px -6px rgba(0,0,0,.3);
+	display: block;
+	left: 0;
+	height: 38px;
+	margin-top: -1px;
+	position: fixed;
+	top: 55px;
+	width: 100%;
+	z-index: 9998;
+}
+#fix_search {
+	display: block;
+	left: 0;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 99999;
+}
+#rakutenLimitedId_header .riShopHdrArea {
+	height:35px !important;
+	min-height:45px !important;
+}
+
+
+/*--------------- #site_navi ---------------*/
+#site_navi {
+	margin:0;
+	float:right;
+}
+#header_1045 #site_navi li {
+	display:inline-block;
+ *display:inline;
+ *zoom:1;
+	width:auto;
+	font-size:13px;
+	line-height:1;
+	background:url(img/header/head_arrow2.gif) no-repeat 0 50% !important;
+	padding:0 5px 0 10px;
+	margin-top:20px;
+	letter-spacing:1px;
+}
+#header_1045 #site_navi li:first-child {
+	margin-left:44px;
+}
+#header_1045 #site_navi li:last-child {
+	padding-right:0;
+}
+/*--------------- #ttl_area ---------------*/
+#header_1045 #ttl_area {
+	padding:25px 0;
+	line-height:0;
+	clear:both;
+}
+#header_1045 #ttl_area #logo {
+	float:left;
+}
+#header_1045 #ttl_area #icon_area {
+	float:right;
+	text-align:right;
+}
+#header_1045 #ttl_area #icon_area img {
+	margin-left:10px;
+	vertical-align:middle;
+}
+/*--------------- #search_box ---------------*/
+#header_1045 #search_box {
+	padding:0px !important;
+	margin:0 0 20px 0;
+	padding:11px 10px 10px;
+	float:none;
+	display: inline-block;
+}
+
+#header_1045 #search_box a {
+	display:inline-block;
+	padding:5px;
+}
+
+#header_1045 #search_box form {
+	border:1px solid #ababab;
+	margin:0;
+	width:300px;
+	float:left;
+	position:relative;
+}
+#header_1045 #search_box form .textbox {
+	width:252px;
+	height:38px;
+	margin:0;
+	padding:0 0 0 10px;
+	font-size:15px;
+	font-weight:normal;
+	border:none;
+	font-family:"メイリオ", Meiryo, "Hiragino Kaku Gothic ProN", "MS PGothic", sans-serif !important;
+}
+#header_1045 #search_box form .btn {
+	height:auto;
+	vertical-align:top;
+	margin:0;
+	padding:7px;
+	position: absolute;
+    top: 0px;
+    right: 0px;
+	background-color: #fff;
+    cursor: pointer;
+}
+#header_1045 #search_box p {
+	width:96px;
+	margin:10px -5px 0 0;
+	text-align:right;
+	padding:0;
+	display:inline;
+	font-size:14px;
+}
+#header_1045 #search_box ul {
+	letter-spacing: -.4em;
+	margin:4px 0 0 0;
+	padding:0;
+	width:auto;
+	font-size:12px;
+	display:inline-block;
+}
+#header_1045 #search_box li {
+	display:inline-block;
+ *display:inline;
+ *zoom:1;
+	border:1px solid #ababab;
+	padding:0;
+	margin:2px 0 0 2px;
+	background-color:#fff;
+	border-radius: 5px;
+	letter-spacing: normal;
+	-webkit-border-radius: 5px;    /* Safari,Google Chrome用 */
+	-moz-border-radius: 5px;   /* Firefox用 */
+}
+
+#header_1045 #search_box a:hover {
+	background-color:#ababab;
+	color:#fff;
+}
+
+/*#header_1045 #search_box li:after{
+	content:"|";
+	margin:0 3px;
+}
+#header_1045 #search_box li.noborder:after,
+#header_1045 #search_box li:last-child:after{
+	content:" ";
+}*/
+
+#header_1045 .keyword {
+	display:inline-block;
+	letter-spacing:1px;
+	width:542px;
+	text-align:right;
+}
+
+#header_1045 #logo1 {
+    margin-right: 15px;
+}
+
+#header_1045 #logo1 img {
+    width: 344px;
+    margin-top: 5px;
+}
+/*--------------- #cat_navi ---------------*/
+#header_1045 #cat_navi {
+	width:1045px;
+	margin:0 auto;
+	padding:0 0 20px 0;
+}
+#header_1045 #cat_navi ul {
+	letter-spacing: -.4em;
+	margin:0;
+	padding:0;
+	background:#f4f4f4;
+	text-align:left;
+	position:relative;
+}
+#header_1045 #cat_navi li {
+		letter-spacing: normal;
+	display:inline-block;
+ *display:inline;
+ *zoom:1;
+}
+#header_1045 #cat_navi li a {
+	display:block;
+	width:93.9px;
+	height:85px;
+	text-indent:-9999px;
+	border-right:1px solid #cccccc;
+	background-color:#eee !important;
+}
+
+#header_1045 #cat_navi .c01 a {
+	border-left:1px solid #ccc;
+}
+
+#header_1045 #cat_navi #c01_menu a{
+	border-left:none;
+}
+
+
+/*#header_1045 #cat_navi li:first-child a {
+	border-left:1px solid #ccc;
+}*/
+
+#header_1045 #cat_navi li:last-child a {
+	width:95px;
+	border-right:none;
+}
+#header_1045 #cat_navi li.c01 a {background:url(img/header/head_01a.png?a) no-repeat #eee;}
+#header_1045 #cat_navi li.c02 a {background:url(img/header/head_02a.png?a) no-repeat #eee;}
+#header_1045 #cat_navi li.c03 a {background:url(img/header/head_03a.png?a) no-repeat #eee;}
+#header_1045 #cat_navi li.c04 a {background:url(img/header/head_04a.png?a) no-repeat #eee;}
+#header_1045 #cat_navi li.c05 a {background:url(img/header/head_05a.png?a) no-repeat #eee;}
+#header_1045 #cat_navi li.c06 a {background:url(img/header/head_06a.png?a) no-repeat #eee;}
+#header_1045 #cat_navi li.c07 a {background:url(img/header/head_07a.png?a) no-repeat #eee;}
+#header_1045 #cat_navi li.c08 a {background:url(img/header/head_08a.png?a) no-repeat #eee;}
+#header_1045 #cat_navi li.c09 a {background:url(img/header/head_12a.png?a) no-repeat #eee;}
+#header_1045 #cat_navi li.c10 a {background:url(img/header/head_09a.png?a) no-repeat #eee;}
+#header_1045 #cat_navi li.c11 a {background:url(img/header/head_11a.png) no-repeat #eee;}
+#header_1045 #cat_navi li.c01 a:hover {background:url(img/header/head_01a.png?a) no-repeat #ff6000;}
+#header_1045 #cat_navi li.c02 a:hover {background:url(img/header/head_02a.png?a) no-repeat #ff6000;}
+#header_1045 #cat_navi li.c03 a:hover {background:url(img/header/head_03a.png?a) no-repeat #ff6000;}
+#header_1045 #cat_navi li.c04 a:hover {background:url(img/header/head_04a.png?a) no-repeat #ff6000;}
+#header_1045 #cat_navi li.c05 a:hover {background:url(img/header/head_05a.png?a) no-repeat #ff6000;}
+#header_1045 #cat_navi li.c06 a:hover {background:url(img/header/head_06a.png?a) no-repeat #ff6000;}
+#header_1045 #cat_navi li.c07 a:hover {background:url(img/header/head_07a.png?a) no-repeat #ff6000;}
+#header_1045 #cat_navi li.c08 a:hover {background:url(img/header/head_08a.png?a) no-repeat #ff6000;}
+#header_1045 #cat_navi li.c09 a:hover {background:url(img/header/head_12a.png?a) no-repeat #ff6000;}
+#header_1045 #cat_navi li.c10 a:hover {background:url(img/header/head_09a.png?a) no-repeat #ff6000;}
+#header_1045 #cat_navi li.c11 a:hover {background:url(img/header/head_11a.png?a) no-repeat #ff6000;}
+#header_1045 #chair #cat_navi li.c01 a {background:url(img/header/chair_head_1.png) no-repeat #f4f4f4;}
+#header_1045 #chair #cat_navi li.c02 a {background:url(img/header/chair_head_2.png) no-repeat #f4f4f4;}
+#header_1045 #chair #cat_navi li.c03 a {background:url(img/header/chair_head_3.png) no-repeat #f4f4f4;}
+#header_1045 #chair #cat_navi li.c04 a {background:url(img/header/chair_head_4.png) no-repeat #f4f4f4;}
+#header_1045 #chair #cat_navi li.c05 a {background:url(img/header/chair_head_5.png) no-repeat #f4f4f4;}
+#header_1045 #chair #cat_navi li.c06 a {background:url(img/header/chair_head_6.png) no-repeat #f4f4f4;}
+#header_1045 #chair #cat_navi li.c07 a {background:url(img/header/chair_head_7.png?171016) no-repeat #f4f4f4;}
+#header_1045 #chair #cat_navi li.c08 a {background:url(img/header/chair_head_8.png) no-repeat #f4f4f4;}
+#header_1045 #chair #cat_navi li.c09 a {background:url(img/header/chair_head_9.png) no-repeat #f4f4f4;}
+#header_1045 #chair #cat_navi li.c10 a {background:url(img/header/chair_head_10.png) no-repeat #f4f4f4;}
+#header_1045 #chair #cat_navi li.c11 a {background:url(img/header/chair_head_11.png?171022) no-repeat #f4f4f4;}
+#header_1045 #chair #cat_navi li.c01 a:hover {background:url(img/header/chair_head_1.png) no-repeat #ff6000;}
+#header_1045 #chair #cat_navi li.c02 a:hover {background:url(img/header/chair_head_2.png) no-repeat #ff6000;}
+#header_1045 #chair #cat_navi li.c03 a:hover {background:url(img/header/chair_head_3.png) no-repeat #ff6000;}
+#header_1045 #chair #cat_navi li.c04 a:hover {background:url(img/header/chair_head_4.png) no-repeat #ff6000;}
+#header_1045 #chair #cat_navi li.c05 a:hover {background:url(img/header/chair_head_5.png) no-repeat #ff6000;}
+#header_1045 #chair #cat_navi li.c06 a:hover {background:url(img/header/chair_head_6.png) no-repeat #ff6000;}
+#header_1045 #chair #cat_navi li.c07 a:hover {background:url(img/header/chair_head_7.png?171016) no-repeat #ff6000;}
+#header_1045 #chair #cat_navi li.c08 a:hover {background:url(img/header/chair_head_8.png) no-repeat #ff6000;}
+#header_1045 #chair #cat_navi li.c09 a:hover {background:url(img/header/chair_head_9.png) no-repeat #ff6000;}
+#header_1045 #chair #cat_navi li.c10 a:hover {background:url(img/header/chair_head_10.png) no-repeat #ff6000;}
+#header_1045 #chair #cat_navi li.c11 a:hover {background:url(img/header/chair_head_11.png?171022) no-repeat #ff6000;}
+#header_1045 #officeitem #cat_navi li.c01 a {background:url(img/header/office_a.png?180221) no-repeat #f4f4f4;}
+#header_1045 #officeitem #cat_navi li.c02 a {background:url(img/header/office_b.png?180222) no-repeat #f4f4f4;}
+#header_1045 #officeitem #cat_navi li.c03 a {background:url(img/header/office_c.png?180221) no-repeat #f4f4f4;}
+#header_1045 #officeitem #cat_navi li.c04 a {background:url(img/header/office_d.png?180221) no-repeat #f4f4f4;}
+#header_1045 #officeitem #cat_navi li.c05 a {background:url(img/header/office_e.png?180221) no-repeat #f4f4f4;}
+#header_1045 #officeitem #cat_navi li.c06 a {background:url(img/header/office_f.png?180221) no-repeat #f4f4f4;}
+#header_1045 #officeitem #cat_navi li.c07 a {background:url(img/header/office_g.png?180221?171016) no-repeat #f4f4f4;}
+#header_1045 #officeitem #cat_navi li.c08 a {background:url(img/header/office_h.png?180221) no-repeat #f4f4f4;}
+#header_1045 #officeitem #cat_navi li.c09 a {background:url(img/header/office_i.png?180222) no-repeat #f4f4f4;}
+#header_1045 #officeitem #cat_navi li.c10 a {background:url(img/header/office_j.png?180222) no-repeat #f4f4f4;}
+#header_1045 #officeitem #cat_navi li.c11 a {background:url(img/header/chair_head_11.png?180221) no-repeat #f4f4f4;}
+#header_1045 #officeitem #cat_navi li.c01 a:hover {background:url(img/header/office_a.png?180221) no-repeat #ff6000;}
+#header_1045 #officeitem #cat_navi li.c02 a:hover {background:url(img/header/office_b.png?180222) no-repeat #ff6000;}
+#header_1045 #officeitem #cat_navi li.c03 a:hover {background:url(img/header/office_c.png?180221) no-repeat #ff6000;}
+#header_1045 #officeitem #cat_navi li.c04 a:hover {background:url(img/header/office_d.png?180221) no-repeat #ff6000;}
+#header_1045 #officeitem #cat_navi li.c05 a:hover {background:url(img/header/office_e.png?180221) no-repeat #ff6000;}
+#header_1045 #officeitem #cat_navi li.c06 a:hover {background:url(img/header/office_f.png?180221) no-repeat #ff6000;}
+#header_1045 #officeitem #cat_navi li.c07 a:hover {background:url(img/header/office_g.png?180221?171016) no-repeat #ff6000;}
+#header_1045 #officeitem #cat_navi li.c08 a:hover {background:url(img/header/office_h.png?180221) no-repeat #ff6000;}
+#header_1045 #officeitem #cat_navi li.c09 a:hover {background:url(img/header/office_i.png?180222) no-repeat #ff6000;}
+#header_1045 #officeitem #cat_navi li.c10 a:hover {background:url(img/header/office_j.png?180221) no-repeat #ff6000;}
+#header_1045 #officeitem #cat_navi li.c11 a:hover {background:url(img/header/chair_head_11.png?180222) no-repeat #ff6000;}
+
+/*--------------- #cat_navi プ・E瀬Ε・---------------*/
+#header_1045 .subcat_navi {
+	position:absolute;
+	width:175px;
+	height:140px;
+	padding-top:4px;
+	z-index:3;
+	color:#333;
+}
+#header_1045 .subcat_navi ul {
+	border:1px solid #ababab;
+	border-radius:12px;
+}
+#header_1045 #cat_navi li .subcat_navi li {
+	display:block;
+	width:171px;
+	background:rgba(255,255,255,0.9);
+}
+
+#header_1045 #cat_navi li a:hover{
+	background-color:#ccc !important;
+}
+
+#header_1045 #cat_navi .subcat_navi li a:hover {
+	background-color:#fff !important;
+	color:#ababab;
+}
+
+#header_1045 #cat_navi li .subcat_navi li:first-child {
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	border-bottom:1px solid white;
+}
+#header_1045 #cat_navi li .subcat_navi li:last-child {
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	text-align:right !important;
+}
+#header_1045 #cat_navi li:last-child .subcat_navi li {
+	text-align:left !important;
+}
+#header_1045 #cat_navi li .subcat_navi a {
+	display:block;
+	width:145px;
+	height:19px;
+	background:none !important;
+	text-indent:0;
+	text-decoration:none;
+	border-bottom:1px dotted #aaaaaa;
+	padding:8px 12px 0;
+	/*	padding-top:8px;*/
+	border-right:none;
+}
+#header_1045 #cat_navi li .subcat_navi li:last-child a {
+	border-bottom:none;
+	height:21px;
+	padding-top:6px;
+}
+
+#header_1045 #cat_navi .subcat_navi li:first-child a:hover {
+	border-radius:15px 15px 0 0;
+}
+
+
+#header_1045 #cat_navi li .subcat_navi li:last-child a:hover {
+	border-radius:0 0 15px 15px;
+}
+
+/* index.html用 */
+#header_1045 #cat_navi.index .c01 #c01_menu {visibility:hidden; top:84px; left:0px;}
+#header_1045 #cat_navi.index .c02 #c02_menu {visibility:hidden; top:84px; left:95px;}
+#header_1045 #cat_navi.index .c08 #c08_menu {visibility:hidden; top:84px; left:285px;}
+#header_1045 #cat_navi.index .c09 #c09_menu {visibility:hidden; top:84px; left:380px;}
+#header_1045 #cat_navi.index .c10 #c10_menu {visibility:hidden; top:84px; left:470px;}
+#header_1045 #cat_navi.index .c03 #c03_menu {visibility:hidden; top:84px; left:190px;}
+#header_1045 #cat_navi.index .c04 #c04_menu {visibility:hidden; top:84px; left:285px;}
+#header_1045 #cat_navi.index .c05 #c05_menu {visibility:hidden; top:84px; left:380px;}
+#header_1045 #cat_navi.index .c06 #c06_menu {visibility:hidden; top:84px; left:470px;}
+#header_1045 #cat_navi.index .c07 #c07_menu {visibility:hidden; top:84px; left:569px;}
+#header_1045 #cat_navi.index .c08 #c08_menu {visibility:hidden; top:84px; left:664px;}
+#header_1045 #cat_navi.index .c09 #c09_menu {visibility:hidden; top:84px; left:759px;}
+#header_1045 #cat_navi.index .c10 #c10_menu {visibility:hidden; top:84px; left:854px;}
+#header_1045 #cat_navi.index .c11 #c11_menu {visibility:hidden; top:84px; left:949px;}
+/* 2階層慢頻 */
+#header_1045 #cat_navi .c01 #c01_menu {visibility:hidden; top:85px; left:0px;}
+#header_1045 #cat_navi .c02 #c02_menu {visibility:hidden; top:85px; left:95px;}
+#header_1045 #cat_navi .c03 #c03_menu {visibility:hidden; top:85px; left:190px;}
+#header_1045 #cat_navi .c04 #c04_menu {visibility:hidden; top:85px; left:285px;}
+#header_1045 #cat_navi .c05 #c05_menu {visibility:hidden; top:85px; left:380px;}
+#header_1045 #cat_navi .c06 #c06_menu {visibility:hidden; top:85px; left:470px;}
+#header_1045 #cat_navi .c07 #c07_menu {visibility:hidden; top:85px; left:569px;}
+#header_1045 #cat_navi .c08 #c08_menu {visibility:hidden; top:85px; left:664px;}
+#header_1045 #cat_navi .c09 #c09_menu {visibility:hidden; top:85px; left:759px;}
+#header_1045 #cat_navi .c10 #c10_menu {visibility:hidden; top:85px; left:854px;}
+#header_1045 #cat_navi .c11 #c11_menu {visibility:hidden; top:85px; left:949px;}
+#header_1045 #cat_navi .c01:hover #c01_menu, #header_1045 #cat_navi .c02:hover #c02_menu, #header_1045 #cat_navi .c03:hover #c03_menu, #header_1045 #cat_navi .c04:hover #c04_menu, #header_1045 #cat_navi .c05:hover #c05_menu, #header_1045 #cat_navi .c06:hover #c06_menu, #header_1045 #cat_navi .c07:hover #c07_menu, #header_1045 #cat_navi .c08:hover #c08_menu, #header_1045 #cat_navi .c09:hover #c09_menu, #header_1045 #cat_navi .c10:hover #c10_menu, #header_1045 #cat_navi .c11:hover #c11_menu {
+	visibility:visible;
+	z-index:9999;
+}
+/*--------------- #bnr_area ---------------*/
+#bnr_area {
+	display:inline-block;
+	margin:0 auto 20px;
+	text-align:center;
+}
+
+#bnr_area ul {
+	display:inline-block !important;
+	margin:0;
+	padding:0;
+	list-style-type:none !important;
+	width:1045px !important;
+}
+#header_1045 #bnr_area .bnr_col {
+	display:none;
+}
+#bnr_area li {
+	display:inline-block !important;
+ *display:inline;
+ *zoom:1;
+	width:49.7%;
+	vertical-align:top;
+	text-align:center;
+	list-style-type:none !important;
+}
+#bnr_area li:first-child {
+	margin-right:5px;
+}
+
+
+#bnr_area li:nth-child(2) {
+	text-align:right;
+}
+
+
+/*--------------- #お知らせ ---------------*/
+#top_news {
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+	margin-bottom:20px;
+}
+
+#top_news .news_text{
+	font-size:12px;
+	letter-spacing:1.2px;
+	color:#333;
+	margin:8px 0 8px 8px;
+}
+
+#top_news a {
+	text-decoration:none;
+	color:#333;
+}
+
+#top_news .title {
+	display: inline-block;
+    color: #bf0000;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#top_news .date {
+	display:inline-block;
+}
+
+#header_news {
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+	margin:0 auto 20px;
+	width:1045px;
+}
+
+#header_news a {
+	text-decoration:none;
+	color:#333;
+}
+
+#header_news .title {
+	display: inline-block;
+    color: #bf0000;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#header_news .date {
+	display:inline-block;
+	margin-right:15px;
+}
+
+#header_news .news_text,
+#top_news .news_text {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+/*--------------- clearboth ---------------*/
+#header_1045 #ttl_area:after, #header_1045 #search_box:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+/*--------------- フッター 16/2/23 ---------------*/
+/* -------------フッターバナー------------ */
+#bnr_341 {
+	margin:0;
+ *margin:0;
+ *zoom:1;
+	padding:0;
+}
+#bnr_341:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#bnr_341 li {
+	float:left;
+	list-style:none;
+	width:341px;
+	margin:0 0 10px;
+}
+#bnr_341 li:nth-child(3n-1) {
+	margin:0 10px 10px;
+}
+/* -------------カテゴリー亥風（#foot）------------- */
+#category_link {
+	width:1039px;
+	border:3px solid #FF6000;
+	margin:30px 0;
+}
+#category_link #contents {
+	width:999px;
+	margin:0;
+	padding:20px;
+}
+#category_link #contents .col {
+	display:table-cell;
+	width:199px;
+	vertical-align:top;
+	margin:0;
+	padding:0 10px;
+	border-right:1px dotted #666666;
+}
+#category_link #contents .col:last-child {
+	border-right:none;
+	width:206px;
+}
+#category_link #contents .col h3 {
+	margin:0 0 3px;
+	padding:0;
+	font-size:14px;
+	line-height:25px;
+	text-indent:20px;
+}
+/*#category_link #contents .col h3:first-child{
+	border-top:none;
+}*/
+#category_link #contents .col h3 a {background:url(img/arrow.gif) no-repeat 7px 8px;
+	background-color:#FFF5CE;
+	display:block;
+	width:100%;
+	height:25px;
+	line-height:1.9;
+}
+#category_link #contents .col ul {
+	margin:0 0 20px;
+	padding:0;
+	list-style-image:none;
+	list-style-position:inside;
+	border-bottom:1px dotted #666666;
+}
+#category_link #contents .col ul:last-child {
+	border-bottom:none;
+}
+#category_link #contents .col li {
+	margin:0;
+	padding:0;
+	font-size:12px;
+	list-style-type:none;
+	text-indent:5px!important;
+	line-height:1.6em;
+}
+#category_link #contents .col li span {
+	color:#bbbbbb;
+}
+#category_link #contents .col li.list_link {
+	text-align:right;
+	margin-right:1em;
+	margin-bottom:10px;
+}
+/* -------------店服腰・+------------ */
+#shop_sanwa {
+	width:1045px;
+	margin:10px 0 0 0;
+	padding:0;
+}
+#shop_sanwa img {
+	width:1045px;
+	height:268px;
+}
+/* -------------丁・E抹・・------------ */
+#order_flow {
+	width:1045px;
+	margin:10px 0;
+	padding:0;
+	line-height:1.7em;
+	font-size:14px;
+	text-align:center;
+}
+#order_flow h2 {
+	background-color:#cc0001;
+	color:white;
+	text-align:center;
+	font-size:18px;
+	padding:3px 0;
+	margin-bottom:0;
+}
+/* -------------インフォメーショ・E----------- */
+#info {
+	margin:0;
+	padding:0;
+	height:920px;
+	font-size:12px;
+	line-height:1.4em;
+	border:3px solid #ff6000;
+}
+#info .contents {
+	padding:0;
+	width:313px;
+	float:left;
+}
+#info .contents:nth-of-type(1) {
+	margin:0 5px 0 20px;
+}
+#info .contents:nth-of-type(2) {
+	margin:10px 9px 0;
+	padding:0 15px 0;
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+}
+#info .contents:nth-of-type(2) h3:first-child {
+	margin-top:0;
+}
+#info .contents:nth-of-type(3) {
+	margin:0 20px 0 5px;
+}
+#info .box {
+	margin:0 0 30px 0;
+	padding:0;
+}
+#info h2 {
+	margin:0;
+	padding:3px 0 0 0;
+	height:22px;
+	background-color:#ff6000;
+	font-size:14px;
+	color:white;
+	text-align:center;
+}
+#info h3 {
+	margin:10px 0;
+	padding:3px;
+	font-size:12px;
+	background-color:#f5f5f5;
+	border:1px solid #CCC;
+}
+#info h4 {
+	margin:10px 0 0 0;
+	padding:0;
+	font-size:12px;
+}
+#info p {
+	margin:5px;
+	padding:0;
+}
+#info .red {
+	color:red;
+}
+#info .red strong {
+	font-size:14px;
+}
+#info .cal {
+	width:170px;
+	height:100px;
+	background-color:#DDD;
+}
+#info .cal th {
+	background-color:#CCC;
+}
+#info .cal td {
+	background-color:white;
+}
+#info .cal .holiday {
+	background-color:#FFCCFF;
+}
+#info .holiday-ico {
+	color:#FFCCFF;
+}
+/* -------------インフォメーショ・E160513～------------ */
+#footer_info {}
+#footer_info h2 {
+	margin:0 0 10px;
+	padding:5px 10px 2px 10px;
+	background-color:#ff6000;
+	font-size:20px;
+	color:white;
+	text-align:center;
+}
+#footer_info .col3 h3 {
+	margin:0;
+	padding:10px 10px 7px 10px;
+	background:#777777;
+	color:#ffffff;
+	font-size:16px;
+	line-height:1;
+}
+#footer_info .col3 h4 {
+	margin:10px 0 5px;
+	line-height:1;
+}
+#footer_info .col3 {
+	display:inline-block;
+	vertical-align:top;
+}
+#footer_info .col3:nth-of-type(1) {
+	margin:0;
+	width:342px;
+}
+#footer_info .col3:nth-of-type(2) {
+	margin:0 7px;
+	width:334px;
+}
+#footer_info .col3:nth-of-type(3) {
+	margin:0;
+	width:343px;
+}
+#footer_info .col3 .column {
+	margin:0 0 10px;
+	background:#f5f5f5;
+}
+/*-----メ・E泪・船腑し・・{タン表ｦｖ榊・E----
+#footer_info .col3 .column#freemail{
+	padding-bottom:54px;
+}
+#footer_info .col3 .column#return{
+	padding-bottom:5px;
+}*/
+/*-----メ・E泪・船腑し・・{タン・E\ｦｖ榊・E----*/
+#footer_info .col3 .column#freemail {
+	padding-bottom:59px;
+}
+#footer_info .col3 .column#return {
+	padding-bottom:43px;
+}
+#footer_info .col3 .column#mailmaga {
+	padding-bottom:0px;
+}
+/*-----top メ・E泪・船腑し・・{タン・E\ｦｖ榊・E----*/
+#footer_info.for_top .col3 .column#freemail {
+	padding-bottom:65px;
+}
+#footer_info.for_top .col3 .column#return {
+	padding-bottom:13px;
+}
+#footer_info.for_top .col3 .column#mailmaga {
+	padding-bottom:0px;
+}
+#footer_info .col3 .column .inner {
+	padding:10px 20px 7px;
+	font-size:12px;
+	line-height:1.5;
+}
+#footer_info .col3 .column .inner p {
+	margin:5px 0 10px;
+}
+#footer_info .col3 .column#mailmaga .inner p:nth-of-type(2) {
+	margin:10px 0 5px;
+}
+#footer_info .col3 .column#mailmaga .inner p:nth-of-type(3) {
+	margin:5px 0 10px;
+}
+#footer_info .col3 .column#delivery .inner p.left:nth-of-type(5), #footer_info .col3 .column#delivery .inner p.left:nth-of-type(9), #footer_info .col3 .column#delivery .inner p.left:nth-of-type(10), #footer_info .col3 .column#inquiry .inner p.left:nth-of-type(1) {
+	margin:5px 0;
+}
+#footer_info .col3 .column#pay .inner table {
+	margin-top:-5px;
+}
+#footer_info .red {
+	color:red;
+}
+#footer_info .red strong {
+	font-size:14px;
+}
+#footer_info .holiday-ico {
+	color:#FF0000;
+}
+/* -------------・�凍・モ・・訊・E艨oナー------------- */
+.matomegai {
+	position:fixed;
+	bottom:-133px;
+	left:50%;
+	margin-left:-370px;
+	z-index:9999;
+}
+.matomegai_obi {
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:41px;
+	z-index:9999;
+}
+.matomegai_banner {
+	width:100%;
+	height:70px;
+	margin-bottom:10px;
+	text-align:center;
+	min-width:740px;
+}
+/* ------------------------------------------------------------
+	・E侫肇淵坏
+------------------------------------------------------------ */
+/*--------------- ・E侫肇淵埖 ---------------*/
+#category {
+	margin:0 0 15px 0;
+}
+#now_category h2, #category h2, #staff_report h2, #soy_info h2, #category_link h2 {
+	margin:0;
+	padding:3px 0 0 0;
+	height:22px;
+	background-color:#ff6000;
+	font-size:14px;
+	color:white;
+	text-align:center;
+}
+#now_category h2 {
+	background-color:#C30300;
+}
+#now_category, #category {
+	width:198px;
+	height:auto;
+	border:1px solid #CCC;
+}
+#now_category {
+	padding-bottom:0px !important;
+	margin-bottom:10px !important;
+	display:none;
+}
+#now_category h3, #category h3 {
+	margin:5px 0 0 0;
+	padding:5px 0 0 0;
+	font-size:14px;
+	line-height:25px;
+	text-indent:20px;
+	border-top:1px dotted #CCC;
+}
+#now_category h3 a, #category h3 a {
+	background-image:url(img/left_bg.gif);
+	display:block;
+	width:178px;
+	height:25px;
+}
+#now_category div div:nth-child(1) h3:nth-child(1), #category h2 + h3 {
+	border-top:none;
+}
+#now_category h3:last-child, #category h3:last-child {
+	padding-bottom:5px;
+}
+#now_category ul, #category ul {
+	margin:0;
+	padding:0;
+	list-style-image:none;
+	list-style-position:inside;
+}
+#now_category li, #category li {
+	font-size:12px;
+	list-style-type:none;
+	text-indent:5px!important;
+	line-height:1.6em;
+}
+#now_category li span, #category li span {
+	color:#bbbbbb;
+}
+#now_category li.list_link, #category li.list_link {
+	text-align:right;
+	margin-right:1em;
+}
+#now_category h3 a, #category h3 a {background:url(img/lefticon_cat.jpg) no-repeat;
+	background-size:30px auto;
+	padding:2px 0 0 20px;
+	height:30px;
+	width:177px;
+}
+#now_category ul, #category ul {
+	padding-left:10px;
+}
+#now_category h3, #category h3 {
+	padding:10px 0;
+	margin:0;
+}
+#now_category li, #category li {
+	background:url(img/left_bg.gif) no-repeat;
+	background-position-y:-3px;
+}
+#now_category li a, #category li a {
+	padding-left:20px;
+}
+#now_category li.list_link, #category li.list_link {
+	background-image:none;
+	margin:10px 1em 15px;
+}
+.left_memory a {background-position:5px -6px !important;
+}
+.left_ink a {background-position:5px -848px !important;
+}
+.left_peripheral a {background-position:5px -249px !important;}
+.left_accessory a {background-position:5px -307px !important;}
+.left_desk a {background-position:5px -606px !important;}
+.left_desk a {background-position:5px -606px !important;}
+.left_chair a {background-position:5px -664px !important;}
+.left_mobile a {background-position:5px -66px !important;}
+.left_car a {background-position:5px -1269px !important;}
+.left_bicycle a {background-position:5px -1203px !important;}
+.left_camera a {background-position:5px -371px !important;}
+.left_tvacc a {background-position:5px -427px !important;}
+.left_tap a {background-position:5px -964px !important;}
+.left_zakka a {background-position:5px -788px !important;}
+.left_youshi a {background-position:5px -904px !important;}
+.left_office a {background-position:5px -728px !important;}
+.left_cable a {background-position:5px -1084px !important;}
+.left_lan a {background-position:5px -1150px !important;}
+.left_pcparts a {background-position:5px -1025px !important;}
+.left_smartphone a {background-position:5px -66px !important;}
+.left_tablet a {background-position:5px -128px !important;}
+
+
+.other a {
+	background-image:none !important;
+	padding:6px 0 0px 14px !important;
+	border-bottom:none !important;
+}
+#left_tokusyuu {
+	width:198px;
+	height:auto;
+	border:1px solid #ccc;
+	margin-bottom:10px;
+}
+#left_tokusyuu h2 {
+	margin:0;
+	padding:3px 0 0 0;
+	height:22px;
+	background-color:#ff6000;
+	font-size:14px;
+	color:white;
+	text-align:center;
+}
+#left_tokusyuu ul {
+	list-style-image:none;
+	padding:15px 10px 0px;
+	margin:0;
+}
+#left_tokusyuu li {
+	background:url(img/left_bg.gif) no-repeat;
+	list-style-type:none;
+	font-size:12px;
+	font-weight:bold;
+	background-position-y:-4px;
+	padding-bottom:5px;
+}
+#left_tokusyuu li a {
+	padding-left:22px;
+}
+#left_tokusyuu .list_link {
+	text-align:right;
+	background-image:none;
+	font-weight:normal;
+	margin:5px 1em 15px;
+	padding:0;
+}
+/* -------------・E侫肇淵咤窰・・・瑞・150513～------------ */
+#osusume {
+	background:#bf0000;
+	width:190px;
+	height:auto;
+	font-size:12px;
+	text-align:center;
+	padding:0 5px 5px 5px;
+	margin:0 0 20px;
+}
+#osusume .ttl {
+	font-size:14px;
+	padding:4px 0;
+	font-weight:bold;
+	color:#FFFFFF;
+	line-height:1.5;
+}
+#osusume .item {
+	background:#FFFFFF;
+	padding:10px;
+	margin:0;
+}
+#osusume .item img {
+	width:170px;
+	height:170px;
+	border:0;
+	margin:0 0 5px 0;
+}
+#osusume .item .mailmaga img {
+	width:auto;
+	height:auto;
+}
+#osusume .item .price_s {
+	font-weight:bold;
+	font-family:Verdana;
+	color:#FF0000;
+	margin:2px 0 0 0;
+}
+#osusume .item .price span {
+	font-size:16px;
+}
+#osusume .item .mailmaga {
+	margin:8px 0 0;
+	padding:0;
+}
+#osusume .item .mailmaga img {
+	margin:0;
+	padding:0;
+}
+/*--------------- ・E侫肇淵啀晙丱福・ ---------------*/
+#banner {
+	margin:0 0 20px 0;
+}
+#banner ul {
+	margin:0;
+	padding:0;
+}
+#banner li {
+	margin:0 0 15px;
+	padding:0;
+	list-style-type:none;
+	line-height:0;
+}
+#banner li a {
+	line-height:1;
+}
+#banner img {
+	margin:0;
+	padding:0;
+	/*width:200px;*/
+border:0;
+}
+/* -------------・E侫肇淵埖GOODA------------ */
+.gooda_img {
+	margin-bottom:0 !important;
+}
+.gooda_img img {
+	margin:0 !important;
+}
+.gooda_txt {
+	background:#000000;
+	text-align:center;
+	line-height:1.1;
+	padding:8px 0 !important;
+	margin-bottom:6px;
+}
+.gooda_txt a {
+	color:#ffffff;
+	font-size:12px;
+}
+/*--------------- ・E侫肇淵咼好織奪侫・檗璽・16/9/21  ---------------*/
+#banner #staff_report {
+	margin-top:10px;
+	border:1px solid #cccccc;
+	font-size:12px;
+	line-height:1.5 !important;
+}
+#banner #staff_report h2 {
+	margin-bottom:5px;
+}
+#banner #staff_report h3 {
+	color:#3C90D4;
+	font-size:12px;
+	margin:0 5px;
+}
+#banner #staff_report .photo {
+	padding:0 5px;
+	float:left;
+	width:45%;
+}
+#banner #staff_report .photo img {
+	width:100%;
+	margin-bottom:5px;
+}
+#banner #staff_report .caption {
+	padding:0 5px 0 0;
+	font-size:11px;
+}
+#banner #staff_report hr {
+	border:0;
+	border-bottom:1px dashed #cccccc;
+	margin:0px 3px 5px;
+	padding:2px 0 0;
+	clear:both;
+}
+#banner #staff_report:after {
+	content: ".";
+	height: 0;
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+/*--------------- 店服咲・E・---------------*/
+#soy_info {
+	margin-top:10px;
+	border:1px solid #cccccc;
+	line-height:1.5 !important;
+}
+#soy_info {
+	padding:5px;
+	vertical-align:middle;
+}
+#soy_info h2 {
+	margin-bottom:5px;
+}
+#soy_info h3 {
+	color:#3C90D4;
+	font-size:14px;
+	margin:0 0 5px 0;
+	padding:0 0 2px 0;
+	border-bottom:1px dotted #cccccc;
+	text-align:center;
+}
+#soy_info .photo {
+	width:75px;
+	padding:0 5px;
+	float:left;
+}
+#soy_info .photo img {
+	width:70px;
+}
+#soy_info .caption {
+	padding:0 4px 0 0;
+	font-size:11px;
+}
+#soy_info .clearfix:after {
+	content:" ";
+	display:block;
+	clear:both;
+}
+/* ------------------------------------------------------------
+	フッター
+------------------------------------------------------------ */
+/* -------------カテゴリー亥風（#foot）------------- */
+#category_link {
+	width:1039px;
+	border:3px solid #FF6000;
+	margin:30px 0;
+}
+#category_link #contents {
+	width:999px;
+	margin:0;
+	padding:20px;
+}
+#category_link #contents .col {
+	display:table-cell;
+	width:199px;
+	vertical-align:top;
+	margin:0;
+	padding:0 10px;
+	border-right:1px dotted #666666;
+}
+/*#category_link #contents .col:last-child{
+	border-right:none;
+	width:206px;
+}*/
+
+#category_link #contents .col h3 {
+	margin:0 0 3px;
+	padding:0;
+	font-size:14px;
+	line-height:25px;
+	text-indent:20px;
+}
+/*#category_link #contents .col h3:first-child{
+	border-top:none;
+}*/
+#category_link #contents .col h3 a {background:url(img/arrow.gif) no-repeat 7px 8px;
+	background-color:#FFF5CE;
+	display:block;
+	width:100%;
+	height:25px;
+	line-height:1.9;
+}
+#category_link #contents .col ul {
+	margin:0 0 20px;
+	padding:0;
+	list-style-image:none;
+	list-style-position:inside;
+	border-bottom:1px dotted #666666;
+}
+#category_link #contents .col ul:last-child {
+	border-bottom:none;
+}
+#category_link #contents .col li {
+	margin:0;
+	padding:0;
+	font-size:12px;
+	list-style-type:none;
+	text-indent:5px!important;
+	line-height:1.6em;
+}
+#category_link #contents .col li span {
+	color:#bbbbbb;
+}
+#category_link #contents .col li.list_link {
+	text-align:right;
+	margin-right:1em;
+	margin-bottom:10px;
+}
+#category_link.frame {
+	border:none;
+	margin: 0 auto;
+	width:1045px;
+}
+/* -------------楽天アイコ・E----------- */
+#icon {
+	margin:20px 10px 15px;
+	padding:0;
+	text-align:center;
+}
+#icon ul {
+	margin:0;
+	padding:0;
+	font-size:12px;
+}
+#icon li {
+	margin:0;
+	padding:0 3px;
+	list-style-type:none;
+	display:inline;
+}
+#icon li img {
+	width:23px;
+	height:14px;
+	border:0;
+}
+#icon ul:after {
+	content: ".";
+	height: 0;
+	clear: both;
+	display: block;
+	visibility: hidden;
+}
+/* -------------コピーライト------------ */
+#copy {
+	margin:0 0 20px 0;
+	padding:0;
+	font-size:12px;
+	text-align:center;
+}
+/* -------------楽天カ・E鵐澄・------------ */
+table.calbase_rakuten * {
+	font-size: 98%;
+	color: #000000;
+}
+table.calbase_rakuten th {
+	height:22px;
+	background-color: #CCCCCC;
+	text-align: center;
+	border:1px solid black;
+}
+table.calframe_rakuten {
+	border:1px solid #DDDDDD;
+	border-collapse: collapse;
+	margin-bottom: 2px;
+}
+table.calframe_rakuten th {
+	border:1px solid #DDDDDD;
+	height:22px;
+	background-color: #CCCCCC;
+	text-align: center;
+}
+table.calframe_rakuten td {
+	border:1px solid #DDDDDD;
+	background-color: #FFFFFF;
+	width:23px;
+	height:22px;
+	text-align: center;
+}
+tr.weektitle_rakuten td {
+	background-color: #CCCCCC;
+}
+table.event_rakuten {
+	word-break: break-all;
+}
+td.event1day_rakuten {
+	background-color: #FFCCFF !important;
+}
+font.event1day_rakuten {
+	color: #FFCCFF;
+}
+td.event2day_rakuten {
+	background-color: #FFFFFF !important;
+}
+font.event2day_rakuten {
+	color: #FFFFFF;
+}
+td.event3day_rakuten {
+	background-color: #FFFFFF !important;
+}
+font.event3day_rakuten {
+	color: #FFFFFF;
+}
+
+
+
+/* -------------あｔ�・・я鋤L齟佻-----------
+#offerNotification,
+#offerNotificationBtn,
+#offerNotificationBtn:hover{
+	display:none !important
+}
+ */
+
+
+
+/* -------------スマホ・E囲------------ */
+@media (min-width:600px) {
+.pc_none {
+	display:none;
+}
+}
+/* -------------PC・E囲------------ */
+@media (max-width:599px) {
+.smp_none {
+	display:none;
+}
+}
+/* -------------セー・E右・E艨^ブバナーー------------- */
+div#sale_tabbnr {
+	position:fixed;
+	/*	top:265px;*/
+	top:0px;
+	right:0;
+	width:104px;
+	height:158px;
+	text-align:center;
+	width:102px;
+	border:2px solid #cccccc;
+	border-right:none;
+	border-radius:8px 0 0 8px/8px 0 0 8px;
+	background:#ffff99;
+	line-height:0.9;
+	z-index:110;
+	display:none;
+}
+div#sale_tabbnr a {
+	display:block;
+	padding:7px;
+	text-decoration:none !important;
+}
+div#sale_tabbnr span:nth-of-type(1) {
+	color:#FF4D8B;
+	font-weight:bold;
+	font-size:12px;
+}
+div#sale_tabbnr span:nth-of-type(2) {
+	text-decoration:underline!important;
+	font-size:11px;
+	font-weight:bold;
+}
+div#sale_tabbnr a img {
+	padding:0 0 3px 0;
+	border:none;
+}
+#sale_tab_frame {
+	position:fixed;
+	top:668px;
+	right:0;
+	width:104px;
+	height:162px;
+}
+/* -------------右タブバナー------------- */
+#tabbnr {
+	display:block;
+	width:130px;
+	position:fixed !important;
+	position:absolute;
+	top:130px;
+	right:0px;
+	z-index:999999;
+}
+* html #tabbnr {
+	position:absolute;
+	top:50px;
+	right:0%;
+}
+#tabbnr iframe {
+	position:fixed;
+	top:130px;
+	right:0px;
+	width:126px;
+	height:70px;
+}
+#floatMenu ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+#floatMenu li {
+	font-size:16px;
+	padding-bottom: 10px;
+}
+#floatMenu li img {
+	vertical-align: bottom;
+}
+/* -------------右・E・o・Eoナー------------- */
+#slide_bnr {
+	position:fixed;
+	top:150px;
+	right:0;
+	margin-right:-150px;
+	z-index:9999999999 !important;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+}
+#slide_bnr:hover {
+	margin-right:0px;
+}
+#slide_bnr img {
+	border:0;
+}
+/* -------------右タブバナー 兆尅ｆﾍ------------ */
+#tabbnr_img {
+	position:fixed;
+	top:130px;
+	right:0;
+	width:100px;
+	height:165px;
+}
+#tabbnr_img img {
+	border:0;
+}
+.sale_item, .tokusyu {
+	position:fixed;
+	top:616px;
+	right:0;
+}
+/*.sub {
+	position:fixed;
+	top:475px !important;
+	right:0;
+}
+*/
+.timesale {
+	position:fixed;
+	top:157px !important;
+	left:-12px;
+}
+.sale_item img, .tokusyu img {
+	width:125px;
+	height:125px;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+	margin:0 0 0 5px;
+	border:1px solid #ccc;
+}
+.absolute {
+	position: absolute;
+	bottom:-11px !important;
+	color: #fff;
+	background: red;
+	width: 100%;
+	max-width: 125px;
+	padding: 3px 0;
+	font-size:12px;
+	margin-left:6px;
+	text-align:center;
+	font-weight:bold;
+	border-bottom-left-radius:10px;
+}
+.sale {
+	position:relative;
+}
+.sub .absolute, .timesale .absolute {
+	bottom:-20px !important;
+}
+.absolute p {
+	margin: 0;
+	padding: 0 0.8em;
+	font-size: 150%;
+	text-align: center;
+}
+@media only screen and (max-width:1300px) {
+.sale_item {
+	display:none !important;
+}
+.tokusyu {
+	display:none !important;
+}
+#douji01 {
+	display:none !important;
+}
+}
+/* ------------------------------------------------------------
+	頻・E・・X・E・霜拾
+------------------------------------------------------------ */
+/* 瀦・E・/
+#tabbnr {
+	display:none;
+}
+div#douji01 {
+	display:block;
+	top:560px !important;
+}
+#douji_slide_frame, div#kinitsu {
+	display:block !important;
+}
+ @media screen and (max-width: 1280px) {
+#tabbnr, #douji01 {
+	display:block;
+}
+div#kinitsu, #douji_slide_frame, #slide_bnr {
+	display:block !important;
+}
+}
+/*イベント・
+
+div#douji01{
+	display:block;
+	top:560px !important;
+}
+
+#tabbnr{display:block;}
+
+
+#douji_slide_frame,
+div#kinitsu,
+#tabbnr_img,
+#slide_bnr{
+	display:none !important;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:960px){
+#smp_tab {
+	display:none !important;
+}
+}
+@media screen and (max-width:959px){
+
+#tabbnr {
+	display:none !important;
+}
+
+#smp_tab {
+	display:block;
+	position:fixed;
+	top:75px;
+	right:0;
+	z-index:9999999;
+}
+}
+*/
+
+/* ヘッダー・フッター*/
+#header_1 {
+	margin:0 0 0 0;
+	padding:0;
+	width:100% !important;
+	height:385px; /*通・108px*/
+	background-color:#eee;
+	z-index:99999;
+
+}
+
+#header_2 {
+	padding:0 0 0 0;
+	width:100%;
+	height:278px;
+	background-color:white;
+}
+#left {
+	margin:0 20px 0 0;
+	padding:0;
+	width:200px;
+	height:8623px;
+	float:left;
+}
+#foot {
+	margin:20px 0 0 0;
+	padding:0;
+	width:1045px;
+	height:3580px;
+	background-color:white;
+}
+/* RMS用 */
+#header_1.for_rms {}
+
+#header_frame {
+	min-width: 1160px;
+	width: 100%;
+	z-index: 99999;
+}
+
+#header_2.for_rms {
+	margin-top:0px;
+}
+#left.for_rms {
+	margin:12px 0 0 0
+}
+#foot.for_rms {}
+/* トップ用 */
+#left.for_top {
+	height:6400px;
+}
+/* フッター用 */
+
+#footer_item {
+	width: 1045px;
+	padding: 0px 10px;
+}
+#footer_bnr {
+	width: 980px;
+	padding: 3em 0 1em;
+}
+#footer_item .footeritem_wrap {
+	padding: 5px auto;
+	color: #fff;
+	text-align: center;
+	width:100%;
+	text-align:center;
+	display:inline-block;
+}
+#footer_item .footeritem_wrap li {
+	list-style: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#footer_item .footeritem_wrap li a {
+	text-decoration: none;
+	color:#252525;
+	display: block;
+	width: 84px;
+	height: 92px;
+	position:relative;
+	background-size:78px 85px;
+	background-repeat:no-repeat;
+	background-position: center bottom
+}
+#footer_item .footeritem_wrap li a:hover {
+	background-size:84px 92px;
+	background-repeat:no-repeat;
+}
+#footer_item .footeritem_wrap a {
+	display: block;
+	position: relative;
+	width: 84px;
+	height: 92px;
+	padding: 5px;
+	background: #FFFFFF;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
+	-ms-transition: 0.2s;
+	transition: 0.2s;
+}
+ @media (max-width:599px) {
+#fix_search {
+	margin-top:-50px;
+}
+
+#rank5 ul,
+.rank_iframe {
+	margin: 0 auto;
+	padding: 0;
+	width: 360px;
+}
+
+.rank_iframe iframe {
+	width: 360px;
+}
+
+.price span {
+	font-family: "Verdana", "Arial", "Helvetica";
+}
+
+}
+
+@media screen and (min-width: 395px) and (max-device-width: 500px) {
+#rank5 ul,
+.rank_iframe {
+	width: 390px;
+}
+.rank_iframe iframe {
+	width: 390px;
+}
+}
+
+@media screen and (max-width: 321px){
+#rank5 ul,
+.rank_iframe {
+	width: 310px;
+}
+.rank_iframe iframe {
+	width: 310px;
+}
+}
