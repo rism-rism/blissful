@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no, email=no, address=no">
+  <title>ハンディファン特集　楽天市場</title>
+  <link rel="stylesheet" href="./css/bootstrap.custom.min.css">
+  <link rel="stylesheet" href="./css/slick.min.css">
+  <link rel="stylesheet" href="./css/slick-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../js/common/jquery-1.10.2.min.js"><\/script>')</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script src="./js/jquery.csv.js"></script>
+  <script>
+    $(function () {
+      $.ajax({
+        url: '../inner/csv/taihei.csv',
+        success: function (data) {
+          // csvを配列に格納
+          var shop = 'taiheisj1';
+          var temp = 'tempA'
+          var csvList = $.csv()(data);
+          // 挿入するHTMLを作成
+          for (var i = 0; i < csvList.length; i++) {
+            var insertA =
+              '<div class="col-sm-4 col-xs-6">' +
+              '<p class="item_images"><a href="https://item.rakuten.co.jp/' + shop + '/' + csvList[i][1] + '/" target="_parent"><img src="https://uper.jp/' + temp + '/' + csvList[i][1] + '.jpg"></a></p>' +
+              '<p class="item_tag">' + csvList[i][5] + '</p>' +
+              '<p class="item_name">' + csvList[i][2] + '</p>' +
+              '<p class="item_price">' + csvList[i][4] + '<span style="font-size:70%">(税込)</span></p>' +
+              '</div>';
+            var insertE =
+              '<div class="col-sm-4 col-xs-6">' +
+              '<p class="item_images"><a href="https://item.rakuten.co.jp/' + shop + '/' + csvList[i][1] + '/" target="_parent"><img src="https://uper.jp/' + temp + '/' + csvList[i][1] + '.jpg"></a></p>' +
+              '<p class="item_tag">' + csvList[i][5] + '</p>' +
+              '<p class="item_name">' + csvList[i][2] + '</p>' +
+              '<p class="item_price">' + csvList[i][4] + '<span style="font-size:70%">(税込)</span></p>' +
+              '</div>';
+            var target;
+            if (csvList[i][0] === "加湿ファン") {
+              target = '#c01';
+              $(target).append(insertA);
+            } else if (csvList[i][0] === "キャンプファン") {
+              target = '#c03';
+              $(target).append(insertE);
+            } else if (csvList[i][0] === "ハンズフリー") {
+              target = '#c04';
+              $(target).append(insertE);
+            } else if (csvList[i][0] === "卓上置き") {
+              target = '#c05';
+              $(target).append(insertE);
+            } else if (csvList[i][0] === "クリップファン") {
+              target = '#c06';
+              $(target).append(insertE);
+            } else if (csvList[i][0] === "腰掛けファン") {
+              target = '#c07';
+              $(target).append(insertE);
+            } else if (csvList[i][0] === "RKウェアラブルファン") {
+              target = '#c08';
+              $(target).append(insertE);
+            } else {
+              target = '#drama';
+            }
+            // targetへ追加
+
+          }
+        }
+
+      });
+    });
+  </script>
+  <style>
+    .sec_white {
+      background-color: #fff;
+    }
+
+    .m_fixed {
+      position: fixed;
+      width: 100%;
+      background: #fff;
+      top: 0;
+      z-index: 999;
+    }
+
+    .item_tag {
+      position: absolute;
+      top: -10px;
+      left: -5px;
+      background: #006934;
+      font-size: 11px;
+      color: #fff;
+      padding: 5px 8px;
+      border-radius: 15px;
+    }
+
+    h2.topicsmainfull {
+      position: relative;
+      font-size: 20px;
+      color: #1e6b90;
+      height: 80px;
+      padding: 0px 0 0 80px;
+      margin-bottom: 30px !important;
+      margin-top: 50px !important;
+      border-bottom: solid #5be7ff 3px;
+      background: url(./images/icon_01.gif) no-repeat;
+      background-position: left;
+      line-height: 1.2em;
+    }
+
+    @media (min-width:480px) {
+      h2.topicsmainfull {
+        position: relative;
+        font-size: 24px;
+        color: #1e6b90;
+        height: 80px;
+        padding: 20px 0 0 80px;
+        margin-bottom: 30px !important;
+        margin-top: 50px !important;
+        border-bottom: solid #5be7ff 3px;
+        background: url(./images/icon_01.gif) no-repeat;
+        background-position: left;
+        line-height: normal;
+      }
+
+    }
+
+    #page_header {
+      border-bottom: 1px solid #ccc;
+    }
+
+    .item_name {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      line-height: 1.5em;
+      max-height: 4.5em;
+    }
+
+    .sub_title {
+      font-size: 18px;
+      font-weight: normal;
+      padding: 5px 5px 5px 10px;
+      margin: 30px 0 15px 0;
+      background: #ffffff;
+      border-left: solid #000 0px;
+      border-bottom: 1px dashed #828282;
+
+    }
+
+    #category_menu h4 {
+      padding: 10px 0px 10px 0px;
+      font-weight: bold;
+      font-size: 14px;
+      border-bottom: 1px solid #cccccc;
+      margin-top: 10px;
+    }
+
+    #category_menu li {
+      position: relative;
+      width: calc(100%/4);
+      float: left;
+      padding: 0;
+      text-align: center;
+
+    }
+
+    #category_menu a:hover li {
+      background: #000066;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="page_header"></header>
+
+  <section>
+    <div class="inner row">
+      <div class="col-sm-4 col-xs-4"><img src="./images/top_img_01.jpg"></div>
+      <div class="col-sm-4 col-xs-4"><img src="./images/top_img_02.jpg"></div>
+      <div class="col-sm-4 col-xs-4"><img src="./images/top_img_03.jpg"></div>
+      <p class="col-sm-12">暑い日に外へ出かけるときも涼しく移動したい、オフィスのデスクで使えるくらいコンパクトな扇風機があれば…、電源がない場所でも扇風機を使いたい！
+        そんな時には小型の扇風機がおすすめです。おしゃれなデザインでコンパクト、さらに持ち運びができるものも多く、様々なシチュエーションで快適に過ごすためのサポートしてくれます。
+        種類も充実しており、アロマトレー付など個性的な機能や特長をもった商品も多数。あなたに最適な1台を見つけてみてください。</p>
+    </div>
+  </section>
+  <section class="sec_white global-nav">
+    <div class="inner">
+      <ul id="category_menu" class=" inner">
+        <a href="#fan04">
+          <li>
+            <h4>クリップタイプ<br>挟むだけで済む</h4>
+          </li>
+        </a>
+        <a href="#fan01">
+          <li>
+            <h4>キャンプファン<br>アウトドア最適</h4>
+          </li>
+        </a>
+        <a href="#fan02">
+          <li>
+            <h4>ハンズフリー<br>両手を解放</h4>
+          </li>
+        </a>
+        <a href="#fan03">
+          <li>
+            <h4>卓上置き型<br>大風量 低騒音</h4>
+          </li>
+        </a>
+
+      </ul>
+    </div>
+  </section>
+  <div class="clearfix"></div>
+
+  <section class="">
+    <div class="inner row">
+      <h2 class="topicsmainfull">2022新登場!「 Cool × Humidifier　 STYLE（加湿機能付きファン）」</h2>
+      <img src="./images/cool.jpg">
+      <p class="">暑い日に外へ出かけるときも涼しく移動したい、従来の扇風機と比べると、加湿機能で空気を潤って、快適な夏を過ごせます</p>
+      <h3 class="text">対象商品</h3>
+      <div id="c01"></div>
+    </div>
+  </section>
+
+  <div class="clearfix"></div>
+
+  <section id="fan04">
+    <div class="inner row">
+      <h3 class="sub_title">クリップタイプファン</h3>
+      <div class="col-sm-4 col-xs-6"><img src="./images/img_04.jpg"></div>
+      <div class="col-sm-8 col-xs-6">
+        クリップタイプの卓上扇風機は、机の角やふちにクリップを挟んで使うことができるので、作業スペースを邪魔せず設置できるのがメリット。<br>
+        また、クリップタイプの多くは卓上タイプを兼ねているものが多く、2WAYとして考えても使い勝手がよくなっています。
+      </div>
+      <div class="clearfix"></div>
+      <h3 class="text">対象商品</h3>
+      <div id="c06"></div>
+    </div>
+  </section>
+  <section class="sec_gray" id="fan01">
+    <div class="inner row">
+      <h3 class="sub_title">キャンプファン</h3>
+      <div class="col-sm-4 col-xs-6"><img src="./images/img_01.jpg"></div>
+      <div class="col-sm-8 col-xs-6">
+        手を使わず首にかけるだけで風を運んでくれる画期的な扇風機です。両手が自由になり、通勤通学や運動の時など、荷物にならずに使えるので利便性が抜群です。見た目もデザイン性の高いものが多く、ベービーカーを押しているときや荷物が多いときに便利です。パワーが強いダブルファンやストラップ付き首かけ可能の多機能タイプもあります。
+      </div>
+      <div class="clearfix"></div>
+      <h3 class="text">対象商品</h3>
+      <div id="c03"></div>
+    </div>
+  </section>
+  <div class="clearfix"></div>
+
+
+  <section id="fan02">
+    <div class="inner row">
+      <h3 class="sub_title">ハンズフリーファン</h3>
+      <div class="col-sm-4 col-xs-6"><img src="./images/img_02.jpg"></div>
+      <div class="col-sm-8 col-xs-6">
+        手を使わず首にかけるだけで風を運んでくれる画期的な扇風機です。両手が自由になり、通勤通学や運動の時など、荷物にならずに使えるので利便性が抜群です。見た目もデザイン性の高いものが多く、ベービーカーを押しているときや荷物が多いときに便利です。パワーが強いダブルファンやストラップ付き首かけ可能の多機能タイプもあります。
+      </div>
+      <div class="clearfix"></div>
+      <h3 class="text">対象商品</h3>
+      <div id="c04"></div>
+    </div>
+  </section>
+  <div class="clearfix"></div>
+
+  <section id="fan03" class="sec_gray">
+    <div class="inner row">
+      <h3 class="sub_title">卓上置きタイプファン</h3>
+      <div class="col-sm-4 col-xs-6"><img src="./images/img_03.jpg"></div>
+      <div class="col-sm-8 col-xs-6">
+        デスクや足元に置くなら「卓上型」がおすすめです。オフィスはもちろん、コンパクトタイプなので、エアコンがないキッチン、トイレ、作業場にも最適です。オフィスで迷惑にならない静音タイプ、風量に調整できるタイプ、マグネット搭載でスチールの壁面に取り付けできるタイプなど様々なタイプがあります。
+      </div>
+      <div class="clearfix"></div>
+      <h3 class="text">対象商品</h3>
+      <div id="c05"></div>
+    </div>
+  </section>
+  <div class="clearfix"></div>
+
+
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+
+  <script>
+    //PartsLoad
+    $(function () {
+      $("#header").load("./header.html");
+      $("#footer").load("./footer.html");
+      $("#mainbody").load("./mainbody.html");
+      $("#leftnavi").load("./leftnavi.html");
+      $("#event").load("./event.html");
+      $("#mainbody").load("./mainbody.html");
+      $("#page_header").load("./page_header.html");
+      $("#sp_header").load("./sp_header.html");
+    });
+    $(function () {
+      // #で始まるリンクをクリックした場合
+      $('a[href^="#"]').click(function () {
+        // スクロールの速度
+        let speed = 400;
+        // スクロールタイプ
+        let type = 'swing';
+        // href属性の取得
+        let href = $(this).attr("href");
+        // 移動先の取得（hrefが#indexならトップ$(html)に、）
+        let target = $(href == "#index" ? 'html' : href);
+        // 移動先のポジション取得
+        let position = target.offset().top;
+        // animateでスムーススクロール
+        $('body,html').animate({ scrollTop: position }, speed, type);
+        return false;
+      });
+    });
+    //スクロールしたら　ヘッダー固定します
+    jQuery(window).on('scroll', function () {
+      if (150 < jQuery(this).scrollTop()) { // 1000px以上スクロールしたら
+        jQuery('.global-nav').addClass('m_fixed');
+      } else {
+        jQuery('.global-nav').removeClass('m_fixed');
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>扇風機関連商品</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="./css/bootstrap.custom.min.css" rel="stylesheet" type="text/css">
+
+  <script>
+
+    $(function() {
+        $.ajax({
+            url : './csv/inner.csv',
+            success : function(data) {
+                // csvを配列に格納
+                var shop= 'taiheisj1';
+                var temp= 'tempC'
+                var csvList = $.csv()(data);
+                // 挿入するHTMLを作成
+                for (var i = 0; i < csvList.length; i++) {
+                    var insert =
+                    '<div class="col-sm-4 col-xs-5ths">'+
+                      '<p class="item_images"><a href="https://item.rakuten.co.jp/' + shop +'/' + csvList[i][0] + '/" target="_parent"><img src="https://uper.jp/' + temp + "/" + csvList[i][1] + '.jpg"></a></p >'+
+                      '<p class="item_name">'+ csvList[i][2] + '</p>'+
+                      '<span class="tags">'+ csvList[i][5] + '</span>'+
+                      '<p class="item_price"><span class="en">販売価格：</span>' + csvList[i][3] + '<span class="en">円（税込）</span></p>' +
+                    '</div>';
+
+                    var insertD =
+                    '<div class="col-sm-3 col-xs-6">'+
+                        '<p class="item_images"><a href="https://item.rakuten.co.jp/' + shop +'/' + csvList[i][0] + '/" target="_parent"><img src="https://uper.jp/' + temp + "/" + csvList[i][1] + '.jpg"></a></p>'+
+                        '<p class="item_name">'+ csvList[i][2] + '</p>'+
+                        '<span class="tags">' + csvList[i][5] + '</span>' +
+                        '<p class="item_price"><span class="en">販売価格：</span>' + csvList[i][3] + '<span class="en">円（税込）</span></p>' +
+                    '</div>';
+
+                    var insertE =
+                      '<div class="col-sm-3 col-xs-6">' +
+                      '<p class="item_images"><a href="https://item.rakuten.co.jp/' + shop + '/' + csvList[i][1] + '/" target="_parent"><img src="https://uper.jp/' + temp + "/" + csvList[i][1] + '.jpg"></a></p >' +
+                      // '<p class="item_name">' + csvList[i][2] + '</p>' +
+                      // '<span class="tags">' +  '</span>' +
+                      '<span class="item_tag1">' + csvList[i][6] + '</span>' +
+                      '<span class="item_tag2">' + csvList[i][7] + '</span>' +
+                      '<p class="item_price"><span class="en">販売価格：</span>' + csvList[i][3] + '<span class="en">円（税込）</span></p>' +
+                      '</div>';
+
+                      var insertF =
+                        '<div class="col-sm-3 col-xs-6">' +
+                        '<p class="item_images"><a href="https://item.rakuten.co.jp/' + shop + '/' + csvList[i][1] + '/" target="_parent"><img src="https://uper.jp/' + temp + "/" + csvList[i][1] + '.jpg"></a></p >' +
+                        // '<p class="item_name">' + csvList[i][2] + '</p>' +
+                        // '<span class="tags">' +  '</span>' +
+                        '<span class="item_tag1">' + csvList[i][6] + '</span>' +
+                        '<span class="item_tag2">' + csvList[i][7] + '</span>' +
+                        '<p class="item_price"><span class="en">販売価格：</span>' + csvList[i][3] + '<span class="en">円（税込）</span></p>' +
+                        '</div>';
+
+                    var target;
+                    if (csvList[i][0] === "冷風扇inner1") {
+                        target = '#A01';
+                        $(target).append(insertE);
+                    }
+
+                    else if (csvList[i][0] === "タワーファンinner3") {
+                        target = '#A02';
+                        $(target).append(insertF);
+                    }
+
+                    else {
+                        target = '#drama';
+                    }
+                    // targetへ追加
+
+                }
+            }
+
+        });
+    });
+  </script>
+
+  <style>
+
+    .title01{
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+      margin: 0 auto;
+      font-size: 20px;
+      font-weight: bold;
+      background: #add;
+      color:#000;
+      margin-bottom: 20px;
+      border-bottom:1px solid #ccc;
+      font-weight: bold;
+      margin-top:20px;
+    }
+
+  .item_name {
+      margin-top: 10px;
+      overflow: hidden;
+      white-space: nowrap;
+      word-break: keep-all;
+      text-overflow: ellipsis;
+  }
+
+  .item_price{
+    display: block;
+    margin: 2px 4px;
+    font-size: 18px;
+  }
+
+  .tags{
+    background-image: url("./images/asuraku-icon.png") ;
+    background-repeat:  no-repeat;
+    background-size:contain;
+    display: block;
+    width:80%;
+    height:60px;
+  }
+
+  .item_tag1{
+    width:100%;
+    display: inline-block;
+    background-color: #f0ad4e;
+    color:#fff;
+    font-size:16px;
+    text-align: center;
+    letter-spacing: inherit;
+    font-weight: bold;
+    padding:2px 4px;
+    border-radius: 2px;
+    margin-top: 5px;
+  }
+
+    .item_tag2{
+      width:100%;
+      display: inline-block;
+      background-color: #46b8da;
+      color:#fff;
+      font-size:16px;
+      text-align: center;
+      letter-spacing: inherit;
+      font-weight: bold;
+      padding:2px 4px;
+      border-radius: 2px;
+      margin-top: 5px;
+    }
+
+</style>
+
+  <body>
+
+    <section class="sc_white">
+
+        <div class="inner">
+          <div class="col-sm-12"><p class="title01">2022年新型冷風機・冷風扇</p></div>
+          <div id="A01"></div>
+          <div class="clearfix"></div>
+        </div>
+
+    </section>
+
+    <script src="./js/jquery.csv.js"></script>
+    <script src="./js/takasyou.js"></script>
+
+
+
+</body>
+</html>
