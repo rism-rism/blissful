@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>アウトドア関連商品一覧</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="./css/bootstrap.custom.min.css" rel="stylesheet" type="text/css">
+  <link href="./css/slick-theme.css" rel="stylesheet" type="text/css">
+  <link href="./css/slick.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./css/frontpage_rakuten.css">
+  <link rel="stylesheet" href="./css/my.css">
+  <link rel="stylesheet" href="./css/icon-style.css">
+  <script src="./js/script.js"></script>
+
+  <style>
+  .item_price{
+    text-align: left;
+    margin: 5px 0 20px 0;
+  }
+  .title01{
+    color: #000;
+    margin: 0 auto;
+    font-size: 15px;
+    margin-bottom: 20px;
+    border-bottom:1px solid #ccc;
+    font-weight: bold;
+    margin-top:40px;
+  }
+  .big_titlle {
+      line-height: 10px;
+      margin-top: 15px;
+      margin-bottom: 40px;
+  }
+  .center {
+    text-align: center;
+}
+.item_name {
+    margin-top: 10px;
+}
+</style>
+  <body>
+    <!--headerの読み込み-->
+    <header id="header"></header>
+    <!--headerの読み込み-->
+
+    <section class="sc_white">
+        <div class="inner">
+          <table>
+            <tr>
+              <p class="title01">この商品の他のタイプ</p>
+            </tr>
+              <div id="A01" class="noleft noright"></div>
+          </table>
+            <div class="clearfix"></div>
+          <table>
+            <tr>
+              <p class="title01">この商品を買った人はこれも</p>
+            </tr>
+              <div id="A02" class="noleft noright"></div>
+          </table>
+            <div class="clearfix"></div>
+          <table>
+            <tr>
+              <p class="title01">あなたにおすすめの商品</p>
+              <div id="A03" class="noleft noright"></div>
+            </tr>
+          </table>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="./js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="./js/jquery.csv.js"></script>
+    <script>
+      loadHtml("./","/header","#header"); //headerの読み込み
+      loadHtml("./","/event","#event"); //sidebarの読み込み
+      loadHtml("./","/footer","#footer"); //footerの読み込み
+      loadHtml("./","/header","#search_keyword","#keywords");
+    </script>
+    <script>
+
+      $(function() {
+          $.ajax({
+              url : '../inner/csv/taihei.csv',
+              success : function(data) {
+                  // csvを配列に格納
+                  var shop= 'taiheisj1';
+                  var csvList = $.csv()(data);
+                  // 挿入するHTMLを作成
+                  for (var i = 0; i < csvList.length; i++) {
+                      var insert =
+                      '<div class="col-sm-5ths col-xs-5ths">'+
+                        '<p class="item_images"><a href="https://item.rakuten.co.jp/' + shop +'/' + csvList[i][1] + '/" target="_parent"><img src="' + csvList[i][4] + '"></a></p >'+
+                        '<p class="item_name">'+ csvList[i][2] + '</p>'+
+                        '<span class="tags">'+ csvList[i][5] + '</span>'+
+                        '<p class="item_price"><span class="no_en">' + csvList[i][3] + '</span><span class="en">円</span></p>'+
+                      '</div>';
+                      var insertD =
+                      '<div class="col-sm-4 col-xs-4">'+
+                          '<p class="item_images"><a href="https://item.rakuten.co.jp/' + shop +'/' + csvList[i][1] + '/" target="_parent"><img src="' + csvList[i][4] + '"></a></p>'+
+                          '<p class="item_name">'+ csvList[i][2] + '</p>'+
+                          '<p class="item_price">' + csvList[i][3] + '円(税込)</p>'+
+                      '</div>';
+
+
+                      var target;
+                      if (csvList[i][0] === "d他のタイプ") {
+                          target = '#A01';
+                          $(target).append(insert);
+                      }
+
+                      else if (csvList[i][0] === "d買った") {
+                          target = '#A02';
+                          $(target).append(insert);
+                      }
+
+                      else if (csvList[i][0] === "zpおすすめ") {
+                          target = '#A03';
+                          $(target).append(insert);
+                      }
+
+
+                      // targetへ追加
+
+                  }
+              }
+
+          });
+      });
+    </script>
+
+     <script>
+      $(function() {
+      $(".tabC a").click(function() {
+        $(this).parent().addClass("current").siblings(".current").removeClass("current");
+        var tabContents = $(this).attr("href");
+        $(tabContents).addClass("current").siblings(".current").removeClass("current");
+        return false;
+      });
+      });
+      </script>
+
+
+
+    <script>
+      $(window).on('load', function(){
+        //複数表示（レスポンシブ）
+        $(function() {
+          $('.multiple-item').slick({
+            infinite: true,
+            dots:true,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            responsive: [{
+              breakpoint: 768,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+              }
+            },{
+              breakpoint: 480,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                }
+              }
+            ]
+          });
+        });
+        //複数表示（レスポンシブ）
+        $(function() {
+          $('.multiple-item4').slick({
+            infinite: true,
+            dots:true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [{
+              breakpoint: 768,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+              }
+            },{
+              breakpoint: 480,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                }
+              }
+            ]
+          });
+        });
+      });
+    </script>
+
+  </body>
+</html>

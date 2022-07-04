@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no, email=no, address=no">
+  <title></title>
+  <link rel="stylesheet" href="./css/bootstrap.custom.min.css">
+  <script type="text/javascript" src="./js/jquery-1.11.3.js"></script>
+  <script>
+    $(function() {
+        $.ajax({
+            url : './csv/taihei.csv',
+            success : function(data) {
+                // csvを配列に格納
+                var shop= 'taiheisj1';
+                var temp= 'tempC'
+                var csvList = $.csv()(data);
+                // 挿入するHTMLを作成
+                for (var i = 0; i < csvList.length; i++) {
+                    var insert =
+                    '<div class="col-sm-5ths col-xs-4">'+
+                        '<a href="https://store.shopping.yahoo.co.jp/' + shop +'/' + csvList[i][1] + '.html" target="_top"><img src="https://uper.jp/' + temp + '/' + csvList[i][1] + '.jpg"></a></p>'+
+                        '<p class="item_name">'+ csvList[i][2] + '</p>'+
+                        '<p class="item_price">' + csvList[i][3] + '(税込)</p>'+
+                    '</div>';
+                    var insertE =
+                    '<div class="col-sm-4 col-xs-4">'+
+                    '<div class="item_rank">NO.' + csvList[i][6] + '</div>'+
+                    '<p class="item_images"><a href="https://item.rakuten.co.jp/' + shop +'/' + csvList[i][1] + '/" target="_parent"><img src="https://uper.jp/' + temp + '/' + csvList[i][1] + '.jpg"></a></p>'+
+                    '<p class="item_price">' + csvList[i][4] + '(税込)</p>'+
+                    '</div>';
+                    var insertD =
+                    '<div class="col-sm-5ths' + csvList[i][6] + ' col-xs-5ths' + csvList[i][6] + '">'+
+                    '<div class="item_rank'+' rank_'+csvList[i][6]+'">NO.' + csvList[i][6] + '</div>'+
+                    '<p class="item_images"><a href="https://item.rakuten.co.jp/' + shop +'/' + csvList[i][1] + '/" target="_parent"><img src="https://uper.jp/' + temp + '/' + csvList[i][1] + '.jpg"></a></p>'+
+                    '<p class="item_price">' + csvList[i][4] + '(税込)</p>'+
+                    '</div>';
+                    var target;
+                    if (csvList[i][0] === "") {
+                        target = '#c01';
+                        $(target).append(insert);
+                    }else if (csvList[i][0] === "RKリビング扇風機") {
+                        target = '#c03';
+                        $(target).append(insertE);
+                    }else if (csvList[i][0] === "RKサーキュレーター") {
+                        target = '#c04';
+                        $(target).append(insertE);
+                    }else if (csvList[i][0] === "RKタワーファン") {
+                        target = '#c05';
+                        $(target).append(insertE);
+                    }else if (csvList[i][0] === "RK冷風扇") {
+                        target = '#c06';
+                        $(target).append(insertE);
+                    } else if (csvList[i][0] === "RKハンディファン") {
+                        target = '#c07';
+                        $(target).append(insertE);
+                    }else if (csvList[i][0] === "RKウェアラブルファン") {
+                        target = '#c08';
+                        $(target).append(insertE);
+                    }else {
+                        target = '#drama';
+                    }
+                    // targetへ追加
+
+                }
+            }
+
+        });
+    });
+  </script>
+
+</head>
+<body>
+
+
+
+<section>
+  <div class="inner row">
+    <div class="title_moji_big"><img src="./images/king.png" width="40" style="margin-right:15px;margin-bottom:8px;">RANKING</div>
+    <div class="col-sm-12">
+      <input id="tabE01" type="radio" name="tabE_item" checked=""><label class="tabE_item" for="tabE01">リビング扇風機</label>
+      <input id="tabE02" type="radio" name="tabE_item"><label class="tabE_item" for="tabE02">ｻｰｷｭﾚｰﾀｰ</label>
+      <input id="tabE04" type="radio" name="tabE_item"><label class="tabE_item" for="tabE04">冷風機</label>
+      <input id="tabE03" type="radio" name="tabE_item"><label class="tabE_item" for="tabE03">ﾀﾜ-ﾌｧﾝ</label>
+      <input id="tabE05" type="radio" name="tabE_item"><label class="tabE_item" for="tabE05">ｳｪｱﾗﾌﾞﾙﾌｧﾝ</label>
+      <input id="tabE06" type="radio" name="tabE_item"><label class="tabE_item" for="tabE06">ﾊﾝﾃﾞｨﾌｧﾝ</label>
+      <div class="tabE_content bk_2 tabE1" id="tabE01_content">
+        <div class="row">
+            <div id="c03"></div>
+            <div class="clearfix"></div>
+        </div>
+        <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000666/"target="_top"><p class="all">すべてを見る</p></a>
+      </div>
+
+      <div class="tabE_content bk_2" id="tabE02_content">
+        <div class="row">
+            <div id="c04"></div>
+            <div class="clearfix"></div>
+        </div>
+        <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000777/"target="_top"><p class="all">すべてを見る</p></a>
+      </div>
+
+      <div class="tabE_content bk_2" id="tabE03_content">
+        <div class="row">
+            <div id="c05"></div>
+            <div class="clearfix"></div>
+        </div>
+        <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000778/"target="_top"><p class="all">すべてを見る</p></a>
+      </div>
+
+      <div class="tabE_content bk_2" id="tabE04_content">
+        <div class="row">
+            <div id="c06"></div>
+            <div class="clearfix"></div>
+        </div>
+        <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000900/"target="_top"><p class="all">すべてを見る</p></a>
+      </div>
+
+      <div class="tabE_content bk_2" id="tabE05_content">
+        <div class="row">
+            <div id="c07"></div>
+            <div class="clearfix"></div>
+        </div>
+        <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000656/"target="_top"><p class="all">すべてを見る</p></a>
+      </div>
+
+      <div class="tabE_content bk_2" id="tabE06_content">
+        <div class="row">
+            <div id="c08"></div>
+            <div class="clearfix"></div>
+        </div>
+        <a href="https://item.rakuten.co.jp/taiheisj1/c/0000000780/"target="_top"><p class="all">すべてを見る</p></a>
+      </div>
+
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</section>
+<script src="./js/jquery.csv.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="./js/takasyou.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,2516 @@
+@charset 'EUC-JP';
+/* CSS Document */
+body {margin:0; padding:0;}
+
+
+/* -------------販売説明文(回遊 一覧表)------------- */
+
+#compare {
+margin:20px 0 10px;
+padding:0;
+}
+#compare .acadapter {height:710px;/* ----ACアダプター比較表---- */}
+#compare .acadapter_pd {height:558px;/* ----ACアダプターPD比較表---- */}
+#compare .airduster {height:810px;/* ----エアダスター比較表---- */}
+#compare .alpha_lons_firstbag {height:3500px;/* ----アルファ・ファーストダウン・ロンズデールラインナップ---- */}
+#compare .alphabag {height:660px;/* ----ALPHAバッグ比較表---- */}
+#compare .bag_3way {height:1090px;/* ----3wayバッグ---- */}
+#compare .battery {height:1040px;/* ----モバイルバッテリー---- */}
+#compare .bc-311_310 {height:250px;/* ----BCI311/310インク---- */}
+#compare .bc-341_340 {height:300px;/* ----BC341/340インク---- */}
+#compare .bci-321_320 {height:608px;/* ----BCI321/320インク---- */}
+#compare .bci-326_325 {height:790px;/* ----BCI326/325インク---- */}
+#compare .bci-351_350 {height:920px;/* ----BCI351/350インク---- */}
+#compare .bci-371_370 {height:570px;/* ----BCI371/370インク---- */}
+#compare .bci-9_7e {height:615px;/* ----BCI9/7eインク---- */}
+#compare .bicycle {height:2150px;/* ----自転車アイテムラインナップ---- */}
+#compare .bouhan {height:1760px;/* ----防犯カメラ比較表---- */}
+#compare .bt_transmitter {height: 720px;}
+#compare .btkey {height:3080px;/* ----BTキーボード---- */}
+#compare .btsp {height:1100px;/* ----Bluetoothスピーカー---- */}
+#compare .bucketseatchair {height:1900px;/* ----バケットシートチェアラインナップ---- */}
+#compare .cabinetdesk{height: 450px;/* --- キャビネットデスクラインナップ　---- */}
+#compare .cable_usbex {height:1390px;/* ----USB延長ケーブル---- */}
+#compare .cablebox{height: 1665px;/* ----ケーブルボックスラインナップ　---- */}
+#compare .cableholder{height: 2130px;/* ----ケーブルホルダーラインナップ　---- */}
+#compare .cabletray {height: 1670px;/* ----ケーブルトレイ---- */}
+#compare .camstand {height:3700px;/* ----カメラスタンド---- */}
+#compare .cdbox{height: 1475px;/* ----CDボックスケースラインナップ　---- */}
+#compare .cdcase {height:1420px;/* ----CDケース---- */}
+#compare .chair_relux {height:780px;/* ----リラックスチェア---- */}
+#compare .chairmat {height:990px;/* ----チェアマット---- */}
+#compare .chair-mat{height: 1500px;/* ----チェアマットラインナップ　---- */}
+#compare .conversion_a{height: 2985px;/* ----変換アダプタ・ケーブルラインナップ---- */}
+#compare .d_partition{height: 1720px;/* ----デスクパーティションラインナップ　---- */}
+#compare .desk {height:736px;/* ----デスク回遊---- */}
+#compare .desk-atoduke {height: 2000px;/* ----デスク後付アイテムラインナップ　---- */}
+#compare .desk-oyakudachi {height: 4060px;/* ----デスク周りのお役立ちラインナップ---- */}
+#compare .desksearch1045 {height:215px;/* ----デスク絞り込み検索1045ー---- */}
+#compare .desksearch740 {height:165px;/* ----デスク絞り込み検索740ー---- */}
+#compare .dist_display {height:1330px;/* ----ディスプレイ分配器---- */}
+#compare .dist_display2 {height:890px;/* ----HDMI分配器---- */}
+#compare .dogstation {height: 1200px;/* ----ドッキングステーション---- */}
+#compare .driver800tk {height: 900px;/* ----ドライバー---- */}
+#compare .driverecorder {height:740px;/* ----ドライブレコーダーー---- */}
+#compare .ergomou {height:370px;/* ----エルゴノミクスマウス---- */}
+#compare .eventspe {height:690px;/* ----イベントスピーカー---- */}
+#compare .filewagon {height:2200px;/* ----ファイルワゴンラインナップ---- */}
+#compare .filmscan {height:900px;/* ----フィルムスキャナー比較表---- */}
+#compare .footrest {height:1120px;/* ----フットレスト---- */}
+#compare .fujin {height:380px;/* ----空調風神服比較表---- */}
+#compare .gameitem{height: 2361px;/* ---ゲーミング インテリア ラインナップ　---- */}
+#compare .gamingitem{height: 1300px;/* ----ゲーミンググッズラインナップ　---- */}
+#compare .handy_cln{height: 1490px;/* ---ハンディクリーナーラインナップ　---- */}
+#compare .hdmi {height: 1200px;/* ----HDMIケーブル---- */}
+#compare .hdmicable {height:1300px;/* ----HDMIケーブル---- */}
+#compare .hdmicable {height:1780px;/* ----HDMIケーブル---- */}
+#compare .headset {height: 2490px;}
+#compare .hikidasi_desk{height: 1100px;/* ----引き出し付きデスクラインナップ　---- */}
+#compare .hll5{height: 500px;/* ----500-hll5ラインナップ　---- */}
+#compare .hls5{height: 500px;/* ----500-hls5ラインナップ　---- */}
+#compare .hss5-6{height: 900px;/* ----500-hss5-6ラインナップ　---- */}
+#compare .ic50 {height:520px;/* ----IC50インク---- */}
+#compare .ic70 {height:590px;/* ----IC70インク---- */}
+#compare .ic80 {height:440px;/* ----IC80インク---- */}
+#compare .intchair {height:1700px;/* ----インテリアチェアラインナップ---- */}
+#compare .iphoneusb {height:530px;/* ----600-iplシリーズ---- */}
+#compare .ip_backup {height:1570px;/* ----iPhoneiPadバックアップラインナップ---- */}
+#compare .jd {height: 610px;}
+#compare .jdlite {height: 475px;}
+#compare .jpbag {height: 2200px;/* ----日本製バッグラインナップ　---- */}
+#compare .kakutyoudesk {height: 896px;}
+#compare .kenbikyo {height:1070px;/* ----デジタル顕微鏡一覧表---- */}
+#compare .keyboard {height:1750px;/* ----キーボード比較表---- */}
+#compare .kijoudai {height:1140px;/* ----机上台---- */}
+#compare .laminator {height:560px;/* ----ラミネーター比較表---- */}
+#compare .laptoptable {height:1705px;/* ----ひざ上テーブルラインナップ---- */}
+#compare .laserpoint {height:987px;/* ----レーザーポインター一覧表---- */}
+#compare .laserpointer {height:1290px;/* ----グリーンレーザーポインター---- */}
+#compare .laserprinter {height:1500px;/* ----LEDライトラインナップ---- */}
+#compare .ledlight {height:1620px;/* ----レーザープリンターラインナップ---- */}
+#compare .lightning{height: 1420px;/* ----Lightningケーブルラインナップ　---- */}
+#compare .loudspe {height:1340px;/* ----ポータブル拡声器---- */}
+#compare .loupe {height:1060px;/* ----ルーペ比較表---- */}
+#compare .lowdesk {height:800px;/* ----ローデスク比較表---- */}
+#compare .mediaplayer {height:680px;/* ----メディアプライヤー---- */}
+#compare .memory_sd {height:1650px;/* ----SDカード---- */}
+#compare .meshchair {height:720px;/* ----メッシュチェア比較表---- */}
+#compare .mokume{height: 1400px;/* ----木目アイテムラインナップ　---- */}
+#compare .moniarm {height:1870px;/* ----モニターアーム---- */}
+#compare .moniarm_2 {height:1250px;/* ----モニターアーム一覧表---- */}
+#compare .monirac {height:944px;/* ----机上台---- */}
+#compare .moniterue {height: 1730px;}
+#compare .monitorback {height:1020px;/* ----モニター裏ラック---- */}
+#compare .mouse {height:1640px;/* ----マウス---- */}
+#compare .mp3 {height:600px;/* ----MP3プレーヤー比較表---- */}
+#compare .nerareru {height:1215px;/* ----寝られるチェア---- */}
+#compare .naturalwood {height:1000px;/* ----天然木シリーズ---- */}
+#compare .op_100-sv001 {height:365px;/* ----100-sv001---- */}
+#compare .op_100-sv002 {height:535px;/* ----100-sv002---- */}
+#compare .osouji {height:410px;/* ----お掃除モップ---- */}
+#compare .parti {height:920px;/* ----パーティション---- */}
+#compare .pjs {height:500px;/* ----プロジェクタースクリーン比較表---- */}
+#compare .presanmouse {height:1100px;/* ----プレゼンマウス---- */}
+#compare .presen_item {height: 1270px;/* ----プロジェクター関連---- */}
+#compare .printadai{height: 900px;/* ----プリンタ台ラインナップ　---- */}
+#compare .printerdai {height:1165px;/* ----プリンタ台---- */}
+#compare .printerrac {height:1400px;/* ----プリンター台ラインナップ---- */}
+#compare .projector {height:870px;/* ----プロジェクター---- */}
+#compare .projector_screen {height:1500px;/* ----プロジェクタースクリーンラインナップ---- */}
+#compare .rockingchair {height: 1450px;/* ----ロッキングチェア---- */}
+#compare .ruck {height:1000px;/* ----リュック比較表---- */}
+#compare .scan {height:1390px;/* ----スキャナー---- */}
+#compare .security2{height: 3990px;/* ----セキュリティアイテムラインナップ　---- */}
+#compare .shelfdesk {height: 1310px;/* ----シェルフデスク---- */}
+#compare .shredder {height:1418px;width:1045px;/* ----シュレッダータブ---- */}
+#compare .shredder_h {height:900px;/* ----家庭用シュレッダー---- */}
+#compare .shredder_o {height:970px;/* ----業務用シュレッダー---- */}
+#compare .sidetable{height: 1630px;/* ----サイドテーブルラインナップ　---- */}
+#compare .sleep-chair {height:1500px;/* ----寝られるチェアラインナップ---- */}
+#compare .smp_holder {height:750px;/* ----スマホホルダー比較表---- */}
+#compare .smp_shasai{height: 1100px;/* ----スマホ用車載ホルダーラインナップ　---- */}
+#compare .smpholder {height:1445px;/* ----スマホ用車載ホルダー比較表---- */}
+#compare .sokuteiki {height: 1180px;}
+#compare .speaker {height: 1250px;/* ----スピーカー比較表---- */}
+#compare .ssdhdd {height: 900px;}
+#compare .standing {height:1610px;/* ----スタンディングデスク電動式---- */}
+#compare .stool {height: 1490px;/* ----収納スツール---- */}
+#compare .summer {height: 900px;/* ----暑さ対策グッズ---- */}
+#compare .support_chair{height: 1200px;/* ----サポートチェアラインナップ　---- */}
+#compare .surface_usb {height:635px;/* ----Surface用ハブ比較表---- */}
+#compare .sw {height:2420px;/* ----パソコン切替器--- */}
+#compare .sw_display {height:963px;/* ----ディスプレイ切替器---- */}
+#compare .sw_usb {height:720px;/* ----USB切替器---- */}
+#compare .tabletarm {height: 1600px;/* ----タブレットアームラインナップ---- */}
+#compare .tachipen {height:700px;/* ----タッチペン比較表---- */}
+#compare .taiou_100-lps {height: 900px;/* ----プリンタスタンド対応---- */}
+#compare .takazaisu {height:750px;/* ----高座椅子---- */}
+#compare .takuhai {height:760px;/* ----宅配ボックス比較表---- */}
+#compare .tap {height:990px;/* ----タップラインナップ---- */}
+#compare .tennnenn_kijodai{height: 800px;/* ----天然素材机上台ラインナップ　---- */}
+#compare .travel {height:1300px;/* ----旅行グッズ一覧表---- */}
+#compare .travellpo {height: 1250px;/* ----トラベルポーチラインナップ　---- */}
+#compare .travelpo {height:1270px;/* ----旅行グッズ一覧表---- */}
+#compare .ts_hdd {height:650px;/* ----HDD一覧表---- */}
+#compare .ts_microsd {height:240px;/* ----microSD一覧表---- */}
+#compare .ts_usb {height:228px;/* ----USB一覧表---- */}
+#compare .tvspeaker {height:720px;/* ----テレビスピーカー比較表---- */}
+#compare .tv-stand{height: 1570px;/* ----TVスタンドラインナップ　---- */}
+#compare .type-c {height: 840px;/* ----type-cケーブルラインナップ---- */}
+#compare .typec {height:1620px;/* ----type-c比較表---- */}
+#compare .usb_kijodai{height: 800px;/* ----USB机上台ラインナップ　---- */}
+#compare .usb_typec {height:1095px;/* ----USBType-cケーブル比較表---- */}
+#compare .usbcable{height: 1225px;/* ----USBケーブルラインナップ　---- */}
+#compare .usbhub {height:1270px;/* ----USBハブラインナップ---- */}
+#compare .usbhub_multiport{height: 800px;/* ----USB充電器ラインナップ　---- */}
+#compare .vrgoggle {height:705px;/* ----VRゴーグル---- */}
+#compare .webcam {height:3270px;/* ----WEB会議---- */}
+#compare .zaisu{height: 3400px;/* ----座椅子ラインナップ　---- */}
+#compare iframe{width:100%;min-width:740px;/* ----一覧表共通幅---- */}
+.meetingdesk {height: 630px;}
+.swd {height: 2170px;}
+
+
+
+/* -------------インクルード囲み用------------- */
+#item_inc{
+/*	width:740px;*/
+	width:100%;
+}
+
+#item_inc img{
+	vertical-align:bottom;
+}
+
+
+/* -------------納期コメント------------- */
+
+.substitute a {
+    display: block;
+    width:1045px;
+    text-decoration: none;
+    position: relative;
+    background-image: url(https://image.rakuten.co.jp/sanwadirect/cabinet/design/zaikogire_1045.gif);
+    background-size: 1045px;
+    height: 246px;
+	background-repeat:no-repeat;
+}
+
+.substitute img {
+    position: absolute;
+    top: 16px;
+    left: 500px;
+    border: 0;
+    width: 213px;
+}
+
+.substitute p {
+	padding:0 !important;
+    position: absolute;
+    top: 50px;
+    left: 770px;
+    display: inline;
+    text-align: left;
+	border:0 !important;
+    color: #333 !important;
+	font-weight:normal !important;
+}
+
+@media screen and (max-width: 1000px){
+
+#rmd_red {
+	width: 860px;
+}
+
+.substitute a {
+	background-size: 860px;
+    height: 203px;
+}
+
+.substitute img {
+	position: absolute;
+    top: 13px;
+    left: 413px;
+	width: 175px;
+}
+
+.substitute p {
+	top: 32px;
+    left: 613px;
+}
+
+}
+
+/* -------------インクルードラインナップ用------------- */
+.inc_lineup{
+	max-width: 1045px;
+	margin:30px 0;
+	padding:0 0 20px;
+}
+.inc_lineup .ttl{
+	text-align:center;
+	font-size:32px;
+	line-height:1.5;
+	margin:30px auto 20px;
+	padding:3px 0 0;
+	color:#ffffff;
+}
+.inc_lineup .ttl:first-child{
+	margin-top:0;
+}
+
+.inc_lineup .sub-ttl{
+	border-bottom:3px solid #eeeeee;
+	padding:5px 0 0;
+	font-size:1.5em;
+	font-weight:bold;
+	color:#333333;
+	text-align: center;
+}
+
+
+.inc_lineup .box{
+	margin:0 auto;
+	padding:0 10px;
+	text-align:center;
+}
+.inc_lineup .box .cap{
+	text-align:center;
+	font-size:24px;
+	font-weight:bold;
+	margin:35px 0 15px;
+
+
+}
+
+.inc_lineup .box .c-2{
+	margin:0 1px 15px;
+	display:inline-block;
+	width:49.5%;
+	padding:0;
+}
+
+
+.inc_lineup .box .cap:first-child{
+	margin-top:0;
+}
+.inc_lineup .box .item{
+	display:inline-block;
+	margin:0 15px 20px;
+	font-weight:bold;
+	text-align:center;
+	line-height:2;
+}
+.inc_lineup .box .item img.main_img{
+	width:100%;
+	border:1px solid #cccccc;
+}
+.inc_lineup .box .item img.btn_img{
+}
+
+/* col設定 */
+.inc_lineup .box.col2 .item{
+	width:44%;
+	max-width:360px;
+}
+.inc_lineup .box.col3 .item{
+	width:28%;
+}
+.inc_lineup .box.col4 .item{
+	width:20.7%;
+	margin:0 10px 20px;
+}
+.inc_lineup .box.col5 .item{
+	width:16%;
+	margin:0 10px 20px;
+	font-size:0.9em;
+}
+
+.inc_lineup .box.col-in2 .item {
+	width: 44%;
+	margin: 0 10px 20px;
+}
+
+#rakutenLimitedId_aroundCart td.inventory input {
+	width: 30px;
+	margin: 10px;
+}
+
+.inventory input{
+	height:23px;
+}
+
+@media screen and (max-width:740px){
+.inc_lineup .ttl{
+	font-size:26px;
+}
+.inc_lineup .cap{
+	font-size:20px;
+}
+}
+
+
+/* -------------インクルード動画用------------- */
+
+
+@media (max-width:740px) {
+#item_inc .videoR {
+	display: none;
+}
+}
+@media (min-width:741px) {
+#item_inc .videoS {
+	display: none;
+}
+}
+
+/* -------------共通説明文小　あす楽------------- */
+.asu{
+	display:block;
+	width:740px;
+	height:150px;
+	background-image:url("https://image.rakuten.co.jp/sanwadirect/cabinet/design/asuraku2017.gif");
+	border:0;
+	background-size: 740px;
+}
+#rakutenLimitedId_aroundCart div.riMb10 a{
+	color:#ff0000 !important;
+	font-weight:bold !important;
+	font-size:1.1em !important;
+}
+
+
+/* -------------販売説明文（レビュー）------------ */
+.review_600px, .review_740px, .review_1045px {
+margin:50px 0;
+height:auto;
+border:0;
+}
+.review_600px p, .review_740px p, .review_1045px p {
+margin:0;
+padding:3px;
+background-color:#FF8000;
+color:white;
+text-align:left;
+font-size:12px;
+font-weight:bold;
+}
+.review_600px iframe, .review_740px iframe, .review_1045px iframe {
+margin:0;
+height:485px;
+border:1px solid #FF8000;
+}
+.review_1045px {
+background-image:url(https://image.rakuten.co.jp/sanwadirect/cabinet/design/bg_review3.jpg);
+}
+.review_600px {width:600px;}
+.review_740px {width:740px;}
+.review_1045px {width:1045px;}
+.review_600px iframe {width:598px;}
+.review_740px iframe {width:738px;}
+.review_1045px iframe {width:1043px;}
+
+.review_600px .ifrm-container {width:598px;}
+.review_740px .ifrm-container {width:738px;}
+.review_1045px .ifrm-container {width:1044px;}
+.ifrm-container {
+	height:487px;
+	overflow:auto;
+	overflow-x:hidden;
+	border-right:1px solid #FF8000;
+	background:#ffffff;
+-webkit-overflow-scrolling:touch;
+}
+	.ifrm {
+	width:100%;
+	height:100%;
+	border:none;
+}
+
+.item_review {
+	display: block;
+}
+
+
+/* -------------販売説明文（回遊）------------ */
+#rmd_redtxt {
+	text-align:center;
+	margin-top:10px;
+}
+
+#rmd_redtxt p {
+	margin:0;
+	padding:5px;
+	color:red;
+	font-size:20px;
+ 	font-weight:bold;
+	text-align:center;
+}
+#rmd_redtxt span {
+	font-size:14px;
+}
+#rmd_og, #rmd_red {
+	box-sizing: border-box;
+	margin:30px 0 0 0;
+	padding:0;
+	border:solid 1px #ff6000;
+	font-size:12px;
+	line-height:1.3;
+	text-align:center;
+	width:100%;
+}
+#rmd_og {
+	border:solid 1px #ff6000;
+}
+#rmd_red {
+	border:solid 3px red;
+}
+#rmd_og p {
+	margin:0;
+	padding:5px;
+	background-color:#ff6000;
+	color:white;
+	font-size:16px;
+ 	font-weight:bold;
+}
+#rmd_red p {
+	margin:0;
+	padding:5px;
+	border-bottom:2px dotted red;
+	color:red;
+	font-size:20px;
+ 	font-weight:bold;
+}
+
+#rmd_red .catch {
+	color:red;
+	font-weight:bold;
+}
+
+#rmd_og img, #rmd_red img {
+	border:0;
+}
+#rmd_red .item_0 {
+	border-bottom:0;
+}
+#rmd_og .item_1, #rmd_red .item_1  {
+	margin:10px auto;
+	width:350px;
+}
+#rmd_og .item_1 div, #rmd_red .item_1 div {
+	margin:2px;
+	text-align:left;
+	font-size:16px;
+}
+#rmd_og .item_1 img, #rmd_red .item_1 img {
+	margin:0 3px 0 0;
+	width:160px;
+	float:left;
+}
+#rmd_og .item_2, #rmd_red .item_2 {
+	margin:10px auto;
+	width:648px;
+	font-size:14px;
+}
+#rmd_og .item_2 div, #rmd_red .item_2 div {
+	margin:2px;
+	width:320px;
+	float:left;
+	text-align:left;
+}
+#rmd_og .item_2 img, #rmd_red .item_2 img {
+	margin:0 3px 0 0;
+	width:160px;
+	float:left;
+}
+#rmd_og .item_3, #rmd_red .item_3 {
+	margin:10px auto;
+	width:630px;
+}
+#rmd_og .item_3 div, #rmd_red .item_3 div {
+	margin:2px 5px;
+	width:200px;
+	float:left;
+}
+#rmd_og .item_3 img, #rmd_red .item_3 img {
+	margin:0 0 3px 0;
+	width:200px;
+}
+#rmd_og .item_4, #rmd_red .item_4 {
+	margin:5px auto;
+	width:680px;
+}
+#rmd_og .item_4 div, #rmd_red .item_4 div {
+	margin:2px 5px;
+	width:160px;
+	float:left;
+}
+#rmd_og .item_4 img, #rmd_red .item_4 img {
+	margin:0 0 3px 0;
+	width:160px;
+}
+#rmd_og .item_5, #rmd_red .item_5  {
+	margin:5px auto;
+	width:100%;
+}
+#rmd_og .item_5 div, #rmd_red .item_5 div {
+	margin:2px 3px;
+	width:140px;
+/*	float:left;*/
+	display:inline-block;
+	float:none;
+}
+#rmd_og .item_5 img, #rmd_red .item_5 img {
+	margin:0 0 3px 0;
+	width:140px;
+}
+#rmd_og .rmd_cat {
+	padding:8px 0;
+	font-size:14px;
+	border-top:1px dotted #ff6000;
+}
+#rmd_red .rmd_cat {
+	margin:5px;
+	padding:10px 0;
+	font-size:18px;
+	font-weight:bold;
+	background-color:#ffeeee;
+}
+#rmd_og .comment {
+	margin:0 auto;
+	padding:10px;
+	text-align:left;
+	font-size:14px;
+}
+<!--セット品回遊-->
+
+#rmd_og, #rmd_red1_1 {
+	margin:30px 0 0 0;
+	padding:0;
+	border:solid 1px #ff6000;
+	font-size:12px;
+	line-height:1.3;
+	text-align:center;
+	min-width:738px;
+	width:calc(100% - 2px);
+}
+
+#rmd_og .item_1, #rmd_red .item_1_1  {
+	margin:10px auto;
+	width:350px;
+}
+
+#rmd_red .catch1_1 {
+	color:red;
+	font-weight:bold;
+}
+
+/* -------------販売説明文（回遊 枠無し4・5列）------------ */
+#rmd_og.line4_5{
+	border:none;
+	width:740px;
+	margin:20px auto 0;
+}
+#rmd_og.line4_5 .rmd_cat{
+	display:none;
+}
+#rmd_og.line4_5 .item_4,
+#rmd_og.line4_5 .item_5{
+	padding:10px 5px 0;
+	width:730px;
+	text-align:left;
+}
+#rmd_og.line4_5 .item_4 div,
+#rmd_og.line4_5 .item_5 div{
+	margin:0 5px;
+	width:136px;
+	text-align:center;
+}
+#rmd_og.line4_5 .item_4 div img,
+#rmd_og.line4_5 .item_5 div img{
+	width:100%;
+}
+
+
+/* -------------販売説明文(スタッフレポート)------------- */
+#rmd_og .sreport {
+	color:#ff6000;
+	font-weight:bold;
+	font-size:16px;
+	margin:20px 0 5px 0;
+}
+
+/* -------------販売説明文（スタッフレポート誘導）------------ */
+
+
+.sr_item {
+	margin:0 10px 10px 15px;
+	padding:15px 0 0 0;
+	height:130px;
+	/*border-top:1px dotted black;*/
+	text-align:left;
+}
+
+.sr_midasi{
+	margin:3px 0 0 0;
+	padding:0;
+}
+
+.sr_ico_b {
+	background-color:#3c90d4;
+	color:white;
+	font-size:12px;
+	padding:1px 7px;
+}
+.sr_ico_r {
+	background-color:#d3492c;
+	color:white;
+	font-size:12px;
+	padding:1px 7px;
+}
+.sr_ico_y {
+	background-color:#F4F23F;
+	color:black;
+	font-size:12px;
+	padding:1px 7px;
+}
+.sr_date {
+	margin:0;
+	font-size:12px!important;
+	font-weight:normal!important;
+}
+
+.sr_catch {
+	margin:10px 0 5px 0!important;
+	font-size:16px!important;
+	font-weight:bold;
+}
+.sr_intro {
+	margin:5px 0 0 0!important;
+	font-size:14px!important;
+}
+
+.sr_photo {
+ margin:0 10px 0 0;
+ width:170px;
+ height:128px;
+ float:left;
+}
+
+
+
+/* -------------販売説明文（ランキング インラインフレーム）------------ */
+.ranking_kaiyuu {
+	margin-top:20px;
+	min-width:740px;
+	max-width:1045px;
+	width:100%;
+	height:360px;
+}
+
+/* -------------販売説明文（アウトレット品）------------ */
+#rmd_red .outlet {
+	font-size:35px;
+}
+#rmd_red .outlet_exp {
+	padding:10px;
+	font-size:16px;
+	color:red;
+	font-weight:bold;
+}
+
+/* -------------販売説明文（取説）------------ */
+
+.torisetsu {
+	margin:10px 0 60px 0;
+	text-align:center;
+}
+.torisetsu img {
+	margin:5 0;
+}
+
+/* -------------販売説明文（おねだりレビューリンク）------------ */
+
+.onedari_review {
+	margin:0;
+	padding:10px;
+	height:auto;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	background-color:#fff9bf;
+	border:1px solid #ffdb33;
+}
+
+/* -------------販売説明文（インク表）------------ */
+#ink_model {
+    border-bottom:1px solid #333;
+    border-left:1px solid #333;
+    border-right:1px solid #333;
+    background-color:#efefef;
+    margint:5px;
+    line-height:1.8;
+    font-size:13px;
+    text-align:left;
+    width:738px;
+}
+
+#ink_model dt {
+    float:left;
+    clear: left;
+    width:100px;
+    font-weight:bold;
+    background-color:#efefef;
+    border-top:1px solid #333;
+    padding:5px;
+}
+
+#ink_model dd {
+    background-color:#ffffff;
+    border-top:1px solid #333;
+    margin-left:110px;
+    padding:5px;
+}
+
+/*------------- 販売説明文（トランセンドサポート インラインフレーム） -------------*/
+.support_frame.transcend{
+	width:100%;
+/*	min-width:740px;*/
+	height:289px;
+	margin:10px 0 0;
+}
+.support_frame.transcend_s{
+	width:100%;
+/*	min-width:740px;*/
+	height:217px;
+	margin:10px 0 0;
+}
+
+
+
+/* -----販売説明文（おすすめポイント）----- */
+#rmd_point {
+	width:738px;
+	margin:0;
+	padding:1px;
+	background-color:#ff6000;
+}
+#rmd_point .title{
+	font-size:16px;
+	color:white;
+	padding:3px;
+}
+#rmd_point .main{
+	margin:0;
+	padding:10px;
+	font-size:12px;
+	background-color:white;
+	line-height:1.5em;
+}
+#rmd_pointlist {
+	margin:0;
+	padding:3px;
+	background-color:#ff6000;
+	display:inline-block;
+}
+#rmd_pointlist .title{
+	font-size:18px;
+	color:white;
+	padding:5px;
+	text-align:center;
+}
+#rmd_pointlist .main{
+	margin:0;
+	padding:15px;
+	font-size:16px;
+	background-color:white;
+	text-align:left;
+	line-height:2em;
+	clear:both;
+}
+#rmd_pointlist span{
+	font-weight:bold;
+	color:red;
+}
+
+/*------------- 販売説明文（右下ボタン） -------------*/
+ul#itembtn {
+	position: fixed;
+	right: 0;
+	bottom: 41px;
+	margin: 0;
+	padding: 0;
+	width: 80px;
+	overflow: hidden;
+	z-index: 1000;
+	list-style: none;
+}
+
+ul#itembtn.side-list {
+	bottom: 0;
+}
+
+ul#itembtn li {
+	display: inline;
+	background: #ffffff;
+	height: 42px;
+}
+
+ul#itembtn li a {
+	display: block;
+	width: 80px;
+	height: 42px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+ul#itembtn li a:hover {
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+}
+
+ul#itembtn li a.itembtn_top {
+	background: url(https://image.rakuten.co.jp/sanwadirect/cabinet/design/itembtn_top.gif);
+}
+
+ul#itembtn li a.itembtn_color {
+	background: url(https://image.rakuten.co.jp/sanwadirect/cabinet/design/itembtn_color.gif);
+}
+
+ul#itembtn li a.itembtn_size {
+
+
+	background: url(https://image.rakuten.co.jp/sanwadirect/cabinet/design/itembtn_size.gif);
+}
+
+ul#itembtn li a.itembtn_buy {
+	background: url(https://image.rakuten.co.jp/sanwadirect/cabinet/design/itembtn_buy.gif);
+}
+
+#rakutenLimitedId_cartParts a:hover {
+	filter: alpha(opacity=80);
+	opacity: 0.8!important
+}
+
+
+/* -------------販売説明文（配送コメント）------------ */
+.haisou {
+	text-align:left !important;
+	padding:5px !important;
+	line-height:1.5 !important;
+	margin:10px 0 !important;
+}
+
+.pay_delivery + #rmd_red {
+	width:408px !important;
+	min-width:408px !important;
+	margin: 0 0 15px 0 !important;
+}
+
+.haisou .item_0 {
+	font-size:15px !important;
+}
+/* -------------番号囲み------------- */
+span.item_number_title{
+	border:1px solid #FFE400;
+	background:#FFE400;
+	font-weight:bold;
+	font-size:14px;
+	padding:1px 8px 0;
+}
+span.item_number{
+	border:1px solid #FFE400;
+	font-weight:bold;
+	font-size:14px;
+	padding:0 8px 1px;
+	position:relative;
+	left:-9px;
+}
+@-moz-document url-prefix() {
+span.item_number_title{
+	padding:0 8px;
+}
+span.item_number{
+	padding:0 8px;
+}
+}
+
+
+
+/*----- タブ切り替え枠内設定-------*/
+
+.frame_desk {
+    height: 540px;
+}
+.frame_shudou {
+	height: 1480px;
+}
+.frame_tati {
+	height: 660px;
+}
+.frame_imaaru {
+	height: 920px;
+}
+.frame_shredder_home,
+.frame_shredder_office {
+	height: 1075px;
+}
+
+.frame_shredder_autofeed {
+	height: 800px;
+}
+.frame_speaker_b {
+	height: 1145px;
+}
+.frame_speaker_p {
+	height: 435px;
+}
+.frame_cmulti {
+	height: 1390px;
+}
+.frame_chub {
+	height: 804px;
+}
+.frame_creader {
+	height: 300px;
+}
+.frame_wireless{
+	height: 815px;
+}
+.frame_wired {
+	height: 815px;
+}
+.frame_bluetooth {
+	height: 815px;
+}
+.frame_trackball {
+	height: 980px;
+}
+.frame_casualruck {
+	height: 760px;
+}
+.frame_businessruck {
+	height: 764px;
+}
+.frame_stand {
+	height: 683px;
+}
+.frame_hand {
+	height: 230px;
+}
+.frame_loupe {
+	height: 380px;
+}
+.frame_bouhanset {
+	height: 587px;
+}
+.frame_bouhansmall {
+	height: 1446px;
+}
+.frame_moniarm1 {
+	height: 1590px;
+}
+.frame_moniarm2 {
+	height: 1010px;
+}
+.frame_moniarm3 {
+	height: 908px;
+}
+.frame_green {
+	height: 945px;
+}
+.frame_red {
+	height: 250px;
+}
+.frame_presen {
+	height: 880px;
+}
+.frame_portable {
+	height: 350px;
+}
+.frame_btsh {
+	height: 754px;
+}
+
+.frame_soundbar {
+	height: 1140px;
+}
+.frame_dendou {
+	height: 430px;
+}
+.frame_gasu {
+	height: 1580px;
+}
+.frame_hub {
+	height: 1145px;
+}
+.frame_reader {
+	height: 220px;
+}
+.frame_multi {
+	height: 1170px;
+}
+.frame_sankyaku {
+	height: 478px;
+}
+.frame_prjstand {
+	height: 505px;
+}
+.frame_zaisu {
+	height: 1950px;
+}
+.frame_takazaisu {
+	height: 1345px;
+}
+
+.frame_keywired {
+	height: 1120px;
+}
+
+.frame_keywireless {
+	height: 1125px;
+}
+/* -------------キャッチコピー------------ */
+.catch_copy {
+display:block;
+margin-bottom:3px;
+}
+
+/* -------------カートボタン------------ */
+div#rakutenLimitedId_aroundCart input.rCartBtn,
+div#rakutenLimitedId_aroundCart input.rCartBtn[type="submit"] {
+  width: 260px !important;
+  height: 50px !important;
+  background:url(https://image.rakuten.co.jp/sanwadirect/cabinet/design/cart.gif) no-repeat !important;
+  overflow: hidden !important;
+  border-width: 0px !important;
+  cursor: pointer !important;
+  text-indent: 150% !important;
+  white-space: nowrap !important;
+  margin: 5px 0 !important;
+  text-indent:-9999px !important;
+}
+#rakutenLimitedId_aroundCart input#units{
+	width:48px;
+	height:19px;
+	background:none;
+	border:1px solid #a9a9a9;
+	text-indent:0;
+	cursor:text !important;
+}
+#rakutenLimitedId_aroundCart font input{
+	width:180px;
+	height:auto;
+	background-image:none;
+	text-indent:0;
+	background-color:#dedede;
+	border:1px solid #a9a9a9;
+	padding:3px 0;
+	-moz-appearance:block !important;
+}
+/*#rakutenLimitedId_aroundCart .inventory input{
+	background-image:none;
+	text-indent:0;
+	width:24px;
+	height:24px;
+	-webkit-appearance: button !important;
+}
+
+
+
+*//* -------------在庫僅少△------------ */
+
+span.inventory_rest {
+    color: #ff0000!important;
+}
+
+/* -------------再入荷ボタン------------ */
+#rakutenLimitedId_aroundCart .InputGryBtn {
+	border-color:#bf0000 !important;
+	background-color:#bf0000 !important;
+}
+
+/* -------------送料説明------------ */
+.dsf-disclaimer-text:nth-child(2)  {
+	color:red !important;
+	font-weight: bold;
+}
+
+/* -------------商品についてのお問い合わせボタン------------ */
+#rakutenLimitedId_aroundCart table{
+	position:relative;
+}
+
+#rakutenLimitedId_aroundCart table:nth-child(2) {
+width: 428px;
+}
+
+.floatingCartPurchaseButtonsContainer {
+width: 422px;
+}
+
+#rakutenLimitedId_aroundCart font input{
+	width:249px;
+  height: 28px;
+/*  background:url(https://image.rakuten.co.jp/sanwadirect/cabinet/design/btn_toiitem.jpg) no-repeat;*/
+  background:url(https://image.rakuten.co.jp/sanwadirect/cabinet/design/btn_toiitemg.jpg) no-repeat;
+  overflow: hidden;
+  border-width: 0px;
+  cursor: pointer !important;
+  text-indent: 150%;
+  white-space: nowrap;
+  margin: 5px 0;
+  text-indent:-9999px;
+}
+
+/* -------------レビュー5％OFFクーポンの画像差込-------------
+span.unit {
+background-image: url("https://image.rakuten.co.jp/sanwadirect/cabinet/design/review_cart.gif");
+background-position: left 5px;
+background-repeat: no-repeat;
+display: block;
+height: 170px;
+text-indent: -9999px;
+width:350px;
+	position:relative;
+}
+
+span.unit:after{
+	content:"個数";
+	display:block;
+	margin-top:177px;
+	text-indent:0;
+	width:38px;
+}
+#rakutenLimitedId_aroundCart input#units{
+	margin:0 8px 0 40px !important;
+}
+div#rakutenLimitedId_aroundCart input.rCartBtn,
+div#rakutenLimitedId_aroundCart input.rCartBtn[type="submit"]{
+	margin:0 0 5px !important;
+}
+div#rakutenLimitedId_aroundCart .rItemUnits{
+	margin-left:38px !important;
+}
+*/
+/* -------------お気に入りボタン（通常時）------------
+#rakutenLimitedId_aroundCart #serviceTableSml td.favorite{
+	padding:0;
+}
+#rakutenLimitedId_aroundCart div.bookmarkArea div.bkm a.addBkm span.bkmStar {
+width: 349px !important;
+height:33px !important;
+background: url(https://image.rakuten.co.jp/sanwadirect/cabinet/design/btn_fav_item2.jpg) no-repeat 0 0 !important;
+}
+
+#rakutenLimitedId_aroundCart div.bookmarkArea div.bkm a.addBkm {
+width: 349px !important;
+height:33px !important;
+margin-right: 8px !important;
+}
+
+#rakutenLimitedId_aroundCart div.bkm {
+width: 349px !important;
+height:33px !important;
+margin-bottom: 2px !important;
+margin-right: 8px !important;
+}
+*/
+/* -------------お気に入りボタン（イベント時）------------ */
+
+.bookmarkAreaWrapper {
+width:100% !important;
+margin-left:-1px;
+}
+
+#rakutenLimitedId_aroundCart .itemBookmarkAreaWrapper {
+display:inline-block;
+width: 49.2%;
+margin-right: 2px;
+letter-spacing: normal;
+float: none;
+}
+
+#rakutenLimitedId_aroundCart .bookmarkArea {
+width:100%;
+}
+
+#rakutenLimitedId_aroundCart div {
+height: auto;
+}
+
+#rakutenLimitedId_aroundCart #buildToOrderContainer .bto-container,
+#rakutenLimitedId_aroundCart #buildToOrderContainer .bto-bundle-set-summary,
+#rakutenLimitedId_aroundCart #buildToOrderContainer div {
+	letter-spacing: normal;
+}
+
+.preSalesMsg,
+.preSalesMsg div {
+	letter-spacing: normal !important;
+}
+
+#rakutenLimitedId_aroundCart div.bookmarkArea div.bkm a.addBkm span.bkmStar {
+width: 100% !important;
+height:78px !important;
+background: url(https://www.rakuten.ne.jp/gold/sanwadirect/img/cart/cart_fav.png) no-repeat 0 0 !important;
+background-size: 100% !important;
+}
+
+#rakutenLimitedId_aroundCart div.bookmarkArea div.bkm a.addBkm {
+width: 100% !important;
+height:78px !important;
+}
+
+#rakutenLimitedId_aroundCart div.bkm {
+float: none !important;
+}
+#rakutenLimitedId_aroundCart div.shopBkm {
+float: none !important;
+}
+
+.bookmarkArea__popup--inner,
+.purchase-buttons-alert-title,
+.purchase-buttons-alert-content {
+letter-spacing: normal !important;
+}
+
+.bookmarkArea__popup--inner p,
+.bookmarkArea__popup--shopReview,
+#susumeruParts_0 {
+letter-spacing: normal !important;
+}
+
+/* -------------お気に入りショップボタン------------ */
+#rakutenLimitedId_aroundCart .shopBookmarkAreaWrapper {
+display:inline-block;
+width:49.2% !important;
+float: none;
+letter-spacing: normal;
+}
+
+#rakutenLimitedId_aroundCart .shopBookmarkArea {
+width:100%;
+}
+
+#rakutenLimitedId_aroundCart div.shopBookmarkArea div.shopBkm a.addShopBkm{
+width: 100% !important;
+height:78px !important;
+}
+#rakutenLimitedId_aroundCart div.shopBookmarkArea div.shopBkm a.addShopBkm span.shopBkmStar {
+width: 100% !important;
+height:78px !important;
+background: url(https://www.rakuten.ne.jp/gold/sanwadirect/img/cart/cart_shop.png) no-repeat 0 0 !important;
+background-size:100% !important;
+}
+
+.bookmarkArea__popup--inner {
+width:auto !important;
+}
+
+#susumeruParts_0 .susumeruShareCount {
+width: auto !important;
+}
+
+.bookmarkAreaWrapper .bookmarkArea .bkm a.addBkm,
+.shopBookmarkAreaWrapper .shopBookmarkArea .shopBkm a.addShopBkm {
+margin-right: 0 !important;
+}
+
+.bookmarkAreaWrapper .bookmarkArea .bkm a.addBkm span,
+ .shopBookmarkAreaWrapper .shopBookmarkArea .shopBkm a.addShopBkm span {
+margin-right: 0 !important;
+}
+
+/* -------------レビューキャンペーンプルダウン------------ */
+span.choice{
+	font-size:15px;
+	font-weight:bold;
+	display:block;
+	margin-top:15px;
+	margin-bottom:5px;
+	width:402px;
+	padding:5px;
+	color:#FF0000;
+	background-color:#ffff00;
+	border:1px solid #cccccc;
+	padding: 3px 5px !important;
+}
+#rakutenLimitedId_aroundCart select{
+	width:414px !important;
+	font-size:13px !important;
+	margin-bottom:15px !important;
+}
+
+span[.choice="沖縄県へのお届けは、別途送料3,240円が加算となります。"]{
+	background-color:#fff;
+}
+
+/* -------------パンくずナビ・カテゴリーリンク------------ */
+
+a.subcategory_list:link {
+	font-weight: bold;
+}
+span.subcategory_list {
+	display: none;
+	width:0px;
+	height:0px;
+	text-decoration: underline;
+}
+a.subcategory_list{
+	display: block;
+	background:#FFFCB5;
+	padding:13px 10px 10px;
+
+	border:1px solid #CCC;
+	width:200px;
+	height:21px;
+	text-decoration: none;
+	line-height:1.3;
+	border-radius:8px;
+	margin-bottom:10px;
+	text-align:center;
+}
+a:hover.subcategory_list {
+	background:rgba(255,252,181,0.5);
+}
+
+td.sdtext{
+	font-size:70%;
+}
+
+
+
+/* -------------商品説明文------------ */
+
+
+
+#item-exp {
+	margin:-80 0 0 0;
+	padding:100px 0 0 0;
+	width: 730px;
+}
+#item-exp.a740 {width:540px;}
+#item-exp.e740 {width:740px;}
+#item-exp.a1050 {width:730px;}
+#item-exp.e1050 {width:1045px;}
+
+#item-exp div {
+	font-size:14px;
+
+	clear:both;
+}
+#item-exp .pay1 {
+	margin:0 0 10px 0;
+	float:left;
+}
+#item-exp .pay2 {
+	width: 321px;
+	height: 80px;
+	background-image:url("https://image.rakuten.co.jp/sanwadirect/cabinet/design/s_free_321.gif");
+	background-color:#0099FF;
+	float:left;
+	margin-bottom:10px;
+}
+#item-exp .pay3 {
+	width: 423px;
+	height: 57px;
+	background-image:url("https://image.rakuten.co.jp/sanwadirect/cabinet/design/kinitsu.gif");
+	background-color:#0099FF;
+	float:left;
+	margin-bottom:10px;
+}
+#item-exp .event {
+	width: 321px;
+	height: 80px;
+	background-image:url("https://image.rakuten.co.jp/sanwadirect/cabinet/event/0801fes/main_321n.gif");
+	background-color:#0099FF;
+	float:left;
+}
+
+
+#item-exp.e740 .pay_delivery,
+#item-exp.e1050 .pay_delivery {
+	display:inline-block;
+	margin-right:5px;
+	margin-bottom:9px;
+}
+
+#item-exp.e740 .pay_info,
+#item-exp.e1050 .pay_info,
+#item-exp.a1050 .pay_info {
+	display: block;
+	width: 100%;
+	height: 64px;
+}
+
+#item-exp .pay_info {
+	display: block;
+	width: 100%;
+	height: 64px;
+}
+
+
+#item-exp.e1050 .pay_info {
+	height: 83px;
+}
+
+
+#item-exp.a740 .pay_info{
+	display: block;
+	width: 100%;
+	height: 100px;
+}
+
+#item-exp .cart_souryou {
+	width: 100%;
+	height: 80px;
+}
+
+#item-exp .cart_souryou {
+	width: 100%;
+	height: 80px;
+}
+
+.a740 .cart_souryou	 {
+	width: 100%;
+	height: 104px !important;
+	margin-top: -14px;
+}
+
+#item-exp.e740 .pay3,
+#item-exp.e1050 .pay3 {
+	background-repeat:no-repeat;
+	background-image:url("https://image.rakuten.co.jp/sanwadirect/cabinet/design/kinitsu_2.gif");
+	width:368px;
+	height:62px;
+	margin-bottom:18px !important;
+}
+
+#item-exp.e740 .pay3,
+#item-exp.e1050 .pay3 {
+	display:inline-block;
+	float:none;
+}
+
+.order {
+	margin:0 0 10px 0;
+	padding:10px;
+	line-height:1.3em;
+	color:blue;
+}
+.order h2 {
+	margin:0;
+	padding:0;
+	font-size:14px;
+	color:red;
+	font-weight:bold;
+	text-indent: -10px;
+}
+#item-exp .set{
+	margin:15px 0 10px 0;
+	padding:0;
+	font-size:16px;
+	font-weight:bold;
+}
+#item-exp .cs, #item-exp .gift {
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+#item-exp .item {
+	margin:0 0 10px 0;
+	padding:20px;
+	border-bottom:1px solid #999;
+	border-left:1px solid #999;
+	border-right:1px solid #999;
+	font-size:12px;
+	line-height:1.9em;/*調整中*/
+}
+#item-exp h1,
+#item-exp #h1 {
+	margin:0;
+	padding:3px 3px 3px 6px;
+	background-color:#ffffcc;
+	border:1px solid #999;
+	font-size:16px;
+	font-weight:bold;
+	clear: both;
+}
+
+#item-exp .keyword {
+	font-size:9px;
+}
+
+#item-exp .dealtext {
+	width:526px;
+	height:197px;
+/*	height:345px;
+*/}
+
+/*#item-exp .transcend {
+	width:740px;
+	height:220px;
+}*/
+
+
+
+/* -------------商品説明文（パンくずナビ）------------ */
+#item-exp .pan {
+    margin:0 0 15px 0;
+    padding:0;
+    font-size:14px;
+}
+#item-exp .pan li {
+    background: url("https://image.rakuten.co.jp/sanwadirect/cabinet/design/ico_pankuzu.gif") no-repeat scroll right center transparent;
+    margin: 0px 5px 0px 0px;
+    padding: 0px 10px 0px 0;
+    display: inline;
+    list-style: outside none;
+}
+#item-exp .pan .end {
+    background:none;
+}
+
+#item-exp .item h2 {
+	margin:20px 0 5px 0;
+	padding:0;
+	font-size:16px;
+	text-indent: -10px;
+}
+#item-exp .item .date {
+	margin:20px 0 0 0;
+	text-indent: -10px;
+}
+#item-exp .cs img, #item-exp .cs p {
+	float:left;
+
+}
+#item-exp .cs .photo_m {
+	margin:23px 0;
+	border:0;
+}
+
+#item-exp .cs {
+	width:450px;
+	height:105px;
+}
+
+#item-exp .cs .add {
+	margin:38px 0 0 0;
+}
+#item-exp .cs .photo_l {
+	margin:10px 0;
+	border:0;
+}
+#item-exp .cs p {
+	margin:43px 0 0 10px;
+	font-size:14px;
+	color:red;
+	font-weight:bold;
+}
+#item-exp .cs a .photo_l, #item-exp .cs a:link .photo_l {
+	border:3px solid #0000cc;
+}
+#item-exp .cs a:hover .photo_l, #item-exp .cs a:active .photo_l {
+	border:3px solid red;
+}
+#item-exp .pdf {
+	font-size:16px;
+	font-weight:bold;
+}
+#item-exp .pdf img {
+	margin-right:5px;
+	border:0;
+}
+
+/* -------------商品説明文（同梱5商品）------------ */
+#item-exp #cs_5 {
+	margin:0 0 20px 0;
+	padding:0;
+	width:524px;
+	height:170px;
+	border:1px solid #999;
+}
+#item-exp #cs_5 .ttl {
+	margin:0;
+	padding:5px;
+	background-color:#FFFFCC;
+	font-size:14px;
+	font-weight:bold;
+	border-bottom:1px solid #999;
+}
+#item-exp #cs_5 div {
+	margin:0;
+	padding:5px 0 0 0;
+	text-align:center;
+}
+#item-exp #cs_5 .thumb01 {
+	margin:0 5px 0 13px;
+	width:90px;
+	height:90px;
+	float:left;
+	color:#bf0000;
+	font-weight:bold;
+}
+#item-exp #cs_5 .thumb02 {
+	margin:0 5px;
+	width:90px;
+	height:90px;
+	float:left;
+	font-size:11px;
+	color:#bf0000;
+	font-weight:bold;
+}
+#item-exp #cs_5 .thumb01 span {
+	font-size:22px;
+	font-family:"Verdana", "Arial", "Helvetica";
+	font-weight:bold;
+}
+#item-exp #cs_5 .thumb02 span {
+	font-size:16px;
+	font-family:"Verdana", "Arial", "Helvetica";
+	font-weight:bold;
+	line-height:1.8em;
+}
+#item-exp #cs_5 .thumb01 img,#cs_5 .thumb02 img {
+	margin-top:0;
+	padding:0;
+	border:0;
+}
+
+/* -------------商品説明文（同梱1商品）------------ */
+#item-exp #cs {
+	margin:10px 0;
+}
+#item-exp #cs .allow {
+	margin:0 0 5px 0;
+	color:#bf0000;
+	font-weight:bold;
+}
+#item-exp #cs .left {
+	margin:10px 5px 0 0;
+	float:left;
+}
+#item-exp #cs .and {
+	margin:43px 5px 0 0;
+	float:left;
+}
+#item-exp #cs .right {
+	margin:0;
+	float:left;
+}
+#item-exp #cs .right img {
+	margin:0 5px 0 0;
+	border:1px solid;
+	float:left;
+}
+#item-exp #cs .name {
+	margin:33px 0 0 0;
+	line-height:1.2em;
+	float:left;
+}
+
+/* ---------商品説明文（シュレッダー表組み）--------- */
+dl#shredder {
+	border: 1px solid #333;
+	border-top: none;
+	width: 439px;
+	line-height:1.8em;
+	font-size:13px;
+}
+dl#shredder dt{
+	border-top: 1px solid #333;
+	margin-right: -13em;
+	float: left;
+	width: 9.2em;
+	padding-left: 5px;
+}
+
+dl#shredder dd{
+	border-left: 1px solid #333;
+	border-top: 1px solid #333;
+	_height: 1%; /* WinIEで頭の文字が右に微妙にずれるのを補正 */
+	margin-left: 9em;
+	padding: 0 5px;
+}
+
+
+/* ---------商品説明文（シュレッダー表組み）--------- */
+.gazou_kaiyuu{
+	min-width:740px;
+}
+.gazou_kaiyuu iframe,
+.support_frame{
+	width:100%;
+}
+
+
+/* ---------商品説明文（ネコポス）--------- */
+.maildlv_itemsupport{
+	width:100%;
+	height:670px;
+}
+.maildlv_itemsupport_s{
+	width:100%;
+	height:760px;
+}
+
+.a740 .maildlv_itemsupport{
+	width:100%;
+	height:835px;
+}
+
+
+
+/* ---------商品説明文（お支払いについて・配送について）--------- */
+.pay_delivery{
+	width:424px;
+	height:70px;
+	margin-bottom:5px;
+	display:block;
+}
+
+/* ---------商品説明文（商品詳細へのリンク）--------- */
+
+
+.spec_link {
+	margin-top:15px;
+}
+
+.spec_link a {
+	display:inline-block;
+	height:40px;
+	width:424px;
+	background-color:#01288f;
+	color:#fff;
+	text-align:center;
+	text-decoration:none !important;
+	border-radius:5px;
+	line-height:250%;
+}
+
+.spec_link span {
+	display:inline-block;
+	line-height:256%;
+	vertical-align:top;
+}
+
+.spec_link img {
+	width:11px;
+	margin-top:13px;
+	padding-left:5px;
+}
+
+.spec_link a:hover {
+	text-decoration:none;
+	color:#fff;
+}
+
+.spec_link a:link {
+	text-decoration:none;
+	color:#fff;
+}
+
+
+/* ---------商品説明文（チャットボタン）---------
+.chat_badge_base:hover:before{
+	content:"スタッフがチャットでお答えします。";
+	position:absolute;
+	left:140px;
+	bottom:6px;
+	display:block;
+	color:#FFF;
+	font-size:1.3rem;
+	width:220px;
+	border-radius:10px;
+	padding:19px;
+	box-sizing: border-box;
+	background:#C00;
+	z-index: 999999;
+	line-height:1.2;
+}
+ */
+
+/* -------------販売説明文（タイムセールLPO）------------- */
+#eventmedama_lpo {
+/*margin:50px 0 0 0;*/
+margin:20px auto 0;
+padding:20px 20px 26px 20px;
+background-color:#bf0000;
+width:700px;
+height:auto;
+text-align:center;
+}
+#eventmedama_lpo .logo {
+margin:0;
+font-size:30px;
+background-color:white;
+font-weight:bold;
+}
+#eventmedama_lpo .time {
+margin:20px 0 0 0;
+color:white;
+font-size:40px;
+font-weight:bold;
+line-height:2em;
+}
+#eventmedama_lpo .time span {
+font-size:110px;
+}
+#eventmedama_lpo .time span.point10 {
+font-size:90px;
+}
+#eventmedama_lpo .souryou {
+margin:0 0 30px 0;
+padding:7px;
+background-color:yellow;
+color:#bf0000;
+font-size:25px;
+font-weight:bold;
+}
+#eventmedama_lpo .like {
+margin:20px 10px 0;
+padding:5px;
+font-size:15px;
+font-weight:bold;
+border-radius:8px;
+background-color:white;
+display:inline-block;
+width:300px;
+}
+
+
+#eventmedama_lpo .exp {
+font-size:12px;
+color:white;
+}
+#eventmedama_lpo .blue {
+color:#97f9ff;
+}
+span.inventory_soldout font {
+	font-size: 12px !important;
+}
+#rakutenLimitedId_aroundCart td.inventory font {
+	font-size:13px!important;
+}
+
+/* -------------カテゴリ一覧へのアンカーリンク------------- */
+#cat_list_btn{
+	position:fixed;
+	bottom:405px;
+	right:0;
+	text-align:center;
+	z-index:99999;
+}
+#cat_list_btn a{
+	display:block;
+	width:161px;
+	height:35px;
+	color:#ffffff;
+	text-decoration:none;
+}
+
+/* -------------買い物かごへのアンカーリンク------------- */
+#cart_icon_btn{
+	position:fixed;
+	bottom:363px;
+	right:0;
+	text-align:center;
+	z-index:99999;
+}
+
+#cart_icon_btn a{
+	display:block;
+	width:161px;
+	height:35px;
+
+}
+
+/* -------------お気に入りボタンリンク------------- */
+#bookmark_btn{
+	position:fixed;
+	bottom:82px;
+	right:0;
+	width:80px;
+	height:40px;
+	text-align:center;
+display:none;
+}
+#cat_list_btn a{
+	display:block;
+	color:#ffffff;
+	text-decoration:none;
+}
+/* -------------領収書ボタンリンク------------- */
+#receipt_btn{
+	position:fixed;
+	top: 200px;
+	right:0;
+	text-align:center;
+	z-index:99999;
+}
+
+#receipt_btn a{
+	display:block;
+	width:161px;
+	height:107px;
+
+}
+
+#receipt_btn img {
+	width: 161px;
+}
+
+/* -------------まとめ買い 位置固定バナー------------- */
+.matomegai{
+	position:fixed;
+	bottom:-133px;
+	left:50%;
+	margin-left:-370px;
+	z-index:9999;
+}
+.matomegai_obi{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:41px;
+	z-index:9999;
+}
+.matomegai_banner{
+	width:100%;
+	height:70px;
+	margin-bottom:10px;
+	text-align:center;
+	min-width:740px;
+}
+
+/* -------------まとめ買い 位置固定バナー------------- */
+
+.newlife_coupon_lpo{
+	width:100%;
+	height:70px;
+	text-align:center;
+	min-width:740px;
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:9999;
+	opacity:0.8;
+
+}
+
+/* -------------クロスセル1商品 右固定タブバナーー-------------(通常時）*/
+
+
+div#douji01{
+	position:fixed;
+	top:98px !important;
+	right:0;
+	width:102px;
+	height:161px;
+	text-align:center;
+	border:2px solid #cccccc;
+	border-right:none;
+	background:#ffffff;
+	line-height:1.3;
+	z-index:100;
+	border-radius:5px 0 0 5px/5px 0 0 5px;
+}
+
+div#douji01 a{
+	display:block;
+	padding:8px;
+	text-decoration:none !important;
+}
+div#douji01 span:nth-of-type(1){
+	color:red;
+	font-weight:bold;
+	font-size:12px;
+}
+div#douji01 span:nth-of-type(2){
+	text-decoration:underline!important;
+	font-size:11px;
+}
+div#douji01 a img{
+	padding:0 0 3px 0;
+	border:none;
+}
+
+/* -------------クロスセル1商品 右固定タブバナーー-------------(イベント）
+div#douji01{
+	position:fixed;
+	top:120px;
+	left:0;
+	width:102px;
+	height:161px;
+	text-align:center;
+	width:120px;
+	border:5px solid red;
+	border-left:none;
+	border-bottom-right-radius:10px;
+	border-top-right-radius:10px;
+	background:#ffffff;
+	line-height:1.3;
+	z-index:100;
+}
+div#douji01 a{
+	display:block;
+	padding:8px;
+	text-decoration:none !important;
+}
+div#douji01 span:nth-of-type(1){
+	color:red;
+	font-weight:bold;
+	font-size:12px;
+}
+div#douji01 span:nth-of-type(2){
+	text-decoration:underline!important;
+	font-size:11px;
+}
+div#douji01 a img{
+	padding:0 0 3px 0;
+	border:none;
+}
+/* -------------クロスセル1商品 右固定スライドタブバナーー------------- */
+
+#douji_slide_frame {
+	position:fixed;
+	top:102px;
+	right:0;
+	margin-right:-152px;
+	width:256px;
+	height:165px;
+	background:#ffffff;
+	z-index:100;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	zoom:1;
+}
+
+#douji_slide_frame2 {
+	position:fixed;
+	top:94px;
+	right:0;
+	margin-right:-152px;
+	width:256px;
+	height:167px;
+	background:#ffffff;
+	z-index:100;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	zoom:1;
+}
+
+.item2 {
+	position:fixed;
+	top:132px !important;
+	right:0 !important;
+	width:273px !important;
+	height:135px !important;
+}
+
+.item3 {
+	position:fixed;
+	right:0;
+	top:275px !important;
+	width:273px !important;
+	height:135px !important;
+}
+
+#douji_slide_frame:hover{
+	margin-right:0px;
+}
+
+div#douji02 {
+	top: 318px !important;
+	width: 162px;
+	position: fixed;
+	right: 0;
+	z-index: 100;
+}
+
+div#douji02  a {
+	padding: 0;
+}
+
+div#douji02 a img {
+	width: 100%;
+}
+
+/* -------------クロスセル1商品 フローティングバナーー------------- */
+#douji_fro_frame{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:40px;
+	background:rgba(250,242,211,0.9);
+	z-index:10;
+}
+
+/* -------------送料無料まであとちょっと 右固定タブバナーー------------- */
+div#kinitsu{
+	position:fixed;
+	top:98px;
+	right:0;
+	width:104px;
+	height:162px;
+	z-index:50;
+}
+
+/* -------------買い物かご 特集バナー------------- */
+#tokusyuu_kago {
+	margin:-5px 0 15px;
+}
+
+
+/* -------------ネコポス iframe------------- */
+.nekopos_inc{
+	min-width:740px;
+	margin:15px auto 0;
+}
+
+/* -------------1603スーパーSALE半額回遊------------- */
+.ss_kaiyuu {
+width:740px;
+height:370px;
+}
+
+/* -------------週間ランキングコンテンツ------------- */
+#r_ranking{
+	display: block;
+	min-width:740px;
+	max-width:945px;
+	margin:10px auto;
+}
+#r_ranking img{
+	width:100%;
+}
+#r_ranking p{
+	text-align:right;
+	font-size:12px;
+	margin-top:3px;
+}
+
+/* "入荷待ち（予約受付中）"と記載されている場合は注文可能です。*/
+span.inventory_desc{
+	margin-top:5px;
+	display:inline-block;
+}
+
+
+#rakutenLimitedId_cart span.tax_postage.shippingCost_free, .rakutenLimitedId_cart span.tax_postage.shippingCost_free{
+	background-color:#FF0000 !important;
+}
+
+/* -------------送料無料バナーコンテンツ------------- */
+.sfree_img {
+	display: block;
+}
+
+/* -------------レビューを見るボタンデザイン変更------------- */
+
+#rakutenLimitedId_aroundCart .seeReview {
+	width:99%;
+	text-align:center !important;
+	padding:9px;
+	border:1px solid #cb3232 !important;
+	font-size:14px !important;
+}
+
+#rakutenLimitedId_aroundCart .seeReview {
+	background-position:23% !important;
+}
+
+
+
+
+/* -------------買い物カゴボタンデザイン変更------------- */
+.floatingCartSplitButtons {
+width: 422px;
+}
+
+#rakutenLimitedId_aroundCart .cart-button-container {
+width: 49.3%;
+margin-right: 3px !important;
+}
+
+#rakutenLimitedId_aroundCart .floatingCartPurchaseButtonsContainer .cart-button-container.timesale.hover {
+top:0 !important;
+left:0 !important;
+}
+
+#rakutenLimitedId_aroundCart .floatingCartPurchaseButtonsContainer .cart-button-container .purchase-buttons-alert {
+top: 87px !important;
+}
+
+#rakutenLimitedId_aroundCart .cart-button-container .add-cart {
+background-color:#980000 !important;
+}
+
+#rakutenLimitedId_aroundCart .cart-button-container .new-cart-button {
+	height:68px !important;
+	width: 100% !important;
+}
+
+#rakutenLimitedId_aroundCart .cart-button-container .new-cart-button span {
+	font-size:18px !important;
+}
+
+/* -------------PC商品説明文_ネコポス記載------------- */
+.neko_pc{
+	margin-top:15px;
+}
+
+.nekosen{
+	margin-top:15px;
+	margin-bottom:10px;
+	min-width:740px;
+	height:425px;
+}
+
+.item_desc {
+	margin:0 !important;
+	padding:0 !important;
+}
+
+/* -------------インクルード部分のtable-------------
+div#pagebody table td table td table td table td table{
+	width:100%;
+}
+*/
+
+
+/* -------------画像回遊------------- */
+.osusume_100-sv{height:238px;}
+.osusume_analog{height:260px;}
+.osusume_bag_3way{height:238px;}
+.osusume_bag_back{height:238px;}
+.osusume_battery_usb{height:238px;}
+.osusume_beltcase{height:238px;}
+.osusume_bousui{height:238px;}
+.osusume_btheadset{height:238px;}
+.osusume_cable{height:238px;}
+.osusume_cablebox{height:238px;}
+.osusume_camera{height:238px;}
+.osusume_camerabag{height:238px;}
+.osusume_car{height:238px;}
+.osusume_carcharger{height:238px;}
+.osusume_carholder{height:238px;}
+.osusume_chair{height:238px;}
+.osusume_chair_meetimg{height:238px;}
+.osusume_chair_premium{height:238px;}
+.osusume_cooler{height:238px;}
+.osusume_d_chair{height:253px;}
+.osusume_desk_m{height:238px;}
+.osusume_drivestorage{height:238px;}
+.osusume_hub_poe{height:474px;}
+.osusume_ipadstand{height:238px;}
+.osusume_iphone{height:238px;}
+.osusume_loudspe{height:238px;}
+.osusume_loupe{height:238px;}
+.osusume_mouse{height:238px;}
+.osusume_mp3{height:238px;}
+.osusume_oa_acce{height:238px;}
+.osusume_office{height:238px;}
+.osusume_omosiro{height:238px;}
+.osusume_pointer{height:238px;}
+.osusume_presen{height:238px;}
+.osusume_scn{height:238px;}
+.osusume_scope{height:238px;}
+.osusume_screwdriver{height:238px;}
+.osusume_smplens{height:238px;}
+.osusume_speaker{height:238px;}
+.osusume_surface{height:250px;}
+.osusume_tabarm{height:238px;}
+.osusume_tap{height:238px;}
+.osusume_tap_2p3p{height:293px;}
+.osusume_tsume{height:238px;}
+.osusume_tv{height:238px;}
+.osusume_warm{height:238px;}
+.osusume_bag_2way{height:238px;}
+.osusume_by_mainte{height:238px;}
+.osusume_deskwork{height:245px;}
+.osusume_tvspeaker{height:238px;}
+.osusume_monirac{height:800px;}
+.osusume_bci350_351{height:320px;}
+.osusume_lanhub{height:238px;}
+.osusume_ledlight{height:238px;}
+.osusume_standing_desk{height:253px;}
+.osusume_350_351{height:800px;}
+.osusume_70{height:650px;}
+.osusume_80{height:650px;}
+.osusume_hongawa{height:238px;}
+.osusume_bag_2way_2{height:498px;}
+
+
+/* -------------かご回り回遊------------- */
+
+#kago_kaiyuu {
+	width:100%;
+	text-align:left;
+	margin-bottom: 30px;
+}
+
+#kago_kaiyuu .title {
+	width:96%;
+	text-align:left;
+	padding:10px 0px 5px 20px;
+	border-bottom:1px solid #999;
+	font-size:16px;
+	font-weight:bold;
+	list-style-type:none;
+	margin-top:0;
+}
+
+#kago_kaiyuu .title li {
+	color: #000;
+	display: block;
+	padding: 10px 10px 5px;
+	text-decoration: none;
+	background: #fff;
+	border:1px solid #999;
+	margin-bottom:-6px;
+	border-bottom:none;
+	width:42%;
+	text-align:center;
+}
+
+#kago_kaiyuu #item {
+	width:100%;
+	text-align:left;
+}
+
+#kago_kaiyuu div {
+	display:inline-block;
+	text-align:center;
+	font-size:12px;
+	margin-right:14px;
+}
+
+#kago_kaiyuu div a {
+	text-decoration: none;
+}
+
+#kago_kaiyuu div img {
+	width:160px;
+	border:1px solid #ccc !important;
+}
+/*スーパーSALE用回遊(5/23追記)*/
+#sale_kaiyuu {
+	position: relative;
+	width: 100%;
+	margin: 30 0 70 0;
+}
+
+#sale_kaiyuu .back-img {
+	width: 100%;
+	max-width: 1045px;
+}
+
+#sale_kaiyuu .photo {
+	width: 23%;
+	max-width: 240px;
+	position: absolute;
+	top: 5.5%;
+	left: 1.5%;
+}
+
+#sale_kaiyuu .photo img {
+	width: 100%;
+}
+
+#sale_kaiyuu .kikan {
+	font-size: calc(16px + 0.25vw);
+    letter-spacing: 1.4px;
+    position: absolute;
+	top:33%;
+	left: 39%;
+}
+
+#sale_kaiyuu a {
+	display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+ @media (max-width:800px) {
+#sale_kaiyuu {
+	width: 740px;
+}
+ }
+
+
+
+
+ @media (max-width:424px) {
+#kago_kaiyuu .title {
+	font-size:14px;
+}
+ }
+
+
+ @media (max-width:540px) {
+#kago_kaiyuu #item div:last-child {
+	display:none;
+	}
+ }
+
+/*セット用回遊(7/28追記)*/
+#set_kaiyuu {
+	position: relative;
+	width: 100%;
+	margin: 30 0 70 0;
+}
+
+#set_kaiyuu .back-img {
+	width: 100%;
+	max-width: 1045px;
+}
+
+#set_kaiyuu .photo {
+	width: 23%;
+	max-width: 240px;
+	position: absolute;
+	top: 10%;
+	left: 5%;
+}
+
+#set_kaiyuu .photo img {
+	width: 100%;
+}
+
+#set_kaiyuu .kikan {
+	font-size: calc(16px + 0.25vw);
+    letter-spacing: 1.4px;
+    position: absolute;
+	top:33%;
+	left: 39%;
+}
+
+#set_kaiyuu a {
+	display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+ @media (max-width:800px) {
+#set_kaiyuu {
+	width: 740px;
+}
+ }
